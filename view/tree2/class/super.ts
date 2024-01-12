@@ -15,10 +15,6 @@ namespace $ {
 			err`No super class at ${klass.span}`
 		)
 
-		if( ! $mol_view_tree2_class_match( superclass ) ) return this.$mol_fail(
-			err`Wrong super class name ${JSON.stringify(superclass.type).replace(/(^"|"$)/g, "")} at ${superclass.span}`
-		)
-
 		return superclass
 	}
 }
