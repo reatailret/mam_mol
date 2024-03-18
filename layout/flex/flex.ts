@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Flexible layout. */
-	export class $mol_layout_flex extends $mol_layout_tree {
+	class $mol_layout_flex extends $mol_layout_tree {
 		
 		up() {
 			
@@ -68,4 +68,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_layout_flex}

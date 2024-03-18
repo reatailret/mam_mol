@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Checks for some of given runtype or throws error.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_data_variant_demo
 	 */
-	export function $mol_data_variant< Sub extends $mol_data_value[] >( ... sub : Sub ) {
+	function $mol_data_variant< Sub extends $mol_data_value[] >( ... sub : Sub ) {
 
 		return $mol_data_setup( ( val : Parameters< Sub[ number ] >[0] ) => {
 			
@@ -34,10 +34,12 @@ namespace $ {
 
 			}
 			
-			return $mol_fail( new $mol_data_error( `${val} is not any of variants` , ... errors ) )
+			return $mol_fail( new $mol_data_error( `${val} is not any of variants` , null, ... errors ) )
 
 		} , sub )
 
 	}
 	
-}
+
+
+ export {$mol_data_variant}

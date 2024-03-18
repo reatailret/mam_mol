@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	const instances = new WeakSet< any >()
 
@@ -7,7 +7,7 @@ namespace $ {
 	 * 
 	 * 	$mol_delegate( Array.prototype , ()=> fetch_array() )
 	 */
-    export function $mol_delegate< Value extends object >(
+    function $mol_delegate< Value extends object >(
 		proto : Value ,
 		target : ()=> Value ,
 	) {
@@ -56,4 +56,6 @@ namespace $ {
 		},
 	)
 
-}
+
+
+ export {$mol_delegate}

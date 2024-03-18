@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'$mol_syntax2_md_flow'() {
@@ -36,4 +36,6 @@ namespace $ {
 		} ,
 		
 	})
-}
+
+
+ export {}

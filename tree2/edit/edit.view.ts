@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_tree2_edit extends $.$mol_tree2_edit {
+
+	class $mol_tree2_edit extends $.$mol_tree2_edit {
 		
 		@ $mol_mem
 		self( next?: string ) {
@@ -74,4 +74,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_tree2_edit}

@@ -1,9 +1,9 @@
-namespace $ {
+
 	/**
 	* Key names code for hotkey
 	* @see [mol_hotkey](../../hotkey/hotkey.view.ts)
 	*/
-	export enum $mol_keyboard_code {
+	enum $mol_keyboard_code {
 		backspace = 8,
 		tab = 9,
 		enter = 13,
@@ -105,4 +105,6 @@ namespace $ {
 		bracketClose = 221,
 		quoteSingle = 222
 	}
-}
+
+
+ export {$mol_keyboard_code}

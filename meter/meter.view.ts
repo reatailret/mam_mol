@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	/** @deprecated Use $mol_view..view_rect **/
-	export class $mol_meter extends $.$mol_meter {
+	class $mol_meter extends $.$mol_meter {
 		
 		@ $mol_mem
 		rect() {
@@ -58,4 +58,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_meter}

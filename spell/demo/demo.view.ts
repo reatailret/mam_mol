@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_spell_demo extends $.$mol_spell_demo {
+
+	class $mol_spell_demo extends $.$mol_spell_demo {
 		
 		@ $mol_mem
 		report() {
@@ -16,4 +16,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_spell_demo}

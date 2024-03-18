@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Position in any resource. */
-	export class $mol_span extends $mol_object2 {
+	class $mol_span extends $mol_object2 {
 
 		constructor(
 			readonly uri: string ,
@@ -76,4 +76,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_span}

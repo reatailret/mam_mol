@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'define as methods'() {
@@ -40,6 +40,8 @@ namespace $ {
 		},
 		
 	})
-}
 
 
+
+
+ export {}

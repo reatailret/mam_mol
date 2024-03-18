@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_svg_text_box extends $.$mol_svg_text_box {
+
+	class $mol_svg_text_box extends $.$mol_svg_text_box {
 
 		box_width() {
 			return `${ this.width() }px`
@@ -26,4 +26,6 @@ namespace $.$$ {
 		}
 	}
 	
-}
+
+
+ //export {$mol_svg_text_box}

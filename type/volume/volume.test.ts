@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type volume1 = $mol_type_assert<
 
@@ -65,4 +65,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

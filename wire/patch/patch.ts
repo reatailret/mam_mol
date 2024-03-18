@@ -1,5 +1,5 @@
-namespace $ {
-	export function $mol_wire_patch( obj: object ) {
+
+	function $mol_wire_patch( obj: object ) {
 		
 		for( const field of Reflect.ownKeys( obj ) ) {
 			
@@ -32,4 +32,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_wire_patch}

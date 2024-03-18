@@ -1,11 +1,11 @@
-namespace $ {
+
 
 	/**
 	 * Recursive `Partial`.
 	 *
 	 * 	let props : $mol_type_partial_deep< HTMLElement > = { style : { display : 'block' } }
 	 */
-	export type $mol_type_partial_deep< Val > =
+	type $mol_type_partial_deep< Val > =
 		Val extends object
 		?
 			Val extends Function
@@ -18,4 +18,6 @@ namespace $ {
 				}
 		: Val
 
-}
+
+
+ export {$mol_type_partial_deep}

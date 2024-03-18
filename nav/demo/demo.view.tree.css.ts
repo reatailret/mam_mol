@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	$mol_style_define( $mol_nav_demo , {
 		display : 'flex',
@@ -9,4 +9,6 @@ namespace $ {
 		},
 	})
 
-}
+
+
+ export {}

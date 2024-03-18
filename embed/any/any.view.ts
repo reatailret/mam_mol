@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_embed_any extends $.$mol_embed_any {
+	class $mol_embed_any extends $.$mol_embed_any {
 		
 		@ $mol_mem
 		type() {
@@ -32,4 +32,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_embed_any}

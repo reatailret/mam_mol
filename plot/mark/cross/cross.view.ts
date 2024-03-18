@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_mark_cross extends $.$mol_plot_mark_cross {
+
+	class $mol_plot_mark_cross extends $.$mol_plot_mark_cross {
 
 		@$mol_mem
 		nearest() {
@@ -94,4 +94,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_plot_mark_cross}

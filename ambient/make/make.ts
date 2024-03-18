@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_ambient_make< Obj >(
+
+	function $mol_ambient_make< Obj >(
 		this : $ ,
 		Obj : new( ... args : any[] )=> Obj ,
 		overrides : Partial< $ > ,
@@ -10,4 +10,6 @@ namespace $ {
 		return obj
 	}
 
-}
+
+
+ export {$mol_ambient_make}

@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_rest_server extends $mol_object {
+	class $mol_rest_server extends $mol_object {
 		
 		@ $mol_mem
 		port() {
@@ -176,59 +176,60 @@ namespace $ {
 			
 			sock.pause()
 			
-			this._ws_icome_partial.push( chunk )
-			const patial_size = this._ws_icome_partial.reduce( ( sum, buf )=> sum + buf.byteLength, 0 )
-			
-			let frame = $mol_websocket_frame.from( this._ws_icome_partial[0] )
-			const msg_size = frame.size() + frame.data().size
-			
-			if( msg_size > patial_size ) {
-				setTimeout( ()=> sock.resume() )
-				return
-			}
-			
-			chunk = Buffer.alloc( patial_size )
-			let offset = 0
-			for( const buf of this._ws_icome_partial.splice( 0 ) ) {
-				chunk.set( buf, offset )
-				offset += buf.byteLength
-			}
-			frame = $mol_websocket_frame.from( chunk )
-			
-			if( msg_size < chunk.byteLength ) {
-				const tail = new Uint8Array( chunk.buffer, chunk.byteOffset + msg_size )
-				this._ws_icome_partial.push( tail )
-			}
-			
-			let data: string | Uint8Array = new Uint8Array( chunk.buffer, chunk.byteOffset + frame.size(), frame.data().size )
-			
-			if( frame.data().mask ) {
-				const mask = frame.mask()
-				for( let i = 0; i < data.length; ++i ) {
-					data[ i ] ^= mask[ i % 4 ]
-				}
-			}
-			
-			const op = frame.kind().op
-			if( op === 'txt' ) data = $mol_charset_decode( data )
-			
-			const message = upgrade.derive( 'POST', data )
-			
-			if( op !== 'txt' && op !== 'bin' ) return
-			
 			try {
 				
+				this._ws_icome_partial.push( chunk )
+				const patial_size = this._ws_icome_partial.reduce( ( sum, buf )=> sum + buf.byteLength, 0 )
+				
+				let frame = $mol_websocket_frame.from( this._ws_icome_partial[0] )
+				const msg_size = frame.size() + frame.data().size
+				
+				if( msg_size > patial_size ) {
+					setTimeout( ()=> sock.resume() )
+					return
+				}
+				
+				chunk = Buffer.alloc( patial_size )
+				let offset = 0
+				for( const buf of this._ws_icome_partial.splice( 0 ) ) {
+					chunk.set( buf, offset )
+					offset += buf.byteLength
+				}
+				frame = $mol_websocket_frame.from( chunk )
+				
+				if( msg_size < chunk.byteLength ) {
+					const tail = new Uint8Array( chunk.buffer, chunk.byteOffset + msg_size )
+					this._ws_icome_partial.push( tail )
+				}
+				
+				let data: string | Uint8Array = new Uint8Array( chunk.buffer, chunk.byteOffset + frame.size(), frame.data().size )
+				
+				if( frame.data().mask ) {
+					const mask = frame.mask()
+					for( let i = 0; i < data.length; ++i ) {
+						data[ i ] ^= mask[ i % 4 ]
+					}
+				}
+				
+				const op = frame.kind().op
+				if( op === 'txt' ) data = $mol_charset_decode( data )
+				
+				const message = upgrade.derive( 'POST', data )
+				
+				if( op !== 'txt' && op !== 'bin' ) return
+			
 				if( data.length !== 0 ) {
 					this.$.$mol_log3_rise({
 						place: this,
 						message: message.method(),
+						port: $mol_key( message.port ),
 						url: message.uri(),
 						frame: frame.toString(),
 					})
 					await $mol_wire_async( this.root() ).REQUEST( message )
 				}
 			
-				sock.resume()
+				setTimeout( ()=> sock.resume() )
 				
 			} catch( error: any ) {
 				
@@ -240,7 +241,7 @@ namespace $ {
 					stack: error.stack,
 				})
 				
-				sock.resume()
+				setTimeout( ()=> sock.resume() )
 				
 			}
 			
@@ -268,4 +269,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_rest_server}

@@ -1,8 +1,8 @@
-namespace $ {
+
 	
 	const named = new WeakSet< Function >()
 	
-	export function $mol_func_name( this : $ , func : Function ) : string {
+	function $mol_func_name( this : $ , func : Function ) : string {
 		
 		let name = func.name
 		if( name?.length > 1 ) return name
@@ -22,9 +22,11 @@ namespace $ {
 		
 	}
 
-	export function $mol_func_name_from< Target extends Function >( target : Target , source : Function ) {
+	function $mol_func_name_from< Target extends Function >( target : Target , source : Function ) {
 		Object.defineProperty( target , 'name' , { value : source.name } )
 		return target
 	}
 
-}
+
+
+ export {$mol_func_name,$mol_func_name_from}

@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Simple [Yandex Maps](https://tech.yandex.ru/maps/doc/jsapi/2.1/) wrapper.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_map_yandex_demo
 	 */
-	export class $mol_map_yandex extends $.$mol_map_yandex {
+	class $mol_map_yandex extends $.$mol_map_yandex {
 
 		static api_key() {
 			return ""
@@ -89,4 +89,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_map_yandex}

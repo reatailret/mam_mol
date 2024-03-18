@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_search_demo extends $.$mol_search_demo {
+	class $mol_search_demo extends $.$mol_search_demo {
 		
 		@ $mol_mem
 		suggests() {
@@ -16,4 +16,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_search_demo}

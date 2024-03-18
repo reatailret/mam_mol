@@ -1,9 +1,8 @@
 declare let ENV : any
 declare let Monitoring : any
 
-namespace $.$$ {
 
-	export class $mol_perf_dbmon extends $.$mol_perf_dbmon {
+	class $mol_perf_dbmon extends $.$mol_perf_dbmon {
 
 		@ $mol_mem
 		data() {
@@ -69,4 +68,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_perf_dbmon}

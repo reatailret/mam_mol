@@ -1,13 +1,13 @@
-namespace $ {
+
 	
-	export type $mol_style_prop_result =
+	type $mol_style_prop_result =
 		Record<
 			string ,
 			$mol_style_func< 'var' >
 		>
 	
 	/** Create record of CSS variables. */
-	export function $mol_style_prop(
+	function $mol_style_prop(
 		prefix : string ,
 		postfixes : Array< string >
 	) {
@@ -23,4 +23,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_style_prop_result,$mol_style_prop}

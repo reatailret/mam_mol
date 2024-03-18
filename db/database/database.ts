@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** IndexedDB instance wrapper. */
-	export class $mol_db_database< Schema extends $mol_db_schema > {
+	class $mol_db_database< Schema extends $mol_db_schema > {
 		
 		constructor(
 			readonly native: IDBDatabase,
@@ -61,4 +61,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_db_database}

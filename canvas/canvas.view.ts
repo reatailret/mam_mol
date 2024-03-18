@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_canvas extends $.$mol_canvas {
+
+	class $mol_canvas extends $.$mol_canvas {
 
 		@ $mol_mem
 		context() {
@@ -24,4 +24,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_canvas}

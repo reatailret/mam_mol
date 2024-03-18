@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_bench_demo extends $.$mol_bench_demo {
+	class $mol_bench_demo extends $.$mol_bench_demo {
 		
 		result() {
 			return {
@@ -21,4 +21,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_bench_demo}

@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_bar extends $.$mol_plot_bar {
+
+	class $mol_plot_bar extends $.$mol_plot_bar {
 
 		@$mol_mem
 		indexes() {
@@ -86,4 +86,6 @@ namespace $.$$ {
 			return next
 		}
 	}
-}
+
+
+ //export {$mol_plot_bar}

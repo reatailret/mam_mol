@@ -1,5 +1,7 @@
-namespace $ {
 
-	export function $mol_offline( ) {}
 
-}
+	function $mol_offline( ) {}
+
+
+
+ export {$mol_offline}

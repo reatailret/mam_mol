@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	/**
 	 * Publisher that can auto collect other publishers. 32B
@@ -7,7 +7,7 @@ namespace $ {
 	 * 	^           ^
 	 * 	pubs_from   subs_from
 	 */
-	export class $mol_wire_pub_sub extends $mol_wire_pub implements $mol_wire_sub {
+	class $mol_wire_pub_sub extends $mol_wire_pub implements $mol_wire_sub {
 		
 		protected pub_from = 0 // 4B
 		protected cursor = $mol_wire_cursor.stale // 4B
@@ -217,4 +217,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_wire_pub_sub}

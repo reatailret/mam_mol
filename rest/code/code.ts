@@ -1,4 +1,4 @@
-namespace $ {
+
 	export enum $mol_rest_code {
 	
 		Continue = 100,
@@ -67,4 +67,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {}

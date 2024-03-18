@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_http_resource extends $mol_http {
+	class $mol_http_resource extends $mol_http {
 		
 		static item( uri : string ) {
 			return $mol_http.resource( uri )
@@ -8,7 +8,7 @@ namespace $ {
 		
 	}
 	
-	export class $mol_http_resource_json {
+	class $mol_http_resource_json {
 		
 		static item( uri : string ) {
 			return $mol_http.resource( uri )
@@ -16,4 +16,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_http_resource,$mol_http_resource_json}

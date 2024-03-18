@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Sandbox for javascript code from user.
 	 * @see https://sandbox.js.hyoo.ru/
 	 */
-	export class $mol_func_sandbox {
+	class $mol_func_sandbox {
 		
 		static blacklist = new Set([
 			( function() {} ).constructor ,
@@ -173,4 +173,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_func_sandbox}

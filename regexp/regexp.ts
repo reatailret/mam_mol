@@ -10,20 +10,19 @@ interface String {
 	
 }
 
-namespace $ {
 	
 	type Groups_to_params<T> = {
 		[P in keyof T]?: T[P] | boolean | undefined;
 	};	
 
-	export type $mol_regexp_source =
+	type $mol_regexp_source =
 	| number
 	| string
 	| RegExp
 	| { [ key in string ] : $mol_regexp_source }
 	| readonly[ $mol_regexp_source , ... $mol_regexp_source[] ]
 
-	export type $mol_regexp_groups< Source extends $mol_regexp_source >
+	type $mol_regexp_groups< Source extends $mol_regexp_source >
 	
 		= Source extends number
 		? {}
@@ -63,7 +62,7 @@ namespace $ {
 		: never
 		
 	/** Type safe reguar expression builder */
-	export class $mol_regexp< Groups extends Record< string , string > > extends RegExp {
+	class $mol_regexp< Groups extends Record< string , string > > extends RegExp {
 		
 		/** Prefer to use $mol_regexp.from */
 		constructor( source : string , flags : string = 'gsu' , readonly groups : ( Extract< keyof Groups , string > )[] = [] ) {
@@ -487,4 +486,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_regexp_source,$mol_regexp_groups,$mol_regexp}

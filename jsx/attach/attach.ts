@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_jsx_attach< Result >( next : typeof $mol_jsx_document , action : ()=> Result ) {
+
+	function $mol_jsx_attach< Result >( next : typeof $mol_jsx_document , action : ()=> Result ) {
 		const prev = $mol_jsx_document
 		try {
 			$mol_jsx_document = next
@@ -10,4 +10,6 @@ namespace $ {
 		}
 	}
 
-}
+
+
+ export {$mol_jsx_attach}

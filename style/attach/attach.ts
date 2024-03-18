@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	let all = [] as string[]
 	let el : HTMLStyleElement | null = null
 	let timer : $mol_after_tick | null = null
 
-	export function $mol_style_attach_force() {
+	function $mol_style_attach_force() {
 		if( all.length ) {
 			el!.innerHTML += '\n' + all.join( '\n\n' )
 			all = []
@@ -13,7 +13,7 @@ namespace $ {
 		return el!
 	}
 	
-	export function $mol_style_attach(
+	function $mol_style_attach(
 		id : string ,
 		text : string ,
 	) {
@@ -35,4 +35,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_style_attach_force,$mol_style_attach}

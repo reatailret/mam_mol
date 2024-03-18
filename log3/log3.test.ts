@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_test_mocks.push( $ => {
 		$.$mol_log3_come = ()=> {}
@@ -9,4 +9,6 @@ namespace $ {
 		$.$mol_log3_area = ()=> ()=> {}
 	} )
 
-}
+
+
+ export {}

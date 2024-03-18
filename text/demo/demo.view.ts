@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_text_demo extends $.$mol_text_demo {
+	class $mol_text_demo extends $.$mol_text_demo {
 		
 		edit() {
 			return this.$.$mol_state_arg.value( 'edit' ) !== null
@@ -16,4 +16,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_text_demo}

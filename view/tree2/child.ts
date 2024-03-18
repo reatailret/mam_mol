@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_view_tree2_child(
+
+	function $mol_view_tree2_child(
 		this: $,
 		tree: $mol_tree2,
 	) {
@@ -22,4 +22,6 @@ namespace $ {
 		return tree.kids[0]
 	}
 
-}
+
+
+ export {$mol_view_tree2_child}

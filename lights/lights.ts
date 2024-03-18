@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	function parse( theme: string | null ) {
 		if( theme === 'true' ) return true
@@ -10,7 +10,7 @@ namespace $ {
 	 * Switcher between light/dark themes (usually for `mol_theme_auto` plugin).
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_lights_demo
 	 */
-	export function $mol_lights( this : $ , next? : boolean ) {
+	function $mol_lights( this : $ , next? : boolean ) {
 		
 		const arg = parse( this.$mol_state_arg.value( 'mol_lights' ) )
 		
@@ -29,4 +29,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_lights}

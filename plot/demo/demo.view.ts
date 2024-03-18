@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_plot_demo extends $.$mol_plot_demo {
+	class $mol_plot_demo extends $.$mol_plot_demo {
 		@ $mol_mem
 		series_x() {
 			const next = [] as number[]
@@ -32,4 +32,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_plot_demo}

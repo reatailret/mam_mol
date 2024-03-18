@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test( {
 		
 		'inserting'($) {
@@ -73,4 +73,6 @@ namespace $ {
 		} ,
 
 	} )	
-}
+
+
+ export {}

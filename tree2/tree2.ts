@@ -1,11 +1,11 @@
-namespace $ {
+
 
 	/** Path by types in tree. */
-	export type $mol_tree2_path =
+	type $mol_tree2_path =
 		Array< string | number | null >
 	
 	/** Hask tool for processing node. */
-	export type $mol_tree2_hack< Context > =
+	type $mol_tree2_hack< Context > =
 		(
 			input : $mol_tree2 ,
 			belt : $mol_tree2_belt< Context > ,
@@ -13,7 +13,7 @@ namespace $ {
 		)=> readonly $mol_tree2[]
 
 	/** Collection of hask tools for processing tree. */
-	export type $mol_tree2_belt< Context > =
+	type $mol_tree2_belt< Context > =
 		Record< string , $mol_tree2_hack< Context > >
 
 	/**
@@ -21,7 +21,7 @@ namespace $ {
 	 * Avoid direct instantiation. Use static factories instead.
 	 * @see https://github.com/nin-jin/tree.d
 	 */
-	export class $mol_tree2 extends Object {
+	class $mol_tree2 extends Object {
 		
 		constructor(
 
@@ -285,10 +285,12 @@ namespace $ {
 
 	}
 
-	export class $mol_tree2_empty extends $mol_tree2 {
+	class $mol_tree2_empty extends $mol_tree2 {
 		constructor() {
 			super( '' , '' , [] , $mol_span.unknown )
 		}
 	}
 	
-}
+
+
+ export {$mol_tree2_path,$mol_tree2_hack,$mol_tree2_belt,$mol_tree2,$mol_tree2_empty}

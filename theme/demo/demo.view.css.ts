@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 	
 	$mol_style_define( $mol_theme_demo_case, {
 		
@@ -100,4 +100,6 @@ namespace $.$$ {
 		
 	} )
 	
-}
+
+
+ export {}

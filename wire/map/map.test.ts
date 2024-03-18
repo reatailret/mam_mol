@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 	$mol_test({
 		
 		"First defined as default delegate for internal"( $ ) {
@@ -42,4 +42,5 @@ namespace $.$$ {
 		},
 		
 	})
-}
+
+ export {}

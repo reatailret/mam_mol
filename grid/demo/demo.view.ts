@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_grid_demo extends $.$mol_grid_demo {
+
+	class $mol_grid_demo extends $.$mol_grid_demo {
 		
 		@ $mol_mem
 		records() {
@@ -18,4 +18,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_grid_demo}

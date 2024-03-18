@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_tree2_text_to_string( this: $, text: $mol_tree2 ) {
+
+	function $mol_tree2_text_to_string( this: $, text: $mol_tree2 ) {
 
 		let res = ''
 		
@@ -45,4 +45,6 @@ namespace $ {
 		return res
 	}
 
-}
+
+
+ export {$mol_tree2_text_to_string}

@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export var $mol_syntax_md_flow = new $mol_syntax({
+	var $mol_syntax_md_flow = new $mol_syntax({
 		'quote' : /^((?:(?:> )(?:[^]*?)$(\r?\n?))+)([\n\r]*)/ ,
 		'header' : /^(#+)(\s*)(.*?)$([\n\r]*)/ ,
 		'list' :  /^((?:(?:\s?[*+-]|\d+\.)\s+(?:[^]*?)$(?:\r?\n?))+)((?:\r?\n)*)/ ,
@@ -10,7 +10,7 @@ namespace $ {
 		'block' : /^(.*?(?:\r?\n.+?)*)$((?:\r?\n)*)/ ,
 	})
 	
-	export var $mol_syntax_md_line = new $mol_syntax({
+	var $mol_syntax_md_line = new $mol_syntax({
 		'strong' : /\*\*(.+?)\*\*/ ,
 		'emphasis' : /\*(?!\s)(.+?)\*/ ,
 		'code3' : /```(.+?)```/ ,
@@ -20,7 +20,7 @@ namespace $ {
 		'image-link' : /!\[([^\[\]]*?)\]\((.*?)\)/ ,
 	})
 	
-	export const $mol_syntax_md_code = new $mol_syntax({
+	const $mol_syntax_md_code = new $mol_syntax({
 		'code-docs' : /\/\/\/.*?$/ ,
 		'code-comment-block' : /(?:\/\*[^]*?\*\/|\/\+[^]*?\+\/|<![^]*?>)/ ,
 		'code-link' : /\w+:\/\/\S*/ ,
@@ -36,4 +36,6 @@ namespace $ {
 		'code-punctuation' : /[\-\[\]\{\}\(\)<=>`~!\?@#\$%&\*_\+\\\/\|'";:\.,\^]/ ,
 	})
 	
-}
+
+
+ export {$mol_syntax_md_flow,$mol_syntax_md_line,$mol_syntax_md_code}

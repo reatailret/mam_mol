@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_perf_uibench_table extends $.$mol_perf_uibench_table {
+
+	class $mol_perf_uibench_table extends $.$mol_perf_uibench_table {
 
 		state() {
 			return { items : [] as any[] }
@@ -25,7 +25,7 @@ namespace $.$$ {
 
 	}
 
-	export class $mol_perf_uibench_table_row extends $.$mol_perf_uibench_table_row {
+	class $mol_perf_uibench_table_row extends $.$mol_perf_uibench_table_row {
 
 		state() {
 			return { props : [] as any[] , active : false , id : 0 }
@@ -69,7 +69,7 @@ namespace $.$$ {
 
 	}
 
-	export class $mol_perf_uibench_table_cell extends $.$mol_perf_uibench_table_cell {
+	class $mol_perf_uibench_table_cell extends $.$mol_perf_uibench_table_cell {
 
 		click( next : Event ) {
 			console.log( 'Click' , this.text() )
@@ -79,4 +79,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_perf_uibench_table,$mol_perf_uibench_table_row,$mol_perf_uibench_table_cell}

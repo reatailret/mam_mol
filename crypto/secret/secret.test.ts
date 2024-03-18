@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		async 'sizes'() {
@@ -61,4 +61,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_chart_demo_forces extends $.$mol_chart_demo_forces {
+	class $mol_chart_demo_forces extends $.$mol_chart_demo_forces {
 
 		generate_forces(): readonly [readonly number[], readonly number[]] {
 			const samples_count = this.samples_count()
@@ -50,4 +50,6 @@ namespace $.$$ {
 		}
 	}
 	
-}
+
+
+ //export {$mol_chart_demo_forces}

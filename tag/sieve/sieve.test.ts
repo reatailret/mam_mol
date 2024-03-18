@@ -1,4 +1,4 @@
-namespace $ {
+
 	function create_sieve({
 		path = '',
 		ids_tags
@@ -111,4 +111,6 @@ namespace $ {
 			}
 		})
 	})
-}
+
+
+ export {}

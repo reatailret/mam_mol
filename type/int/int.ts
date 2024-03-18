@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	type Parse<
 		Str extends string,
@@ -52,7 +52,7 @@ namespace $ {
 	> = Minus<[ Value , One ]>
 
 	/** Number literal which is sum of two another */
-	export type $mol_type_int_plus<
+	type $mol_type_int_plus<
 		Left extends Check< Left >,
 		Right extends Check< Right >,
 	> = Down<
@@ -67,7 +67,7 @@ namespace $ {
 	> = [ ... Arg[0], ... Arg[1] ]
 
 	/** Number literal which is subtract of two another */
-	export type $mol_type_int_minus<
+	type $mol_type_int_minus<
 		Left extends Check< Left >,
 		Right extends Check< Right >,
 	> = Down<
@@ -84,7 +84,7 @@ namespace $ {
 		: never
 
 	/** Number literal which is multiply of two another */
-	export type $mol_type_int_mult<
+	type $mol_type_int_mult<
 		Left extends Check< Left >,
 		Right extends Check< Right >,
 	> = Down<
@@ -105,7 +105,7 @@ namespace $ {
 		>
 
 	/** Number literal which is power one to another */
-	export type $mol_type_int_pow<
+	type $mol_type_int_pow<
 		Left extends Check< Left >,
 		Right extends Check< Right >,
 	> = Down<
@@ -129,7 +129,7 @@ namespace $ {
 	 * Range of number literals from Lo up to Hi
 	 * **Slow on large ranges**
 	 */
-	export type $mol_type_int_range<
+	type $mol_type_int_range<
 		Lo extends Check< Lo >,
 		Hi extends Check< Hi >
 	> = Down<
@@ -154,7 +154,7 @@ namespace $ {
 		: never
 	
 	/** Unknown when number literals is ordered */
-	export type $mol_type_int_ordered<
+	type $mol_type_int_ordered<
 		Left extends Check< Left >,
 		Right extends Check< Right >,
 	> = keyof Parse<`${Left}`> extends keyof Parse<`${Right}`>
@@ -190,6 +190,8 @@ namespace $ {
 		: Parse< Expr >
 	
 	/** Evaluates simple expression */
-	export type $mol_type_int_calc< Expr extends string > = Down< Calc< Expr > >
+	type $mol_type_int_calc< Expr extends string > = Down< Calc< Expr > >
 	
-}
+
+
+ export {$mol_type_int_plus,$mol_type_int_minus,$mol_type_int_mult,$mol_type_int_pow,$mol_type_int_range,$mol_type_int_ordered,$mol_type_int_calc}

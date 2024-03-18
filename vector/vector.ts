@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_vector< Value , Length extends number > extends Array< Value > {
+
+	class $mol_vector< Value , Length extends number > extends Array< Value > {
 
 		get length() {
 			return super.length as Length
@@ -109,13 +109,13 @@ namespace $ {
 		
 	}
 
-	export class $mol_vector_1d< Value > extends $mol_vector< Value , 1 > { }
+	class $mol_vector_1d< Value > extends $mol_vector< Value , 1 > { }
 
-	export class $mol_vector_2d< Value > extends $mol_vector< Value , 2 > {}
+	class $mol_vector_2d< Value > extends $mol_vector< Value , 2 > {}
 
-	export class $mol_vector_3d< Value > extends $mol_vector< Value , 3 > {}
+	class $mol_vector_3d< Value > extends $mol_vector< Value , 3 > {}
 
-	export class $mol_vector_range< Value > extends $mol_vector< Value , 2 > {
+	class $mol_vector_range< Value > extends $mol_vector< Value , 2 > {
 		
 		0: Value
 		1: Value
@@ -148,9 +148,9 @@ namespace $ {
 
 	}
 
-	export let $mol_vector_range_full = new $mol_vector_range( Number.NEGATIVE_INFINITY , Number.POSITIVE_INFINITY )
+	let $mol_vector_range_full = new $mol_vector_range( Number.NEGATIVE_INFINITY , Number.POSITIVE_INFINITY )
 
-	export class $mol_vector_matrix<
+	class $mol_vector_matrix<
 		Width extends number ,
 		Height extends number ,
 	> extends $mol_vector< readonly number[] & { length : Width } , Height > {
@@ -169,4 +169,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_vector,$mol_vector_1d,$mol_vector_2d,$mol_vector_3d,$mol_vector_range,$mol_vector_range_full,$mol_vector_matrix}

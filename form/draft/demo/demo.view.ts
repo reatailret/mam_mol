@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_form_draft_demo extends $.$mol_form_draft_demo {
+	class $mol_form_draft_demo extends $.$mol_form_draft_demo {
 		
 		@ $mol_mem
 		form_body() {
@@ -46,4 +46,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_form_draft_demo}

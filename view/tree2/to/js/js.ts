@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	const err = $mol_view_tree2_error_str
 
@@ -126,7 +126,7 @@ namespace $ {
 						ref.struct( '[]', [
 							ref.data( ref.kids[0]?.type ? name_of.call(this, ref.kids[0]) : name ),
 						] ),
-						ref.struct( '(,)' )
+						ref.kids[0]?.type ? params_of.call(this, ref.kids[0]) : ref.struct( '(,)' )
 					]),
 				] ),
 			],
@@ -253,7 +253,7 @@ namespace $ {
 		return acc
 	}
 
-	export function $mol_view_tree2_to_js( this: $, descr: $mol_tree2 ) {
+	function $mol_view_tree2_to_js( this: $, descr: $mol_tree2 ) {
 		
 		descr = $mol_view_tree2_classes( descr )
 		
@@ -307,4 +307,6 @@ namespace $ {
 		])
 		
 	}
-}
+
+
+ export {$mol_view_tree2_to_js}

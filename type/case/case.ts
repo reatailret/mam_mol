@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Join strings in snake_case.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// 'foo_bar_wee'
 	 * 	$mol_type_case_snake< [ 'foo', 'bar', 'wee' ] >
 	 */
-	export type $mol_type_case_snake< Parts extends Array< string > > =
+	type $mol_type_case_snake< Parts extends Array< string > > =
 		$mol_type_string_join< Parts, '_' >
 
 	/**
@@ -15,7 +15,7 @@ namespace $ {
 	 * 	// [ 'foo', 'bar', 'wee' ]
 	 * 	$mol_type_case_snake_parse< 'foo_bar_wee' >
 	 */
-	export type $mol_type_case_snake_parse< String extends string > =
+	type $mol_type_case_snake_parse< String extends string > =
 		$mol_type_string_split< String, '_' >
 
 
@@ -25,7 +25,7 @@ namespace $ {
 	 * 	// 'foo-bar-wee'
 	 * 	$mol_type_case_kebab< [ 'foo', 'bar', 'wee' ] >
 	 */
-	export type $mol_type_case_kebab< Parts extends Array< string > > =
+	type $mol_type_case_kebab< Parts extends Array< string > > =
 		$mol_type_string_join< Parts, '-' >
 
 	/**
@@ -34,7 +34,7 @@ namespace $ {
 	 * 	// [ 'foo', 'bar', 'wee' ]
 	 * 	$mol_type_case_kebab_parse< 'foo-bar-wee' >
 	 */
-	export type $mol_type_case_kebab_parse< String extends string > =
+	type $mol_type_case_kebab_parse< String extends string > =
 		$mol_type_string_split< String, '-' >
 
 
@@ -44,7 +44,7 @@ namespace $ {
 	 * 	// 'foo.bar.wee'
 	 * 	$mol_type_case_dot< [ 'foo', 'bar', 'wee' ] >
 	 */
-	export type $mol_type_case_dot< Parts extends Array< string > > =
+	type $mol_type_case_dot< Parts extends Array< string > > =
 		$mol_type_string_join< Parts, '.' >
 
 	/**
@@ -53,7 +53,7 @@ namespace $ {
 	 * 	// [ 'foo', 'bar', 'wee' ]
 	 * 	$mol_type_case_dot_parse< 'foo.bar.wee' >
 	 */
-	export type $mol_type_case_dot_parse< String extends string > =
+	type $mol_type_case_dot_parse< String extends string > =
 		$mol_type_string_split< String, '.' >
 
 
@@ -63,7 +63,7 @@ namespace $ {
 	 * 	// 'fooBarWee'
 	 * 	$mol_type_case_camel< [ 'foo', 'bar', 'wee' ] >
 	 */
-	export type $mol_type_case_camel< Parts extends Array< string > > =
+	type $mol_type_case_camel< Parts extends Array< string > > =
 		$mol_type_string_join<
 			[
 				Lowercase< $mol_type_head< Parts > >,
@@ -93,7 +93,7 @@ namespace $ {
 	 * 	// [ 'foo', 'bar', 'wee' ]
 	 * 	$mol_type_case_camel_parse< 'fooBarWee' >
 	 */
-	export type $mol_type_case_camel_parse< String extends string > =
+	type $mol_type_case_camel_parse< String extends string > =
 		$mol_type_string_split<
 			camel_replace_with_separator< String>,
 			camel_temp_separator
@@ -106,7 +106,7 @@ namespace $ {
 	 * 	// 'FooBarWee'
 	 * 	$mol_type_case_pascal< [ 'foo', 'bar', 'wee' ] >
 	 */
-	export type $mol_type_case_pascal< Parts extends Array< string > > =
+	type $mol_type_case_pascal< Parts extends Array< string > > =
 		$mol_type_string_join<
 			$mol_type_case_capital_values<
 				$mol_type_case_lower_values<
@@ -122,7 +122,7 @@ namespace $ {
 	 * 	// [ 'foo', 'bar', 'wee' ]
 	 * 	$mol_type_case_pascal_parse< 'FooBarWee' >
 	 */
-	export type $mol_type_case_pascal_parse< String extends string > =
+	type $mol_type_case_pascal_parse< String extends string > =
 		$mol_type_case_camel_parse< String >
 
 
@@ -132,7 +132,7 @@ namespace $ {
 	 * 	// 'Foo_bar_wee'
 	 * 	$mol_type_case_cobra< [ 'foo', 'bar', 'wee' ] >
 	 */
-	export type $mol_type_case_cobra< Parts extends Array< string > > =
+	type $mol_type_case_cobra< Parts extends Array< string > > =
 		$mol_type_string_join<
 			[
 				Capitalize< Lowercase< $mol_type_head< Parts > > >,
@@ -152,7 +152,7 @@ namespace $ {
 	 * 	// [ 'foo', 'bar', 'wee' ]
 	 * 	$mol_type_case_cobra_parse< 'Foo_bar_wee' >
 	 */
-	export type $mol_type_case_cobra_parse< String extends string > =
+	type $mol_type_case_cobra_parse< String extends string > =
 		$mol_type_case_lower_values<
 			$mol_type_string_split<
 				String,
@@ -167,7 +167,7 @@ namespace $ {
 	 * 	// 'FOO_BAR_WEE'
 	 * 	$mol_type_case_scream< [ 'foo', 'bar', 'wee' ] >
 	 */
-	export type $mol_type_case_scream< Parts extends Array< string > > =
+	type $mol_type_case_scream< Parts extends Array< string > > =
 		$mol_type_string_join<
 			$mol_type_case_upper_values< Parts >,
 			'_'
@@ -179,7 +179,9 @@ namespace $ {
 	 * 	// [ 'foo', 'bar', 'wee' ]
 	 * 	$mol_type_case_scream_parse< 'FOO_BAR_WEE' >
 	 */
-	export type $mol_type_case_scream_parse< String extends string > =
+	type $mol_type_case_scream_parse< String extends string > =
 		$mol_type_case_cobra_parse< String >
 
-}
+
+
+ export {$mol_type_case_snake,$mol_type_case_snake_parse,$mol_type_case_kebab,$mol_type_case_kebab_parse,$mol_type_case_dot,$mol_type_case_dot_parse,$mol_type_case_camel,$mol_type_case_camel_parse,$mol_type_case_pascal,$mol_type_case_pascal_parse,$mol_type_case_cobra,$mol_type_case_cobra_parse,$mol_type_case_scream,$mol_type_case_scream_parse}

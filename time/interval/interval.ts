@@ -1,6 +1,6 @@
-namespace $ {
 
-	export type $mol_time_interval_config = string | {
+
+	type $mol_time_interval_config = string | {
 		start? : $mol_time_moment_config
 		end? : $mol_time_moment_config
 		duration? : $mol_time_duration_config
@@ -12,7 +12,7 @@ namespace $ {
 	 * Immutable iso8601 time interval representation.
 	 * @see http://localhost:9080/mol/app/docs/-/test.html#!demo=mol_time_demo
 	 */
-	export class $mol_time_interval extends $mol_time_base {
+	class $mol_time_interval extends $mol_time_base {
 
 		constructor( config : $mol_time_interval_config ) {
 			
@@ -83,4 +83,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {$mol_time_interval_config,$mol_time_interval}

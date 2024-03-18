@@ -1,12 +1,12 @@
-namespace $ {
+
 	
 	/** @deprecated */
-	export let $mol_dict_key = $mol_key
+	let $mol_dict_key = $mol_key
 
 	/**
 	 * Dictionary with extended keys support
 	 */
-	export class $mol_dict< Key , Value > extends Map< Key , Value > {
+	class $mol_dict< Key , Value > extends Map< Key , Value > {
 
 		get( key : Key ) {
 			return super.get( $mol_key( key ) as any )
@@ -76,4 +76,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {$mol_dict_key,$mol_dict}

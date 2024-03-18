@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_promise< Result = void >() {
+
+	function $mol_promise< Result = void >() {
 		
 		let done!: ( res: Result | PromiseLike< Result > )=> void
 		let fail!: ( error?: any ) => void
@@ -17,4 +17,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_promise}

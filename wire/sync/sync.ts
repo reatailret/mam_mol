@@ -1,10 +1,10 @@
-namespace $ {
+
 	
 	/**
 	 * Convert asynchronous (promise-based) API to synchronous by wrapping function and method calls in a fiber.
 	 * @see https://mol.hyoo.ru/#!section=docs/=1fcpsq_1wh0h2
 	 */
-	export function $mol_wire_sync< Host extends object >( obj: Host ) {
+	function $mol_wire_sync< Host extends object >( obj: Host ) {
 		return new Proxy( obj, {
 			
 			get( obj, field ) {
@@ -41,4 +41,6 @@ namespace $ {
 		Some extends (...args: any) => unknown ? FunctionResultAwaited<Some> : {}
 	) & ( Some extends Object ? MethodsResultAwaited<Some> : Some )
 
-}
+
+
+ export {$mol_wire_sync}

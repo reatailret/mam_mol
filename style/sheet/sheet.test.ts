@@ -1,10 +1,10 @@
-namespace $ {
 
-	export class $mol_style_sheet_test1 extends $mol_view {
+
+	class $mol_style_sheet_test1 extends $mol_view {
 		Item() { return new $mol_view }
 	}
 
-	export class $mol_style_sheet_test2 extends $mol_view {
+	class $mol_style_sheet_test2 extends $mol_view {
 		List() { return new $mol_style_sheet_test1 }
 	}
 
@@ -318,4 +318,6 @@ namespace $ {
 
 	})
 
-}
+
+
+ export {$mol_style_sheet_test1,$mol_style_sheet_test2}

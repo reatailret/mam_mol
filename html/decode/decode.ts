@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_html_decode( text : string ) {
+	function $mol_html_decode( text : string ) {
 
 		return text
 		.replace( /&(?:#(\d+)|(lt|gt|quot));/gi , ( str , numb , name )=> {
@@ -18,4 +18,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_html_decode}

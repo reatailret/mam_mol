@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type function_result = $mol_type_assert<
 		$mol_type_result< ()=> 777 > ,
@@ -10,4 +10,6 @@ namespace $ {
 		777
 	>
 
-}
+
+
+ export {}

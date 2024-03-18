@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_paragraph extends $.$mol_paragraph {
+
+	class $mol_paragraph extends $.$mol_paragraph {
 
 		@ $mol_mem
 		maximal_width() {
@@ -44,4 +44,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_paragraph}

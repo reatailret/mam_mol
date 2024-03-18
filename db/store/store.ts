@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** IndexedDB ObjectStore wrapper. */
-	export class $mol_db_store< Schema extends $mol_db_store_schema > {
+	class $mol_db_store< Schema extends $mol_db_store_schema > {
 		
 		constructor(
 			readonly native: IDBObjectStore,
@@ -94,4 +94,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_db_store}

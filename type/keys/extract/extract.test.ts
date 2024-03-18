@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type only_numbers = $mol_type_assert<
 		$mol_type_keys_extract< { a : 1 , b : '2' , c : any } , number > ,
@@ -40,4 +40,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

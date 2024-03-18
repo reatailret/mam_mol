@@ -1,24 +1,24 @@
-namespace $ {
+
 	
-	export type $mol_style_unit_length =
+	type $mol_style_unit_length =
 	| '%'
 	| 'px' | 'cm' | 'mm' | 'Q' | 'in' | 'pc' | 'pt'
 	| 'cap' | 'ch' | 'em' | 'rem' | 'ex' | 'ic' | 'lh' | 'rlh'
 	| 'vh' | 'vw' | 'vi' | 'vb' | 'vmin' | 'vmax'
 	
-	export type $mol_style_unit_angle = 'deg' | 'rad' | 'grad' | 'turn'
+	type $mol_style_unit_angle = 'deg' | 'rad' | 'grad' | 'turn'
 	
-	export type $mol_style_unit_time = 's' | 'ms'
+	type $mol_style_unit_time = 's' | 'ms'
 
-	export type $mol_style_unit_any = $mol_style_unit_length | $mol_style_unit_angle | $mol_style_unit_time
+	type $mol_style_unit_any = $mol_style_unit_length | $mol_style_unit_angle | $mol_style_unit_time
 
-	export type $mol_style_unit_str< Quanity extends $mol_style_unit_any = $mol_style_unit_any> = `${number}${Quanity}`
+	type $mol_style_unit_str< Quanity extends $mol_style_unit_any = $mol_style_unit_any> = `${number}${Quanity}`
 
 	/**
 	 * CSS Units
 	 * @see https://mol.hyoo.ru/#!section=docs/=xwq9q5_f966fg
 	 */
-	export class $mol_style_unit<
+	class $mol_style_unit<
 		Literal extends $mol_style_unit_any
 	> extends $mol_decor< number > {
 
@@ -66,4 +66,6 @@ namespace $ {
 	
 	}
 
-}
+
+
+ export {type $mol_style_unit_length,type $mol_style_unit_angle,type $mol_style_unit_time,type $mol_style_unit_any,type $mol_style_unit_str,$mol_style_unit}

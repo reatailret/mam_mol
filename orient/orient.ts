@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_orient_wrapper< Api > extends $mol_object2 {
+
+	class $mol_orient_wrapper< Api > extends $mol_object2 {
 
 		api() : Api {
 			return $mol_fail( `${ this }.api() isn't defined` )
@@ -8,7 +8,7 @@ namespace $ {
 
 	}
 
-	export class $mol_orient_client extends $mol_object2 {
+	class $mol_orient_client extends $mol_object2 {
 
 		address() {
 			return {
@@ -83,7 +83,7 @@ namespace $ {
 
 	}
 
-	export class $mol_orient_pool extends $mol_orient_wrapper< $lib_orientjs['ODatabaseSessionPool'] > {
+	class $mol_orient_pool extends $mol_orient_wrapper< $lib_orientjs['ODatabaseSessionPool'] > {
 
 		db() : string {
 			return $mol_fail( `${ this }.db() isn't defined` )
@@ -106,7 +106,7 @@ namespace $ {
 
 	}
 
-	export class $mol_orient_session extends $mol_orient_wrapper< $lib_orientjs['ODatabaseSession'] > {
+	class $mol_orient_session extends $mol_orient_wrapper< $lib_orientjs['ODatabaseSession'] > {
 
 		pool() : $mol_orient_pool {
 			return $mol_fail( `${ this }.pool() isn't defined` )
@@ -142,7 +142,7 @@ namespace $ {
 
 	}
 
-	export class $mol_orient_record extends $mol_orient_wrapper< $lib_orientjs['ORecord'] > {
+	class $mol_orient_record extends $mol_orient_wrapper< $lib_orientjs['ORecord'] > {
 
 		field( name : string ) {
 			return this.api()[ name ]
@@ -166,4 +166,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_orient_wrapper,$mol_orient_client,$mol_orient_pool,$mol_orient_session,$mol_orient_record}

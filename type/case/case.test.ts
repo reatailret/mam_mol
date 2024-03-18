@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type snake1 = $mol_type_assert<
 
@@ -222,4 +222,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

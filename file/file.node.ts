@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	function stat_convert(stat: ReturnType<typeof $node.fs.statSync>): null | $mol_file_stat {
 		
@@ -24,7 +24,7 @@ namespace $ {
 		return new Uint8Array(buf.buffer, buf.byteOffset, buf.byteLength)
 	}
 
-	export class $mol_file_node extends $mol_file {
+	class $mol_file_node extends $mol_file {
 		
 		@ $mol_mem_key
 		static absolute( path : string ) {
@@ -106,6 +106,11 @@ namespace $ {
 				this.$.$mol_fail_hidden(e)
 			}
 
+		}
+		
+		@ $mol_action
+		drop() {
+			$node.fs.unlinkSync( this.path() )
 		}
 		
 		@ $mol_mem
@@ -204,4 +209,6 @@ namespace $ {
 	}
 
 	$.$mol_file = $mol_file_node
-}
+
+
+ export {$mol_file_node}

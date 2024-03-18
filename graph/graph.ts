@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_graph< Node , Edge > {
+	class $mol_graph< Node , Edge > {
 		
 		nodes = new Set< Node >()
 		
@@ -212,4 +212,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_graph}

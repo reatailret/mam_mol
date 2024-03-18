@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test( {
 
 		'ordered links'() {
@@ -110,4 +110,6 @@ namespace $ {
 		} ,
 	
 	} )
-}
+
+
+ export {}

@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type keys1 = $mol_type_assert<
 
@@ -30,4 +30,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

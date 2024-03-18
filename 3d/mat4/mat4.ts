@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_3d_mat4 extends Float32Array {
+	class $mol_3d_mat4 extends Float32Array {
 		
 		@ $mol_memo.method
 		static identity() {
@@ -178,4 +178,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_3d_mat4}

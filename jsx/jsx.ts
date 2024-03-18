@@ -1,17 +1,17 @@
-namespace $ {
 
-	export let $mol_jsx_prefix = ''
-	export let $mol_jsx_crumbs = ''
 
-	export let $mol_jsx_booked = null as null | Set< string >
+	let $mol_jsx_prefix = ''
+	let $mol_jsx_crumbs = ''
+
+	let $mol_jsx_booked = null as null | Set< string >
 	
-	export let $mol_jsx_document : $mol_jsx.JSX.ElementClass['ownerDocument'] = {
+	let $mol_jsx_document : $mol_jsx.JSX.ElementClass['ownerDocument'] = {
 		getElementById : ()=> null ,
 		createElementNS : ( space: string, name : string )=> $mol_dom_context.document.createElementNS( space, name ) as any,
 		createDocumentFragment : ()=> $mol_dom_context.document.createDocumentFragment(),
 	}
 	
-	export const $mol_jsx_frag = ''
+	const $mol_jsx_frag = ''
 
 	/**
 	 * JSX adapter that makes DOM tree.
@@ -19,7 +19,7 @@ namespace $ {
 	 * Ensures all local ids are unique.
 	 * Can reuse an existing nodes by GUIDs when used inside [`mol_jsx_attach`](https://github.com/hyoo-ru/mam_mol/tree/master/jsx/attach).
 	 */
-	export function $mol_jsx<
+	function $mol_jsx<
 		Props extends $mol_jsx.JSX.IntrinsicAttributes,
 		Children extends Array< Node | string >
 	>(
@@ -193,7 +193,7 @@ namespace $ {
 		}
 		
 		/** Props for html elements */
-		export type IntrinsicElements = {
+		type IntrinsicElements = {
 			[ key in keyof ElementTagNameMap ]? : $.$mol_type_partial_deep< OrString<
 				& Element
 				& IntrinsicAttributes
@@ -212,11 +212,13 @@ namespace $ {
 			}
 		}
 		
-		// export type IntrinsicClassAttributes< Class > = $.$mol_type_partial_deep< Omit< Class , 'valueOf' > >
+		// type IntrinsicClassAttributes< Class > = $.$mol_type_partial_deep< Omit< Class , 'valueOf' > >
 		
 		interface ElementChildrenAttribute {
 		}
 	
 	}
 
-}
+
+
+ export {$mol_jsx_prefix,$mol_jsx_crumbs,$mol_jsx_booked,$mol_jsx_document,$mol_jsx_frag,$mol_jsx,IntrinsicElements,IntrinsicClassAttributes}

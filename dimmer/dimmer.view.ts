@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Output text with dimmed mismatched substrings.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_dimmer_demo
 	 */
-	export class $mol_dimmer extends $.$mol_dimmer {
+	class $mol_dimmer extends $.$mol_dimmer {
 		
 		parts() {
 			const needle = this.needle()
@@ -50,4 +50,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_dimmer}

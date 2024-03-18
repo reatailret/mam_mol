@@ -1,9 +1,9 @@
-namespace $ {
+
 	
-	export const $mol_key_store = new WeakMap< object, string >()
+	const $mol_key_store = new WeakMap< object, string >()
 
 	/** Returns string key for any value. */
-	export function $mol_key< Value >( value : Value ) : string {
+	function $mol_key< Value >( value : Value ) : string {
 		
 		if( typeof value === 'bigint' ) return value.toString() + 'n'
 		if( typeof value === 'symbol' ) return value.description!
@@ -37,4 +37,6 @@ namespace $ {
 
 	}
 	
-}
+
+
+ export {$mol_key_store,$mol_key}

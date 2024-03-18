@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_embed_native extends $.$mol_embed_native {
+
+	class $mol_embed_native extends $.$mol_embed_native {
 
 		@ $mol_mem
 		window() {
@@ -62,4 +62,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_embed_native}

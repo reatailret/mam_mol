@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Cached field' ($) {
@@ -34,4 +34,6 @@ namespace $ {
 		},
 
 	})
-}
+
+
+ export {}

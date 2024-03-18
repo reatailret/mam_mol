@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export interface $mol_github_issue_json extends $mol_github_entity_json {
 		repository_url : string
@@ -20,7 +20,7 @@ namespace $ {
 		closed_by : $mol_github_user_json
 	}
 
-	export class $mol_github_issue extends $mol_model< $mol_github_issue_json > {
+	class $mol_github_issue extends $mol_model< $mol_github_issue_json > {
 
 		json_update( patch? : Partial< $mol_github_issue_json > ) {
 			
@@ -106,7 +106,7 @@ namespace $ {
 
 	}
 
-	export class $mol_github_issue_comments extends $mol_model< $mol_github_comment_json[] > {
+	class $mol_github_issue_comments extends $mol_model< $mol_github_comment_json[] > {
 		
 		json_update( patch : Partial<$mol_github_comment_json[]> ) {
 			
@@ -156,4 +156,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_github_issue,$mol_github_issue_comments}

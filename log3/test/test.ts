@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_ambient({}).$mol_log3_come({
 		request_id: 123456789,
@@ -42,4 +42,6 @@ namespace $ {
 		info: { size : 123456 , format : 'mp4' },
 	})
 
-}
+
+
+ export {}

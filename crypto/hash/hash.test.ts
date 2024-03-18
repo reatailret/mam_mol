@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'empty hash'() {
@@ -37,4 +37,6 @@ namespace $ {
 		// },
 		
 	})
-}
+
+
+ export {}

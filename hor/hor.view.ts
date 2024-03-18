@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	/** Horizontal list of blocks. */
-	export class $mol_hor extends $.$mol_hor {
+	class $mol_hor extends $.$mol_hor {
 		
 		@ $mol_mem
 		minimal_width() {
@@ -20,4 +20,6 @@ namespace $.$$ {
 		}
 		
 	} 
-}
+
+
+ //export {$mol_hor}

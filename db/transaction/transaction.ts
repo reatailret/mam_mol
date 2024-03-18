@@ -2,10 +2,9 @@ interface IDBTransaction {
 	commit(): void
 }
 
-namespace $ {
 	
 	/** IndexedDB Transaction wrapper. */
-	export class $mol_db_transaction< Schema extends $mol_db_schema > {
+	class $mol_db_transaction< Schema extends $mol_db_schema > {
 		
 		constructor(
 			readonly native: IDBTransaction,
@@ -64,4 +63,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_db_transaction}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_log2 extends $mol_wrapper {
+
+	class $mol_log2 extends $mol_wrapper {
 
 		static current = null as null | $mol_log2
 
@@ -97,7 +97,7 @@ namespace $ {
 
 	}
 
-	export class $mol_log2_indent extends $mol_wrapper {
+	class $mol_log2_indent extends $mol_wrapper {
 
 		static wrap< This extends { $ : $ } , Args extends any[] , Result >( task : ( this : This , ... args : Args )=> Result ) {
 
@@ -118,7 +118,7 @@ namespace $ {
 
 	}
 	
-	export class $mol_log2_table extends $mol_log2 {
+	class $mol_log2_table extends $mol_log2 {
 
 		[ $mol_dev_format_head ]() {
 			return $mol_dev_format_span( {} ,
@@ -134,13 +134,13 @@ namespace $ {
 
 	}
 
-	export class $mol_log2_hidden extends $mol_log2 {
+	class $mol_log2_hidden extends $mol_log2 {
 
 		flush() {}
 
 	}
 
-	export class $mol_log2_line extends Array<any> {
+	class $mol_log2_line extends Array<any> {
 
 		constructor( ... items : any[] ) {
 			super( ... items )
@@ -156,7 +156,7 @@ namespace $ {
 
 	}
 
-	export class $mol_log2_token extends Array<any> {
+	class $mol_log2_token extends Array<any> {
 
 		constructor( ... items : any[] ) {
 			super( ... items )
@@ -168,11 +168,13 @@ namespace $ {
 
 	}
 
-	export let $mol_log2_token_empty = new $mol_log2_token( '' )
-	export let $mol_log2_token_indent = new $mol_log2_token( '\t' )
+	let $mol_log2_token_empty = new $mol_log2_token( '' )
+	let $mol_log2_token_indent = new $mol_log2_token( '\t' )
 
-	export let $mol_log2_legend = new $mol_log2_table( null , '$mol_log2_legend' , [] )
+	let $mol_log2_legend = new $mol_log2_table( null , '$mol_log2_legend' , [] )
 
 	if( !$mol_log2.excludes ) $mol_log2_legend.info( $mol_log2_token_empty , 'Use `$mol_log2.excludes : null | RegExp[]` to toggle logs' )
 
-}
+
+
+ export {$mol_log2,$mol_log2_indent,$mol_log2_table,$mol_log2_hidden,$mol_log2_line,$mol_log2_token,$mol_log2_token_empty,$mol_log2_token_indent,$mol_log2_legend}

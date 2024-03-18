@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	/** Generic subscriber interface */
 	export interface $mol_wire_sub extends $mol_wire_pub {
@@ -42,4 +42,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {}

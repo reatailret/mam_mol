@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type Guard_value<
 		Funcs extends $mol_type_unary[] ,
@@ -29,7 +29,7 @@ namespace $ {
 	 * 
 	 * 	const reparse = $mol_data_pipe( JSON.stringify , JSON.parse )
 	 **/
-	export function $mol_data_pipe<
+	function $mol_data_pipe<
 		Funcs extends $mol_type_unary[]
 	>(
 		... funcs : Funcs & Guard< Funcs >
@@ -48,4 +48,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_data_pipe}

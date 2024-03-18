@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_3d_glob extends Object {
+
+	class $mol_3d_glob extends Object {
 		
 		constructor(
 			readonly api: WebGL2RenderingContext,
@@ -79,4 +79,5 @@ namespace $ {
 		
 	}
 
-}
+
+ export {$mol_3d_glob}

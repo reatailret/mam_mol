@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_state_history< Value > extends $mol_object {
+	class $mol_state_history< Value > extends $mol_object {
 		
 		@ $mol_mem
 		static data( next?: {} | null ) {
@@ -33,4 +33,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_state_history}

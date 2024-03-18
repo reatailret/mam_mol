@@ -1,9 +1,9 @@
-namespace $ {
+
 	
 	let sponge = new Uint32Array(80)
 	
 	/** Fast small sync SHA-1 */
-	export function $mol_crypto_hash( data: Uint8Array ) {
+	function $mol_crypto_hash( data: Uint8Array ) {
 		
 		const bits = data.byteLength << 3
 		const kbits = bits >> 5
@@ -96,4 +96,6 @@ namespace $ {
 		return new Uint8Array( hash.buffer )
 	}
 	
-}
+
+
+ export {$mol_crypto_hash}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_log( path : any , ... values : any[] ) {
+
+	function $mol_log( path : any , ... values : any[] ) {
 		
 		if( $mol_log_filter() == null ) return
 		
@@ -18,4 +18,6 @@ namespace $ {
 		debugger
 	}
 	
-}
+
+
+ export {$mol_log}

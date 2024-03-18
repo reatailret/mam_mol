@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_line extends $.$mol_plot_line {
+
+	class $mol_plot_line extends $.$mol_plot_line {
 
 		sub() {
 			return this.hint() ? super.sub() : []
@@ -78,4 +78,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_plot_line}

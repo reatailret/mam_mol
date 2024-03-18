@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_tree2_xml_from_dom( dom: Node ): $mol_tree2 {
+	function $mol_tree2_xml_from_dom( dom: Node ): $mol_tree2 {
 		
 		switch( dom.nodeType ) {
 			
@@ -74,4 +74,6 @@ namespace $ {
 		return $mol_fail( new Error( `Unsupported node ${ dom.nodeName }` ) )
 	}
 	
-}
+
+
+ export {$mol_tree2_xml_from_dom}

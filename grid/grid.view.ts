@@ -1,12 +1,12 @@
-namespace $.$$ {
+
 	
-	export interface $mol_grid_node {
+	interface $mol_grid_node {
 		id : string
 		parent : $mol_grid_node
 		sub : $mol_grid_node[]
 	}
 	
-	export class $mol_grid extends $.$mol_grid {
+	class $mol_grid extends $.$mol_grid {
 		
 		@ $mol_mem
 		head_cells() {
@@ -146,4 +146,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_grid}

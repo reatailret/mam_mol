@@ -1,16 +1,16 @@
-namespace $ {
+
 
 	/**
 	 * Current story instance which track changes
 	 * of trackable props inside tracking actions.
 	 */
-	export let $mol_story_current: $mol_story | null = null
+	let $mol_story_current: $mol_story | null = null
 
 	/**
 	 * Track changes of trackable props ($mol_story_hero)
 	 * inside tracking actions ($mol_story_tell).
 	 */
-	export class $mol_story extends $mol_object2 {
+	class $mol_story extends $mol_object2 {
 
 		/** Steps for rollback all uncommited steps **/
 		prev = [] as $mol_story_step[]
@@ -150,4 +150,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_story_current,$mol_story}

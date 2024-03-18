@@ -1,6 +1,6 @@
-namespace $ {
+
 	/** Reactive Set */
-	export class $mol_wire_set< Value > extends Set< Value > {
+	class $mol_wire_set< Value > extends Set< Value > {
 
 		pub = new $mol_wire_pub
 		
@@ -79,4 +79,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_wire_set}

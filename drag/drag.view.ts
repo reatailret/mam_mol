@@ -1,9 +1,9 @@
-namespace $.$$ {
+
 	
 	/**
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_drag_demo
 	 */
-	export class $mol_drag extends $.$mol_drag {
+	class $mol_drag extends $.$mol_drag {
 
 		@ $mol_mem
 		status( next = 'ready' as 'ready' | 'drag' ) { return next }
@@ -38,4 +38,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_drag}

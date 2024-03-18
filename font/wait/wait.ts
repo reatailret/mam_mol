@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_font_wait extends $mol_object2 {
+
+	class $mol_font_wait extends $mol_object2 {
 
 		static face( config : { face : string , text : string } ) {
 
@@ -26,4 +26,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_font_wait}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		'sample source mapped lang'( $ ) {
 
@@ -41,4 +41,6 @@ namespace $ {
 
 		}
 	})
-}
+
+
+ export {}

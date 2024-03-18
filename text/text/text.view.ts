@@ -1,9 +1,9 @@
-namespace $.$$ {
+
 	/**
 	 * Markdown visualizer.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_text_demo
 	 */
-	export class $mol_text extends $.$mol_text {
+	class $mol_text extends $.$mol_text {
 		
 		@ $mol_mem
 		flow_tokens() {
@@ -303,7 +303,7 @@ namespace $.$$ {
 
 	}
 	
-	export class $mol_text_header extends $.$mol_text_header {
+	class $mol_text_header extends $.$mol_text_header {
 		
 		dom_name() {
 			return 'h' + this.level()
@@ -311,4 +311,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_text,$mol_text_header}

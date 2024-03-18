@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_window extends $mol_object {
+	class $mol_window extends $mol_object {
 		
 		static size() {
 			return {
@@ -11,4 +11,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_window}

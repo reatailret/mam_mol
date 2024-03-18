@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_text_profile_distance(
+	function $mol_text_profile_distance(
 		left: Map< string, number >,
 		right: Map< string, number >,
 	) {
@@ -25,4 +25,6 @@ namespace $ {
 		return dist / total
 	}
 	
-}
+
+
+ export {$mol_text_profile_distance}

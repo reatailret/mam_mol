@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Same text'() {
@@ -65,4 +65,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

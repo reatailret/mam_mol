@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_chart_demo_styles extends $.$mol_chart_demo_styles {
+	class $mol_chart_demo_styles extends $.$mol_chart_demo_styles {
 
 		limit() {
 			const shift = 10
@@ -54,4 +54,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_chart_demo_styles}

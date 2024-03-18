@@ -1,8 +1,8 @@
-namespace $ {
+
 	
 	const float_size = 4
 	
-	export class $mol_3d_param extends Object {
+	class $mol_3d_param extends Object {
 		
 		constructor(
 			readonly api: WebGL2RenderingContext,
@@ -113,4 +113,5 @@ namespace $ {
 		
 	}
 	
-}
+
+ export {$mol_3d_param}

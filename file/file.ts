@@ -1,6 +1,6 @@
-namespace $ {
 
-	export type $mol_file_type = 'file' | 'dir' | 'link'
+
+	type $mol_file_type = 'file' | 'dir' | 'link'
 
 	export interface $mol_file_stat {
 		type: $mol_file_type
@@ -10,7 +10,7 @@ namespace $ {
 		ctime: Date
 	}
 
-	export class $mol_file_not_found extends Error {}
+	class $mol_file_not_found extends Error {}
 
 	export abstract class $mol_file extends $mol_object {
 			
@@ -49,6 +49,7 @@ namespace $ {
 		}
 
 		abstract ensure(): void
+		abstract drop(): void
 
 		watcher() {
 			console.warn('$mol_file_web.watcher() not implemented')
@@ -66,8 +67,12 @@ namespace $ {
 			if( next === undefined ) return exists
 			if( next === exists ) return exists
 
-			if( next ) this.parent().exists( true )
-			this.ensure()
+			if( next ) {
+				this.parent().exists( true )
+				this.ensure()
+			} else {
+				this.drop()
+			}
 			this.reset()
 			
 			return next
@@ -149,4 +154,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_file_type,$mol_file_not_found}

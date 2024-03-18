@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export interface $mol_locale_dict {
 		[ key : string ] : string
@@ -8,7 +8,7 @@ namespace $ {
 	 * Localisation in $mol framework
 	 * @see https://mol.hyoo.ru/#!section=docs/=s5aqnb_odub8l
 	 */
-	export class $mol_locale extends $mol_object {
+	class $mol_locale extends $mol_object {
 		
 		@ $mol_mem
 		static lang_default() {
@@ -71,4 +71,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_locale}

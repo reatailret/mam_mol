@@ -1,11 +1,11 @@
-namespace $ {
+
 
 	/**
 	 * Extracts keys from `Input` which values extends `Upper` and extendable by `Lower`.
 	 *
 	 * 	type MathConstants = $mol_type_keys_extract< Math , number > // "E" | "PI" ...
 	 */
-	export type $mol_type_keys_extract< Input , Upper , Lower = never > =
+	type $mol_type_keys_extract< Input , Upper , Lower = never > =
 		{
 			[ Field in keyof Input ]:
 
@@ -24,4 +24,6 @@ namespace $ {
 
 		}[ keyof Input ]
 
-}
+
+
+ export {type $mol_type_keys_extract}

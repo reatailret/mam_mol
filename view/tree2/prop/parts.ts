@@ -1,5 +1,5 @@
-namespace $ {
-	export function $mol_view_tree2_prop_parts(this: $, prop: $mol_tree2 ) {
+
+	function $mol_view_tree2_prop_parts(this: $, prop: $mol_tree2 ) {
 		const groups = [ ...prop.type.matchAll( $mol_view_tree2_prop_signature ) ][0]?.groups
 
 		if (! groups) {
@@ -14,4 +14,6 @@ namespace $ {
 			next: groups.next ? '?' : ''
 		}
 	}
-}
+
+
+ export {$mol_view_tree2_prop_parts}

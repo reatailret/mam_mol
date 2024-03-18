@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_server extends $mol_object {
+	class $mol_server extends $mol_object {
 		
 		@ $mol_mem
 		express() {
@@ -158,4 +158,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_server}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'serial & parse'() {
@@ -27,4 +27,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

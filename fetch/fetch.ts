@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_fetch_response extends $mol_object2 {
+
+	class $mol_fetch_response extends $mol_object2 {
 
 		constructor( readonly native : Response ) {
 			super()
@@ -72,7 +72,7 @@ namespace $ {
 
 	}
 
-	export class $mol_fetch extends $mol_object2 {
+	class $mol_fetch extends $mol_object2 {
 		
 		static request( input : RequestInfo , init : RequestInit = {} ) {
 			const native = globalThis.fetch ?? $node['undici'].fetch
@@ -147,5 +147,7 @@ namespace $ {
 
 	}
 
-}
 
+
+
+ export {$mol_fetch_response,$mol_fetch}

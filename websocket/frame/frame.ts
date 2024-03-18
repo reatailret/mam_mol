@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export enum $mol_websocket_frame_op {
 		
@@ -16,7 +16,7 @@ namespace $ {
 	 * WebSocket frame header.
 	 * Payload >= 2^32 isn't supported
 	 */
-	export class $mol_websocket_frame extends $mol_buffer {
+	class $mol_websocket_frame extends $mol_buffer {
 		
 		kind( next?: {
 			op: keyof typeof $mol_websocket_frame_op
@@ -109,4 +109,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_websocket_frame}

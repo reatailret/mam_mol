@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 	
 	/** The component tags should be at the end of the list */
 	const compare_names = ( a: string, b: string )=> {
@@ -9,7 +9,7 @@ namespace $.$$ {
 		return 0
 	}
 
-	export class $mol_app_demo_menu extends $.$mol_app_demo_menu {
+	class $mol_app_demo_menu extends $.$mol_app_demo_menu {
 
 		@ $mol_mem
 		override filter( next?: string ) {
@@ -121,28 +121,15 @@ namespace $.$$ {
 		@ $mol_mem
 		names_filtered() {
 			const words = this.filter_words()
-			let names = this.names()
-
-			if( words.length !== 0 ) {
-
-				names = names.filter( name => {
-					const title = this.widget_title( name )
-
-					const component_keywords = [
-						...( title ? [ title.toLowerCase() ] : [] ),
-						...this.widget_tags( name )
-					]
-
-					return words.every(
-						word => component_keywords.some( kw => kw.includes( word ) )
-					)
-				} )
-
-			}
-
-			return names
+			return this.names().filter( $mol_match_text( this.filter(), name => [
+				name,
+				... this.widget_aspects( name ),
+				... this.widget_tags( name ),
+			] ) )
 		}
 
 	}
 	
-}
+
+
+ //export {$mol_app_demo_menu}

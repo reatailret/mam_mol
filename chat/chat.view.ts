@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Button to open embedded chat.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_chat_demo
 	 */
-	export class $mol_chat extends $.$mol_chat {
+	class $mol_chat extends $.$mol_chat {
 		
 		opened() {
 			return this.$.$mol_state_arg.value( 'mol_chat' ) !== null
@@ -31,4 +31,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_chat}

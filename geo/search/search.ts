@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	const Numb = $mol_data_pipe( $mol_data_string , parseFloat )
 
@@ -10,9 +10,9 @@ namespace $ {
 		})
 	)
 
-	export let $mol_geo_search_attribution = 'https://osm.org/copyright'
+	let $mol_geo_search_attribution = 'https://osm.org/copyright'
 
-	export function $mol_geo_search( { query , count = 1 }: {
+	function $mol_geo_search( { query , count = 1 }: {
 		query: string
 		count?: number
 	} ) {
@@ -39,4 +39,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_geo_search_attribution,$mol_geo_search}

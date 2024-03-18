@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_si_short( numb: number, unit = '' ) {
+	function $mol_si_short( numb: number, unit = '' ) {
 		
 		let magnitude = Math.floor( Math.log10( Math.abs( numb ) ) / 3 )
 		
@@ -27,4 +27,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_si_short}

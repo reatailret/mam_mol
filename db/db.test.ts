@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		async 'take and drop db'() {
@@ -37,4 +37,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

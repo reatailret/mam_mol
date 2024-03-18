@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type write1 = $mol_type_assert<
 
@@ -20,4 +20,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

@@ -1,8 +1,8 @@
-namespace $ {
+
 	
 	const makeURL = $mol_wire_sync( ( url: string | URL, base?: string | URL )=> new URL( url, base ))
 	
-	export class $mol_rest_resource extends $mol_object {
+	class $mol_rest_resource extends $mol_object {
 		
 		@ $mol_action
 		REQUEST( msg: $mol_rest_message ) {
@@ -117,4 +117,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_rest_resource}

@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	export enum $mol_time_moment_weekdays {
 		monday,
@@ -10,7 +10,7 @@ namespace $ {
 		sunday
 	}
 	
-	export type $mol_time_moment_config = number | Date | string | {
+	type $mol_time_moment_config = number | Date | string | {
 		year? : number
 		month? : number
 		day? : number
@@ -32,7 +32,7 @@ namespace $ {
 	 * Immutable iso8601 time moment representation.
 	 * @see http://localhost:9080/mol/app/docs/-/test.html#!demo=mol_time_demo
 	 */
-	export class $mol_time_moment extends $mol_time_base {
+	class $mol_time_moment extends $mol_time_base {
 
 		constructor( config : $mol_time_moment_config = new Date ) {
 			
@@ -453,4 +453,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_time_moment_config,$mol_time_moment}

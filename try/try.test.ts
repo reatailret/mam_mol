@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'return result without errors'() {
@@ -15,4 +15,6 @@ namespace $ {
 		//} ,
 		
 	})	
-}
+
+
+ export {}

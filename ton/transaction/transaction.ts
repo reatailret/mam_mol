@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_ton_transaction extends $mol_object2 {
+
+	class $mol_ton_transaction extends $mol_object2 {
 
 		ton(): $mol_ton {
 			throw new Error('Not defined')
@@ -67,4 +67,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_ton_transaction}

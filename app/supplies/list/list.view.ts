@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_app_supplies_list extends $.$mol_app_supplies_list {
+
+	class $mol_app_supplies_list extends $.$mol_app_supplies_list {
 		
 		@ $mol_mem
 		supply_rows() {
@@ -15,4 +15,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_app_supplies_list}

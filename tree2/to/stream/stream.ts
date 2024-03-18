@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export async function $mol_tree2_to_stream(
 		tree: $mol_tree2,
@@ -48,4 +48,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {}

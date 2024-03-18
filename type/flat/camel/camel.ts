@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Make flat structure from volume. Camel case is used for key names.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// { fooBarWee: number; fooToo: string }
 	 * 	type flat = $mol_type_flat_camel< { foo: { bar: { wee: number }; too: string } } >
 	 */
-	export type $mol_type_flat_camel< Type, Endpoint = never > =
+	type $mol_type_flat_camel< Type, Endpoint = never > =
 		// @ts-ignore
 		$mol_type_partial_undefined<
 			{
@@ -21,4 +21,6 @@ namespace $ {
 			}
 		>
 
-}
+
+
+ export {$mol_type_flat_camel}

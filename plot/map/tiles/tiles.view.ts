@@ -1,8 +1,8 @@
-namespace $.$$ {
+
 	
 	type Id = [ number, number, number ]
 	
-	export class $mol_plot_map_tiles extends $.$mol_plot_map_tiles {
+	class $mol_plot_map_tiles extends $.$mol_plot_map_tiles {
 		
 		@ $mol_mem
 		level() {
@@ -129,4 +129,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_plot_map_tiles}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Word making'() {
@@ -21,4 +21,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

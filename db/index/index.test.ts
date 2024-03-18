@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		async 'unique index'() {
@@ -129,4 +129,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

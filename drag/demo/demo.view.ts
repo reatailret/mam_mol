@@ -1,11 +1,11 @@
-namespace $.$$ {
 
-	export type $mol_drag_demo_task = {
+
+	type $mol_drag_demo_task = {
 		id: string
 		title: string
 	}
 
-	export class $mol_drag_demo extends $.$mol_drag_demo {
+	class $mol_drag_demo extends $.$mol_drag_demo {
 
 		@ $mol_mem
 		task_list( next? : $mol_drag_demo_task[] ) {
@@ -74,4 +74,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_drag_demo_task,$mol_drag_demo}

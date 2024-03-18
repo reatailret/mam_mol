@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_xpath {
+	class $mol_xpath {
 		
 		constructor( readonly path: string ) {}
 		
@@ -62,4 +62,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_xpath}

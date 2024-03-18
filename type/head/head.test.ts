@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type no_item = $mol_type_assert_never<
 		$mol_type_head< [] >
@@ -14,4 +14,6 @@ namespace $ {
 		666
 	>
 
-}
+
+
+ export {}

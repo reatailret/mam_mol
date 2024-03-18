@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Reactive memoizing multiplexed property decorator. */
-	export function $mol_wire_plex< Args extends [ any, ... any[] ] >(
+	function $mol_wire_plex< Args extends [ any, ... any[] ] >(
 		host: object,
 		field: string,
 		descr?: TypedPropertyDescriptor< ( ... args: Args )=> any >
@@ -46,4 +46,6 @@ namespace $ {
 		return descr2
 	}
 	
-}
+
+
+ export {$mol_wire_plex}

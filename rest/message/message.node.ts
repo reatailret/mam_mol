@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_rest_message extends $mol_object {
+	class $mol_rest_message extends $mol_object {
 		
 		port!: $mol_rest_port
 		
@@ -88,4 +88,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_rest_message}

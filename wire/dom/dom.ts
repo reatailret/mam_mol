@@ -2,9 +2,8 @@ interface Node {
 	__defineGetter__: ( field: string, getter: ()=> any )=> void
 }
 
-namespace $ {
 	
-	export function lookup_descr<
+	function lookup_descr<
 		Obj extends { [ field in Field ]: any },
 		Field extends PropertyKey
 	>( obj: Obj, field: Field ): PropertyDescriptor | null {
@@ -142,7 +141,7 @@ namespace $ {
 	}
 	
 	/** Polyfill makes DOM reactive. */
-	export function $mol_wire_dom< El extends Element >( el: El ) {
+	function $mol_wire_dom< El extends Element >( el: El ) {
 		
 		if( el.__defineGetter__ === redefine ) return el
 		
@@ -163,4 +162,6 @@ namespace $ {
 		return el
 	}
 	
-}
+
+
+ export {lookup_descr,$mol_wire_dom}

@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_theme_demo extends $.$mol_theme_demo {
+	class $mol_theme_demo extends $.$mol_theme_demo {
 		
 		hue_deg() {
 			return this.hue() + 'deg'
@@ -12,4 +12,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_theme_demo}

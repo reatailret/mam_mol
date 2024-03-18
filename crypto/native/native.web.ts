@@ -1,3 +1,5 @@
-namespace $ {
-	export var $mol_crypto_native = crypto
-}
+
+	var $mol_crypto_native = crypto
+
+
+ export {$mol_crypto_native}

@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_wasm_module extends $mol_object2 {
+	class $mol_wasm_module extends $mol_object2 {
 
 		native : WebAssembly.Module
 
@@ -23,4 +23,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_wasm_module}

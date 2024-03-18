@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type all1 = $mol_type_assert<
 
@@ -11,4 +11,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

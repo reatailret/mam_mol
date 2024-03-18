@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_ruler_hor extends $.$mol_plot_ruler_hor {
+
+	class $mol_plot_ruler_hor extends $.$mol_plot_ruler_hor {
 		dimensions_axis() {
 			return this.dimensions_pane().x
 		}
@@ -47,4 +47,6 @@ namespace $.$$ {
 			return String(this.font_size())
 		}
 	}
-}
+
+
+ //export {$mol_plot_ruler_hor}

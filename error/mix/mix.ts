@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_error_mix extends AggregateError {
+
+	class $mol_error_mix extends AggregateError {
 
 		name = $$.$mol_func_name( this.constructor )
 		
@@ -38,4 +38,7 @@ namespace $ {
 
 	}
 
-}
+
+ export {$mol_error_mix}
+ export {}
+ export {}

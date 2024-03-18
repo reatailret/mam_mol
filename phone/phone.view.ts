@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export const $mol_phone_formats: Record< string, string > = {
+	const $mol_phone_formats: Record< string, string > = {
 		
 		// Common
 		'': '+___________',
@@ -58,7 +58,7 @@ namespace $.$$ {
 		
 	}
 	
-	export class $mol_phone extends $.$mol_phone {
+	class $mol_phone extends $.$mol_phone {
 		
 		mask( val: string ) {
 			return $mol_phone_formats[ val.slice( 0, 3 ) ]
@@ -69,4 +69,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_phone_formats,$mol_phone}

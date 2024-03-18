@@ -1,12 +1,12 @@
-namespace $ {
 
-	export type $mol_style_properties = Partial< $mol_type_override< CSSStyleDeclaration , Overrides > >
+
+	type $mol_style_properties = Partial< $mol_type_override< CSSStyleDeclaration , Overrides > >
 
 	type Common =
 	| 'inherit' | 'initial' | 'unset' | 'revert' | 'revert-layer'
 	| $mol_style_func< 'var' >
 
-	export type $mol_style_properties_color =
+	type $mol_style_properties_color =
 	| 'aliceblue' | 'antiquewhite' | 'aqua' | 'aquamarine' | 'azure'
 	| 'beige' | 'bisque' | 'black' | 'blanchedalmond' | 'blue' | 'blueviolet'| 'brown' | 'burlywood'
 	| 'cadetblue' | 'chartreuse' | 'chocolate' | 'coral' | 'cornflowerblue' | 'cornsilk' | 'crimson' | 'cyan'
@@ -647,4 +647,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {type $mol_style_properties,type $mol_style_properties_color}

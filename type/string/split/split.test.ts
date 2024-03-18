@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type split1 = $mol_type_assert<
 
@@ -50,4 +50,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

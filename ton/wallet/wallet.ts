@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_ton_wallet extends $mol_object2 {
+
+	class $mol_ton_wallet extends $mol_object2 {
 
 		static Wallet(type = 'v3R2') {
 			return $mol_ton.lib().Wallets.all[type]
@@ -100,4 +100,6 @@ namespace $ {
 		}
 	}
 
-}
+
+
+ export {$mol_ton_wallet}

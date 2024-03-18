@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Parses tree format from string. */
-	export function $mol_tree2_from_string(
+	function $mol_tree2_from_string(
 		this: $,
 		str: string,
 		uri = '?',
@@ -147,4 +147,6 @@ namespace $ {
 		return root
 	}
 
-}
+
+
+ export {$mol_tree2_from_string}

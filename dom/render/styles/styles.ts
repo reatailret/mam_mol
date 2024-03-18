@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_dom_render_styles (
+	function $mol_dom_render_styles (
 		el : Element ,
 		styles : { [ key : string ] : string|number }
 	) {
@@ -19,4 +19,6 @@ namespace $ {
 		}
 	}
 
-}
+
+
+ export {$mol_dom_render_styles}

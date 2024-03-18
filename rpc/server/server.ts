@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_rpc_server extends $mol_object {
+
+	class $mol_rpc_server extends $mol_object {
 
 		@ $mol_mem
 		listener() {
@@ -33,4 +33,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_rpc_server}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_log3_node_make(
+
+	function $mol_log3_node_make(
 		level : keyof Console ,
 		output : 'stdout' | 'stderr',
 		type : string ,
@@ -34,4 +34,6 @@ namespace $ {
 	$.$mol_log3_rise = $mol_log3_node_make( 'log' , 'stdout' , 'rise' , $mol_term_color.magenta )
 	$.$mol_log3_area = $mol_log3_node_make( 'log' , 'stdout' , 'area' , $mol_term_color.cyan )
 
-}
+
+
+ export {$mol_log3_node_make}

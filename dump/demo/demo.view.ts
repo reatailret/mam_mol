@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_dump_demo extends $.$mol_dump_demo {
+
+	class $mol_dump_demo extends $.$mol_dump_demo {
 		
 		@ $mol_mem
 		value() {
@@ -22,4 +22,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_dump_demo}

@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_3d_buffer extends Object {
+	class $mol_3d_buffer extends Object {
 		
 		constructor(
 			readonly api: WebGL2RenderingContext,
@@ -29,4 +29,5 @@ namespace $ {
 		
 	}
 	
-}
+
+ export {$mol_3d_buffer}

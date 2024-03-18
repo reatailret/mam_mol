@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_link_iconed extends $.$mol_link_iconed {
+
+	class $mol_link_iconed extends $.$mol_link_iconed {
 
 		@ $mol_mem
 		icon() {
@@ -33,4 +33,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_link_iconed}

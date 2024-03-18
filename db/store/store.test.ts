@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		async 'put, get, drop, count records and clear store'() {
@@ -75,4 +75,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

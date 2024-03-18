@@ -1,28 +1,28 @@
-namespace $ {
+
 	
-	export type $mol_int62_string = `${string}_${string}`
+	type $mol_int62_string = `${string}_${string}`
 	
-	export function $mol_int62_string_ensure( str: unknown ) {
+	function $mol_int62_string_ensure( str: unknown ) {
 		if( typeof str !== 'string' ) return null
 		return $mol_int62_from_string( str ) && str as $mol_int62_string
 	}
 	
-	export type $mol_int62_pair = {
+	type $mol_int62_pair = {
 		readonly lo: number,
 		readonly hi: number,
 	}
 	
-	export const $mol_int62_max = ( 2 ** 30 ) - 1
-	export const $mol_int62_min = - ( 2 ** 30 )
-	export const $mol_int62_range = $mol_int62_max - $mol_int62_min + 1
+	const $mol_int62_max = ( 2 ** 30 ) - 1
+	const $mol_int62_min = - ( 2 ** 30 )
+	const $mol_int62_range = $mol_int62_max - $mol_int62_min + 1
 	
-	export function $mol_int62_to_string( { lo, hi }: $mol_int62_pair ) {
+	function $mol_int62_to_string( { lo, hi }: $mol_int62_pair ) {
 		lo = ( lo + $mol_int62_range ) % $mol_int62_range
 		hi = ( hi + $mol_int62_range ) % $mol_int62_range
 		return lo.toString(36) + '_' + hi.toString(36) as $mol_int62_string
 	}
 
-	export function $mol_int62_from_string( str: string ): null | $mol_int62_pair {
+	function $mol_int62_from_string( str: string ): null | $mol_int62_pair {
 		
 		const [ str_lo, str_hi ] = str.split( '_' )
 		
@@ -40,7 +40,7 @@ namespace $ {
 		
 	}
 
-	export function $mol_int62_compare(
+	function $mol_int62_compare(
 		left_lo: number,
 		left_hi: number,
 		right_lo: number,
@@ -49,7 +49,7 @@ namespace $ {
 		return ( right_hi - left_hi ) || ( right_lo - left_lo )
 	}
 
-	export function $mol_int62_inc(
+	function $mol_int62_inc(
 		lo: number,
 		hi: number,
 		max = $mol_int62_max,
@@ -61,14 +61,14 @@ namespace $ {
 		}
 	}
 
-	export function $mol_int62_random(): $mol_int62_pair {
+	function $mol_int62_random(): $mol_int62_pair {
 		return {
 			lo: Math.floor( Math.random() * $mol_int62_range + $mol_int62_min ),
 			hi: Math.floor( Math.random() * $mol_int62_range + $mol_int62_min ),
 		}
 	}
 
-	export function $mol_int62_hash_string( str: string ) {
+	function $mol_int62_hash_string( str: string ) {
 		return $mol_int62_to_string(
 			$mol_int62_hash_buffer(
 				$mol_charset_encode( str ),
@@ -76,7 +76,7 @@ namespace $ {
 		)
 	}
 	
-	export function $mol_int62_hash_buffer( buf: Uint8Array, seed = { lo: 0, hi: 0 } ): $mol_int62_pair {
+	function $mol_int62_hash_buffer( buf: Uint8Array, seed = { lo: 0, hi: 0 } ): $mol_int62_pair {
 		
 		let h1 = 0xdeadbeef ^ seed.lo
 		let h2 = 0x41c6ce57 ^ seed.hi
@@ -92,4 +92,6 @@ namespace $ {
 		return { lo: h1 << 1 >> 1, hi: h2 << 1 >> 1 }
 	}
 	
-}
+
+
+ export {$mol_int62_string,$mol_int62_string_ensure,$mol_int62_pair,$mol_int62_max,$mol_int62_min,$mol_int62_range,$mol_int62_to_string,$mol_int62_from_string,$mol_int62_compare,$mol_int62_inc,$mol_int62_random,$mol_int62_hash_string,$mol_int62_hash_buffer}

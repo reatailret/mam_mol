@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_layout_demo extends $.$mol_layout_demo {
+	class $mol_layout_demo extends $.$mol_layout_demo {
 		
 		@ $mol_mem
 		font() {
@@ -142,4 +142,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_layout_demo}

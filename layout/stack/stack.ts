@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Stacked layout. */
-	export class $mol_layout_stack extends $mol_layout_tree {
+	class $mol_layout_stack extends $mol_layout_tree {
 		
 		up() {
 			
@@ -60,4 +60,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_layout_stack}

@@ -1,9 +1,9 @@
-namespace $ {
+
 
 	const prefix = '# sourceMappingURL=data:application/json,'
 	const end_comment = ' */'
 
-	export function $mol_sourcemap_dataurl_decode(this: $, data: string) {
+	function $mol_sourcemap_dataurl_decode(this: $, data: string) {
 		const index = data.lastIndexOf(prefix)
 
 		if (index === -1) return undefined
@@ -30,9 +30,11 @@ namespace $ {
 		}
 	}
 
-	export function $mol_sourcemap_dataurl_encode(this: $, map: $mol_sourcemap_raw, type = 'js' as 'js' | 'css') {
+	function $mol_sourcemap_dataurl_encode(this: $, map: $mol_sourcemap_raw, type = 'js' as 'js' | 'css') {
 		const str = JSON.stringify( { ...map, mappings: ';;' + map.mappings } )
 
 		return this.$mol_sourcemap_url('data:application/json,' + this.encodeURIComponent( str ), type)
 	}
-}
+
+
+ export {$mol_sourcemap_dataurl_decode,$mol_sourcemap_dataurl_encode}

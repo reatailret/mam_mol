@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Row layout. */
-	export class $mol_layout_row extends $mol_layout_flex {
+	class $mol_layout_row extends $mol_layout_flex {
 		
 		ortho = $mol_layout_stack.make({})
 		
@@ -12,4 +12,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_layout_row}

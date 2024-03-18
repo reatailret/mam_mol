@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_3d_texture extends $mol_object {
+	class $mol_3d_texture extends $mol_object {
 		
 		constructor(
 			readonly api: WebGL2RenderingContext,
@@ -113,4 +113,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_3d_texture}

@@ -1,5 +1,7 @@
-namespace $ {
+
 	
-	export var $mol_dom_context : typeof globalThis
+	var $mol_dom_context = window
 	
-}
+
+
+ export {$mol_dom_context}

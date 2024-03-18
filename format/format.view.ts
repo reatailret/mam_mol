@@ -1,9 +1,9 @@
-namespace $.$$ {
+
 	/**
 	 * Formatted string input/output
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_format_demo
 	 */
-	export class $mol_format extends $.$mol_format {
+	class $mol_format extends $.$mol_format {
 		
 		@ $mol_mem
 		selection( [ from, to ] = [ 0, 0 ] ): number[] {
@@ -61,4 +61,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_format}

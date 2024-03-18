@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	// Positive
 
@@ -10,4 +10,6 @@ namespace $ {
 	// type supertype = $mol_type_enforce< number, 666 >
 	// type different = $mol_type_enforce< '666', 666 >
 	
-}
+
+
+ export {}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		'decode utf8 string'() {
 			const str = 'Hello, ΧΨΩЫ'
@@ -14,4 +14,6 @@ namespace $ {
 			$mol_assert_equal( $mol_charset_decode(encoded), '' )
 		},
 	})
-}
+
+
+ export {}

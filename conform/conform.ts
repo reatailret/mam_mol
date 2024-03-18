@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	const cache = new WeakMap< any , boolean >()
 
-	export const $mol_conform_stack = [] as any[]
+	const $mol_conform_stack = [] as any[]
 
-	export function $mol_conform< Target , Source >( target : Target , source : Source ) : Target {
+	function $mol_conform< Target , Source >( target : Target , source : Source ) : Target {
 
 		if( Object.is( target , source ) ) return source as any
 
@@ -31,16 +31,16 @@ namespace $ {
 
 	}
 
-	export const $mol_conform_handlers = new WeakMap< Object , ( target : any , source : any )=> any >()
+	const $mol_conform_handlers = new WeakMap< Object , ( target : any , source : any )=> any >()
 
-	export function $mol_conform_handler< Class >(
+	function $mol_conform_handler< Class >(
 		cl : { new( ... args : any[] ) : Class } ,
 		handler : ( target : Class , source : Class )=> Class ,
 	) {
 		$mol_conform_handlers.set( cl , handler )
 	}
 
-	export function $mol_conform_array<
+	function $mol_conform_array<
 		Value ,
 		List extends {
 			[ index : number ] : Value
@@ -96,4 +96,6 @@ namespace $ {
 		return target
 	} )
 
-}
+
+
+ export {$mol_conform_stack,$mol_conform,$mol_conform_handlers,$mol_conform_handler,$mol_conform_array}

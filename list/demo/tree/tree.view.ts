@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_list_demo_tree extends $.$mol_list_demo_tree {
+
+	class $mol_list_demo_tree extends $.$mol_list_demo_tree {
 		
 		root_rows() {
 			return this.row_content( [] )
@@ -26,4 +26,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_list_demo_tree}

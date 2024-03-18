@@ -1,11 +1,11 @@
-namespace $.$$ {
-	export class $mol_app_demo_readme_not_found_error extends Error {
+
+	class $mol_app_demo_readme_not_found_error extends Error {
 		constructor( public module: readonly string[] ) {
 			super( 'Readme not found' )
 		}
 	}
 
-	export class $mol_app_demo_readme extends $.$mol_app_demo_readme {
+	class $mol_app_demo_readme extends $.$mol_app_demo_readme {
 		
 		close() {
 			this.opened( false )
@@ -57,4 +57,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_app_demo_readme_not_found_error,$mol_app_demo_readme}

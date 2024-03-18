@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_image2 extends $.$mol_image2 {
+
+	class $mol_image2 extends $.$mol_image2 {
 
 		@ $mol_mem
 		background() {
@@ -12,4 +12,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_image2}

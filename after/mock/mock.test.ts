@@ -1,14 +1,14 @@
-namespace $ {
+
 
 	/// @todo right orderinng
-	export let $mol_after_mock_queue = [] as ( ()=> void )[]
+	let $mol_after_mock_queue = [] as ( ()=> void )[]
 
-	export function $mol_after_mock_warp() {
+	function $mol_after_mock_warp() {
 		const queue = $mol_after_mock_queue.splice( 0 )
 		for( const task of queue ) task()
 	}
 
-	export class $mol_after_mock_commmon extends $mol_object2 {
+	class $mol_after_mock_commmon extends $mol_object2 {
 
 		promise = Promise.resolve()
 		cancelled = false
@@ -26,7 +26,7 @@ namespace $ {
 
 	}
 
-	export class $mol_after_mock_timeout extends $mol_after_mock_commmon {
+	class $mol_after_mock_timeout extends $mol_after_mock_commmon {
 
 		constructor(
 			public delay : number ,
@@ -37,4 +37,6 @@ namespace $ {
 
 	}
 	
-}
+
+
+ export {$mol_after_mock_queue,$mol_after_mock_warp,$mol_after_mock_commmon,$mol_after_mock_timeout}

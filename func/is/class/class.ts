@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_func_is_class<
+
+	function $mol_func_is_class<
 		Func extends Function
 	>(
 		func: Func
@@ -8,4 +8,6 @@ namespace $ {
 		return Object.getOwnPropertyDescriptor( func, 'prototype' )?.writable === false
 	}
 
-}
+
+
+ export {$mol_func_is_class}

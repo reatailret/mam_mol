@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'Is boolean - true' () {
@@ -22,4 +22,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

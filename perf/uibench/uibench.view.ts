@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_perf_uibench extends $.$mol_perf_uibench {
+
+	class $mol_perf_uibench extends $.$mol_perf_uibench {
 
 		@ $mol_mem
 		state( next = {} as any ) {
@@ -39,4 +39,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_perf_uibench}

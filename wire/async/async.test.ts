@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_test({
 		'test types'( $ ) {
@@ -70,4 +70,6 @@ namespace $ {
 
 	})
 	
-}
+
+
+ export {}

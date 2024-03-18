@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 
 	function rand( max : number ) {
 		return Math.floor( Math.random() * max )
@@ -11,7 +11,7 @@ namespace $.$$ {
 		color : string
 	}
 
-	export class $mol_perf_dopes extends $.$mol_perf_dopes {
+	class $mol_perf_dopes extends $.$mol_perf_dopes {
 
 		@ $mol_mem
 		started( next = false ) { return next }
@@ -129,4 +129,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_perf_dopes}

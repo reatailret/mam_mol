@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test( {
 		'span for same uri'( $ ) {
 			const span = new $mol_span('test.ts', '', 1, 3, 4)
@@ -59,4 +59,6 @@ namespace $ {
 		}
 
 	} )
-}
+
+
+ export {}

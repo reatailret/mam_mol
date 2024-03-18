@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	// type wrong_ints = $mol_type_int_plus< 'b40', '60b' >
 
@@ -69,4 +69,6 @@ namespace $ {
 		$mol_type_int_calc< '(4..7)' >
 	>
 
-}
+
+
+ export {}

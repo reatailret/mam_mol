@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_drop extends $.$mol_drop {
+
+	class $mol_drop extends $.$mol_drop {
 
 		@ $mol_mem
 		status( next = 'ready' as 'ready' | 'drag' ) { return next }
@@ -69,4 +69,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_drop}

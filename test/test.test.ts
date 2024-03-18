@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_test( set : { [ name : string ] : string | ( ( context : $ )=> void ) } ) {
+
+	function $mol_test( set : { [ name : string ] : string | ( ( context : $ )=> void ) } ) {
 		
 		for( let name in set ) {
 
@@ -13,9 +13,9 @@ namespace $ {
 		$mol_test_schedule()
 	}
 
-	export let $mol_test_mocks = [] as Array< ( context : $ )=> void >
+	let $mol_test_mocks = [] as Array< ( context : $ )=> void >
 
-	export const $mol_test_all = [] as Array< ( context : $ )=> any >
+	const $mol_test_all = [] as Array< ( context : $ )=> any >
 
 	export async function $mol_test_run() {
 
@@ -43,7 +43,7 @@ namespace $ {
 	}
 	
 	let scheduled = false
-	export function $mol_test_schedule() {
+	function $mol_test_schedule() {
 
 		if( scheduled ) return
 		scheduled = true
@@ -105,4 +105,6 @@ namespace $ {
 
 	})
 
-}
+
+
+ export {$mol_test,$mol_test_mocks,$mol_test_all,$mol_test_schedule}

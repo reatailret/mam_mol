@@ -1,5 +1,5 @@
-namespace $ {
-	export function $mol_base64_decode_node(base64Str: string): Uint8Array {
+
+	function $mol_base64_decode_node(base64Str: string): Uint8Array {
 		
 		base64Str = base64Str.replace( /-/g, '+' ).replace( /_/g, '/' )
 		
@@ -10,4 +10,6 @@ namespace $ {
 	}
 
 	$.$mol_base64_decode = $mol_base64_decode_node
-}
+
+
+ export {$mol_base64_decode_node}

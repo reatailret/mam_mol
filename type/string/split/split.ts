@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Split string into parts with separator.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// [ 'foo', 'bar', 'wee' ]
 	 * 	$mol_type_string_split< 'foo-bar-wee', '-' >
 	 */
-	export type $mol_type_string_split<
+	type $mol_type_string_split<
 		String extends string,
 		Separator extends string = ''
 	> =
@@ -21,4 +21,6 @@ namespace $ {
 				]
 			: [ String ]
 
-}
+
+
+ export {$mol_type_string_split}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_log_group< Task extends Function , This >( name : string , task : Task ) {
+
+	function $mol_log_group< Task extends Function , This >( name : string , task : Task ) {
 		
 		const filter = $mol_log_filter()
 		if( filter == null ) return task
@@ -31,4 +31,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_log_group}

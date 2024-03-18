@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_app_supplies_position extends $.$mol_app_supplies_position {
+
+	class $mol_app_supplies_position extends $.$mol_app_supplies_position {
 
 		product_name() {
 			return this.position().name()
@@ -30,4 +30,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_app_supplies_position}

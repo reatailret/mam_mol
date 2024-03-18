@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Uppercase type keys.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// { FOO: 'bar' }
 	 * 	$mol_type_case_upper_keys< { foo: 'bar' } >
 	 */
-	export type $mol_type_case_upper_keys< Type > =
+	type $mol_type_case_upper_keys< Type > =
 		{
 			[
 				Key in keyof Type
@@ -21,10 +21,12 @@ namespace $ {
 	 * 	// { foo: 'BAR' }
 	 * 	$mol_type_case_upper_values< { foo: 'bar' } >
 	 */
-	export type $mol_type_case_upper_values< Type > =
+	type $mol_type_case_upper_values< Type > =
 		{
 			[ Key in keyof Type ]:
 				Uppercase< Extract< Type[ Key ], string > >
 		}
 
-}
+
+
+ export {$mol_type_case_upper_keys,$mol_type_case_upper_values}

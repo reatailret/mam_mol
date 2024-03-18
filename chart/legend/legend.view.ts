@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_chart_legend extends $.$mol_chart_legend {
+	class $mol_chart_legend extends $.$mol_chart_legend {
 
 		@ $mol_mem
 		graphs_front() {
@@ -21,4 +21,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_chart_legend}

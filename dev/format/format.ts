@@ -1,9 +1,9 @@
-namespace $ {
+
 
 	// https://docs.google.com/document/d/1FTascZXT9cxfetuPRT2eXPQKXui4nWFivUnS_335T3U/preview#
-	($ as any)['devtoolsFormatters'] ||= []
+	$['devtoolsFormatters'] ||= []
 
-	export function $mol_dev_format_register( config : {
+	function $mol_dev_format_register( config : {
 		header : ( val : any , config : any )=> any
 		hasBody : ( val : any , config : any )=> false
 	} | {
@@ -11,11 +11,11 @@ namespace $ {
 		hasBody : ( val : any , config : any )=> boolean
 		body : ( val : any , config : any )=> any
 	} ) {
-		($ as any)['devtoolsFormatters'].push( config )
+		$['devtoolsFormatters'].push( config )
 	}
 
-	export let $mol_dev_format_head = Symbol( '$mol_dev_format_head' )
-	export let $mol_dev_format_body = Symbol( '$mol_dev_format_body' )
+	let $mol_dev_format_head = Symbol( '$mol_dev_format_head' )
+	let $mol_dev_format_body = Symbol( '$mol_dev_format_body' )
 
 	$mol_dev_format_register({
 
@@ -51,7 +51,7 @@ namespace $ {
 
 	})
 
-	export function $mol_dev_format_native( obj : any ) {
+	function $mol_dev_format_native( obj : any ) {
 		
 		if( typeof obj === 'undefined' ) return $mol_dev_format_shade( 'undefined' )
 		
@@ -67,7 +67,7 @@ namespace $ {
 
 	}
 
-	export function $mol_dev_format_auto( obj : any ) {
+	function $mol_dev_format_auto( obj : any ) {
 		
 		if( obj == null ) return $mol_dev_format_shade( String( obj ) )
 
@@ -81,7 +81,7 @@ namespace $ {
 
 	}
 
-	export function $mol_dev_format_element( element : string , style : object , ...content : any[] ) {
+	function $mol_dev_format_element( element : string , style : object , ...content : any[] ) {
 			
 		const styles = [] as string[]
 		
@@ -97,7 +97,7 @@ namespace $ {
 
 	}
 
-	export function $mol_dev_format_span( style : object , ...content : any[] ) {
+	function $mol_dev_format_span( style : object , ...content : any[] ) {
 		return $mol_dev_format_element(
 			'span' ,
 			{
@@ -108,31 +108,33 @@ namespace $ {
 		)
 	}
 
-	export let $mol_dev_format_div = $mol_dev_format_element.bind( null , 'div' )
-	export let $mol_dev_format_ol = $mol_dev_format_element.bind( null , 'ol' )
-	export let $mol_dev_format_li = $mol_dev_format_element.bind( null , 'li' )
-	export let $mol_dev_format_table = $mol_dev_format_element.bind( null , 'table' )
-	export let $mol_dev_format_tr = $mol_dev_format_element.bind( null , 'tr' )
-	export let $mol_dev_format_td = $mol_dev_format_element.bind( null , 'td' )
+	let $mol_dev_format_div = $mol_dev_format_element.bind( null , 'div' )
+	let $mol_dev_format_ol = $mol_dev_format_element.bind( null , 'ol' )
+	let $mol_dev_format_li = $mol_dev_format_element.bind( null , 'li' )
+	let $mol_dev_format_table = $mol_dev_format_element.bind( null , 'table' )
+	let $mol_dev_format_tr = $mol_dev_format_element.bind( null , 'tr' )
+	let $mol_dev_format_td = $mol_dev_format_element.bind( null , 'td' )
 
-	export let $mol_dev_format_accent = $mol_dev_format_span.bind( null , {
+	let $mol_dev_format_accent = $mol_dev_format_span.bind( null , {
 		'color' : 'magenta' ,
 	} )
 
-	export let $mol_dev_format_strong = $mol_dev_format_span.bind( null , {
+	let $mol_dev_format_strong = $mol_dev_format_span.bind( null , {
 		'font-weight' : 'bold' ,
 	} )
 
-	export let $mol_dev_format_string = $mol_dev_format_span.bind( null , {
+	let $mol_dev_format_string = $mol_dev_format_span.bind( null , {
 		'color' : 'green',
 	} )
 
-	export let $mol_dev_format_shade = $mol_dev_format_span.bind( null , {
+	let $mol_dev_format_shade = $mol_dev_format_span.bind( null , {
 		'color' : 'gray',
 	} )
 
-	export let $mol_dev_format_indent = $mol_dev_format_div.bind( null , {
+	let $mol_dev_format_indent = $mol_dev_format_div.bind( null , {
 		'margin-left': '13px'
 	} )
 
-}
+
+
+ export {$mol_dev_format_register,$mol_dev_format_head,$mol_dev_format_body,$mol_dev_format_native,$mol_dev_format_auto,$mol_dev_format_element,$mol_dev_format_span,$mol_dev_format_div,$mol_dev_format_ol,$mol_dev_format_li,$mol_dev_format_table,$mol_dev_format_tr,$mol_dev_format_td,$mol_dev_format_accent,$mol_dev_format_strong,$mol_dev_format_string,$mol_dev_format_shade,$mol_dev_format_indent}

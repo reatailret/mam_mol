@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** State of arguments like `#foo=bar/xxx` or `?foo=bar&xxx` */
-	export class $mol_state_arg extends $mol_object {
+	class $mol_state_arg extends $mol_object {
 		
 		@ $mol_mem
 		static href( next?: string ) {
@@ -141,4 +141,6 @@ namespace $ {
 
 	self.addEventListener( 'hashchange' , $mol_state_arg_change )
 	
-}
+
+
+ export {$mol_state_arg}

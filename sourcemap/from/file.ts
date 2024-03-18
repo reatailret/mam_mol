@@ -1,5 +1,5 @@
-namespace $ {
-	export function $mol_sourcemap_from_file(this: $, src: $mol_file) {
+
+	function $mol_sourcemap_from_file(this: $, src: $mol_file) {
 		const text = src.text()
 		let map = this.$mol_sourcemap_dataurl_decode(text)
 		if (map) return map
@@ -9,4 +9,6 @@ namespace $ {
 
 		return map
 	}
-}
+
+
+ export {$mol_sourcemap_from_file}

@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Transition atom value */
-	export function $mol_wire_easing( next: any ) {
+	function $mol_wire_easing( next: any ) {
 		
 		const atom = $mol_wire_auto()
 		if(!( atom instanceof $mol_wire_atom )) $mol_fail( new Error( 'Allowed only inside atom' ) )
@@ -19,4 +19,6 @@ namespace $ {
 		return current
 	}
 	
-}
+
+
+ export {$mol_wire_easing}

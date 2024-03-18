@@ -1,6 +1,6 @@
-namespace $ {
 
-	export type $mol_style_func_name =
+
+	type $mol_style_func_name =
 	| 'calc'
 	| 'hsla'
 	| 'rgba'
@@ -13,13 +13,13 @@ namespace $ {
 	| $mol_style_func_image
 	| $mol_style_func_filter
 	
-	export type $mol_style_func_image =
+	type $mol_style_func_image =
 	| 'url'
 	| 'linear-gradient'
 	| 'radial-gradient'
 	| 'conic-gradient'
 	
-	export type $mol_style_func_filter =
+	type $mol_style_func_filter =
 	| 'blur'
 	| 'brightness'
 	| 'contrast'
@@ -37,7 +37,7 @@ namespace $ {
 	 * CSS Functions
 	 * @see https://mol.hyoo.ru/#!section=docs/=xwq9q5_f966fg
 	 */
-	export class $mol_style_func<
+	class $mol_style_func<
 		Name extends $mol_style_func_name ,
 		Value = unknown,
 	> extends $mol_decor< Value > {
@@ -189,4 +189,6 @@ namespace $ {
 	
 	}
 
-}
+
+
+ export {$mol_style_func_name,$mol_style_func_image,$mol_style_func_filter,$mol_style_func}

@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_dom_render_attributes (
+	function $mol_dom_render_attributes (
 		el : Element ,
 		attrs : { [ key : string ] : string|number|boolean|null }
 	) {
@@ -32,4 +32,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_dom_render_attributes}

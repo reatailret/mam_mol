@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Checkbox for group of check boxes.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_check_group_demo
 	 */
-	export class $mol_check_group extends $.$mol_check_group {
+	class $mol_check_group extends $.$mol_check_group {
 		
 		@ $mol_mem
 		checked( next? : boolean ) {
@@ -32,4 +32,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_check_group}

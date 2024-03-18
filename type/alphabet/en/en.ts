@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** English alphabet in lowercase **/
-	export type $mol_type_alphabet_en_lower =
+	type $mol_type_alphabet_en_lower =
 		| 'a' | 'b' | 'c' | 'd' | 'e' | 'f'
 		| 'j' | 'h' | 'i' | 'j' | 'k' | 'l'
 		| 'm' | 'n' | 'o' | 'p' | 'q' | 'r'
@@ -9,12 +9,14 @@ namespace $ {
 		| 'y' | 'z'
 
 	/** English alphabet in uppercase **/
-	export type $mol_type_alphabet_en_upper =
+	type $mol_type_alphabet_en_upper =
 		Uppercase< $mol_type_alphabet_en_lower >
 
 	/** English alphabet **/
-	export  type $mol_type_alphabet_en =
+	type $mol_type_alphabet_en =
 		| $mol_type_alphabet_en_lower
 		| $mol_type_alphabet_en_upper
 
-}
+
+
+ export {$mol_type_alphabet_en_lower,$mol_type_alphabet_en_upper,$mol_type_alphabet_en}

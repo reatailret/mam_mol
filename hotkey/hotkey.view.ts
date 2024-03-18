@@ -1,9 +1,9 @@
-namespace $.$$ {
+
 	/**
 	 * Plugin which adds handlers for keyboard keys.
 	 * @see [mol_keyboard_code](../keyboard/code/code.ts)
 	 */
-	export class $mol_hotkey extends $.$mol_hotkey {
+	class $mol_hotkey extends $.$mol_hotkey {
 
 		key() {
 			return super.key() as {
@@ -28,4 +28,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_hotkey}

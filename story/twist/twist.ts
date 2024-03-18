@@ -1,9 +1,9 @@
-namespace $ {
+
 
 	/**
 	 * Atomic step for navigation through story. 48B+
 	 */
-	export class $mol_story_twist {
+	class $mol_story_twist {
 
 		constructor(
 			public prev: $mol_story_step[], // 24B+
@@ -20,4 +20,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_story_twist}

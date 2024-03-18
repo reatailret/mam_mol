@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export interface $mol_github_search_issues_json {
 		incomplete_results : boolean
@@ -6,7 +6,7 @@ namespace $ {
 		total_count : number
 	}
 
-	export class $mol_github_search_issues extends $mol_model< $mol_github_search_issues_json > {
+	class $mol_github_search_issues extends $mol_model< $mol_github_search_issues_json > {
 		
 		json_update( patch? : $mol_github_search_issues_json ) {
 			
@@ -31,4 +31,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_github_search_issues}

@@ -1,5 +1,7 @@
-namespace $ {
-	export function $mol_env() {
+
+	function $mol_env() {
 		return {} as Record< string, string | undefined >
 	}
-}
+
+
+ export {$mol_env}

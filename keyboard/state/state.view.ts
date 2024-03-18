@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_keyboard_state extends $.$mol_keyboard_state {
+
+	class $mol_keyboard_state extends $.$mol_keyboard_state {
 
 		key() {
 			return super.key() as {
@@ -32,4 +32,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_keyboard_state}

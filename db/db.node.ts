@@ -1,4 +1,4 @@
-namespace $ {
+
 
     $mol_dom_context.indexedDB = $node[ 'fake-indexeddb' ].indexedDB
     $mol_dom_context.IDBCursor = $node[ 'fake-indexeddb' ].IDBCursor
@@ -13,4 +13,6 @@ namespace $ {
     $mol_dom_context.IDBTransaction = $node[ 'fake-indexeddb' ].IDBTransaction
     $mol_dom_context.IDBVersionChangeEvent = $node[ 'fake-indexeddb' ].IDBVersionChangeEvent
 
-}
+
+
+ export {}

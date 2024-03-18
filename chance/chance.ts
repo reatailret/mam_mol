@@ -1,10 +1,10 @@
-namespace $ {
 
-	export type $mol_chance_list = Array< [ number, ()=> any ] >
 
-	export type $mol_chance_result< List extends $mol_chance_list > = $mol_type_result< List[ number ][ 1 ] >
+	type $mol_chance_list = Array< [ number, ()=> any ] >
 
-	export function $mol_chance< List extends $mol_chance_list >( ... chance_list: List ): $mol_chance_result< List > | never {
+	type $mol_chance_result< List extends $mol_chance_list > = $mol_type_result< List[ number ][ 1 ] >
+
+	function $mol_chance< List extends $mol_chance_list >( ... chance_list: List ): $mol_chance_result< List > | never {
 
 		const prob_sum = chance_list.reduce( ( sum, [ prob ] )=> {
 			if (
@@ -49,4 +49,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_chance_list,$mol_chance_result,$mol_chance}

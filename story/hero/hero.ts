@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Property which tracked in current story.
 	 * Use $mol_story_tell to enable tracking.
 	 */
-	export function $mol_story_hero<
+	function $mol_story_hero<
 		Field extends string ,
 		Prop extends ( next?: any )=> any ,
 	>(
@@ -40,4 +40,6 @@ namespace $ {
 		return descr
 	}
 
-}
+
+
+ export {$mol_story_hero}

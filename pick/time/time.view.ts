@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Time picker.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_pick_time_demo
 	 */
-	export class $mol_pick_time extends $.$mol_pick_time {
+	class $mol_pick_time extends $.$mol_pick_time {
 
 		trigger_content() {
 			return [ this.value_moment().toString( 'hh:mm.sss' ) || this.Icon() ]
@@ -103,4 +103,6 @@ namespace $.$$ {
 				new $mol_time_moment( {} )
 		}
 	}
-}
+
+
+ //export {$mol_pick_time}

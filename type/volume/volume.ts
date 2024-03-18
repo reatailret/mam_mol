@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Volume structure from flat with dot.case key names.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// { a: { b: number; c: { d: string } } }
 	 * 	type volume = $mol_type_volume< { 'a.b': number; 'a.c.d': string } >
 	 */
-	export type $mol_type_volume< Type extends object > =
+	type $mol_type_volume< Type extends object > =
 		$mol_type_merge<
 			$mol_type_intersect<
 				{
@@ -27,4 +27,6 @@ namespace $ {
 			>
 		>
 
-}
+
+
+ export {$mol_type_volume}

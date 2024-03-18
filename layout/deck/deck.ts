@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Layered layout. */
-	export class $mol_layout_deck extends $mol_layout_stack {
+	class $mol_layout_deck extends $mol_layout_stack {
 		
 		ortho = $mol_layout_stack.make({})
 		
@@ -12,4 +12,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_layout_deck}

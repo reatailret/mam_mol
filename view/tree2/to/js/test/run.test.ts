@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	const str2js = (function (this: $, data: string, url: string) {
 		const tree = this.$mol_tree2_from_string(data, url)
@@ -8,7 +8,7 @@ namespace $ {
 		return js_str
 	}).bind($ as typeof $$)
 
-	export function $mol_view_tree2_to_js_test_run( tree: string ): any {
+	function $mol_view_tree2_to_js_test_run( tree: string ): any {
 		class $mol_view_mock extends $mol_object {}
 		const $ = { $mol_object: $mol_view_mock }
 		;( $mol_view_mock as any )[$mol_ambient_ref] = $
@@ -19,4 +19,6 @@ namespace $ {
 		eval( js )
 		return $
 	}
-}
+
+
+ export {$mol_view_tree2_to_js_test_run}

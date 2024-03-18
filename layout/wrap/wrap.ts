@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Stack with wrapping layout. */
-	export class $mol_layout_wrap extends $mol_layout_flex {
+	class $mol_layout_wrap extends $mol_layout_flex {
 		
 		ortho = $mol_layout_flex.make({})
 
@@ -84,4 +84,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_layout_wrap}

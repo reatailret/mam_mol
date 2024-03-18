@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	const algorithm = {
 		name: 'AES-CBC',
@@ -7,7 +7,7 @@ namespace $ {
 	}
 	
 	/** Symmetric cipher with shortest payload */
-	export class $mol_crypto_secret extends Object {
+	class $mol_crypto_secret extends Object {
 		
 		/** Key size in bytes. */
 		static size = 16
@@ -126,4 +126,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {$mol_crypto_secret}

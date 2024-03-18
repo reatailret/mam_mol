@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	// Positive
 
@@ -101,4 +101,6 @@ namespace $ {
 		$mol_type_equals< never , void >
 	>
 
-}
+
+
+ export {}

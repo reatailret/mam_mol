@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	const Age = $mol_data_optional( $mol_data_number )
 	const Age_or_zero = $mol_data_optional( $mol_data_number, ()=> 0 )
@@ -44,4 +44,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

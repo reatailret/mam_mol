@@ -1,5 +1,5 @@
-namespace $ {
-	export function $mol_tree2_span_imprint( tree: $mol_tree2 ) {
+
+	function $mol_tree2_span_imprint( tree: $mol_tree2 ) {
 
 		const sources = new Map< string, $mol_tree2 >()
 
@@ -30,4 +30,6 @@ namespace $ {
 		])
 
 	}
-}
+
+
+ export {$mol_tree2_span_imprint}

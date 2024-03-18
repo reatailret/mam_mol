@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		// https://github.com/nin-jin/slides/tree/master/reactivity#component-states
@@ -645,4 +645,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

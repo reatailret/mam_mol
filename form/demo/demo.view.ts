@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_form_demo extends $.$mol_form_demo {
+
+	class $mol_form_demo extends $.$mol_form_demo {
 		
 		name_first( next? : string ) {
 			return $mol_state_local.value( this.state_key( 'name_first' ) , next ) || ''
@@ -85,4 +85,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_form_demo}

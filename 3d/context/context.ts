@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_3d_context extends Object {
+	class $mol_3d_context extends Object {
 		
 		constructor(
 			readonly native: WebGL2RenderingContext,
@@ -86,4 +86,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_3d_context}

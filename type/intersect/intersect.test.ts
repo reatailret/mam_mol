@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type numbers = $mol_type_assert<
 		$mol_type_intersect< 1 | 2 > ,
@@ -15,4 +15,6 @@ namespace $ {
 		number & string
 	>
 
-}
+
+
+ export {}

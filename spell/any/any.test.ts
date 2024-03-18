@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Known language'() {
@@ -14,4 +14,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

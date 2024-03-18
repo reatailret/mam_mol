@@ -1,5 +1,5 @@
-namespace $ {
-	export class $mol_storage extends $mol_object2 {
+
+	class $mol_storage extends $mol_object2 {
 		
 		@ $mol_mem
 		static native() {
@@ -42,4 +42,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_storage}

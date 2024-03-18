@@ -1,12 +1,12 @@
-namespace $ {
 
-	export let $mol_compare_deep_cache = new WeakMap< any , WeakMap< any , boolean > >()
+
+	let $mol_compare_deep_cache = new WeakMap< any , WeakMap< any , boolean > >()
 	
 	/**
 	 * Deeply compares two values. Returns true if equal.
 	 * Define `Symbol.toPrimitive` to customize.
 	 */
-	export function $mol_compare_deep< Value >( left: Value, right: Value ): boolean {
+	function $mol_compare_deep< Value >( left: Value, right: Value ): boolean {
 
 		if( Object.is( left , right ) ) return true
 
@@ -153,4 +153,6 @@ namespace $ {
 		)
 	}
 	
-}
+
+
+ export {$mol_compare_deep_cache,$mol_compare_deep}

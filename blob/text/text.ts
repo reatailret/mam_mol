@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_blob_text( blob: $mol_blob ) {
+
+	function $mol_blob_text( blob: $mol_blob ) {
 		return new Promise< string >( ( done, fail )=> {
 			const reader = new FileReader
 			reader.onerror = fail
@@ -9,4 +9,6 @@ namespace $ {
 		} )
 	}
 
-}
+
+
+ export {$mol_blob_text}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export type $mol_audio_vibe_shape =
+
+	type $mol_audio_vibe_shape =
 	| 'sine' 
 	| 'square' 
 	| 'sawtooth' 
@@ -10,7 +10,7 @@ namespace $ {
 	/**
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_audio_demo_vibe
 	 */
-	export class $mol_audio_vibe extends $mol_audio_instrument {
+	class $mol_audio_vibe extends $mol_audio_instrument {
 		
 		@ $mol_mem
 		override node_raw() { return this.context().createOscillator() }
@@ -35,4 +35,6 @@ namespace $ {
 		}
 
 	}
-}
+
+
+ export {$mol_audio_vibe_shape,$mol_audio_vibe}

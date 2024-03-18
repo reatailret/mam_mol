@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export let $mol_file_extensions = {
+	let $mol_file_extensions = {
 		
 		'css': 'text/css;charset=utf-8',
 		'csv': 'text/csv;charset=utf-8',
@@ -93,4 +93,6 @@ namespace $ {
 		
 	} as Record< string, $mol_rest_port_mime >
 	
-}
+
+
+ export {$mol_file_extensions}

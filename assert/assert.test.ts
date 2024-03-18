@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test( {
 		
 		'must be false'() {
@@ -42,4 +42,6 @@ namespace $ {
 		} ,
 		
 	} )
-}
+
+
+ export {}

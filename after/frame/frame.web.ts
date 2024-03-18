@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_after_frame extends $mol_object2 {
+
+	class $mol_after_frame extends $mol_object2 {
 
 		static _promise = null as Promise<void> | null
 
@@ -46,4 +46,6 @@ namespace $ {
 
 	}
 	
-}
+
+
+ export {$mol_after_frame}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_geo_position extends $mol_object {
+
+	class $mol_geo_position extends $mol_object {
 
 		options() {
 			return { enableHighAccuracy: this.accuracy_high() }
@@ -66,4 +66,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {$mol_geo_position}

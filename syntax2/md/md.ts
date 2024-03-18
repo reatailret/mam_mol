@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export var $mol_syntax2_md_flow = new $mol_syntax2({
+	var $mol_syntax2_md_flow = new $mol_syntax2({
 		'quote' : /^((?:(?:[>"] )(?:[^]*?)$(\r?\n?))+)([\n\r]*)/ ,
 		'header' : /^([#=]+)(\s+)(.*?)$([\n\r]*)/ ,
 		'list' :  /^((?:(?: ?([*+-])|(?:\d+[\.\)])+) +(?:[^]*?)$(?:\r?\n?)(?:  (?:[^]*?)$(?:\r?\n?))*)+)((?:\r?\n)*)/ ,
@@ -12,7 +12,7 @@ namespace $ {
 		'block' : /^(.*?)$((?:\r?\n)*)/ ,
 	})
 	
-	export var $mol_syntax2_md_line = new $mol_syntax2({
+	var $mol_syntax2_md_line = new $mol_syntax2({
 		'strong' : /\*\*(.+?)\*\*/ ,
 		'emphasis' : /\*(?!\s)(.+?)\*|\/\/(?!\s)(.+?)\/\// ,
 		'code' : /```(.+?)```|;;(.+?);;|`(.+?)`/ ,
@@ -27,7 +27,7 @@ namespace $ {
 		'text-link-http' : /\b(https?:\/\/[^\s,.;:!?")]+(?:[,.;:!?")][^\s,.;:!?")]+)+)/ ,
 	})
 	
-	export const $mol_syntax2_md_code = new $mol_syntax2({
+	const $mol_syntax2_md_code = new $mol_syntax2({
 		'code-indent' : /\t+/ ,
 		'code-docs' : /\/\/\/.*?$/ ,
 		'code-comment-block' : /(?:\/\*[^]*?\*\/|\/\+[^]*?\+\/|<![^]*?>)/ ,
@@ -46,4 +46,6 @@ namespace $ {
 		'code-punctuation' : /[\-\[\]\{\}\(\)<=>~!\?@#%&\*_\+\\\/\|;:\.,\^]+?/ ,
 	})
 	
-}
+
+
+ export {$mol_syntax2_md_flow,$mol_syntax2_md_line,$mol_syntax2_md_code}

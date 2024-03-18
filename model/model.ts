@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_model< Raw extends Object > extends $mol_object {
+
+	class $mol_model< Raw extends Object > extends $mol_object {
 
 		@( $mol_mem_key as any )
 		static item<
@@ -57,7 +57,7 @@ namespace $ {
 
 	}
 
-	// export function $mol_model_prop< Value , Json >(
+	// function $mol_model_prop< Value , Json >(
 	// 	field : keyof Json ,
 	// 	make : ( json : Json )=> Value ,
 	// ) {
@@ -79,4 +79,6 @@ namespace $ {
 	// 	}
 	// }
 
-}
+
+
+ export {$mol_model,$mol_model_prop}

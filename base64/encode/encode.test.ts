@@ -1,4 +1,4 @@
-namespace $ {
+
 	const png = new Uint8Array([ 0x1a, 0x0a, 0x00, 0x49, 0x48, 0x78, 0xda ])
 
 	$mol_test({
@@ -10,4 +10,6 @@ namespace $ {
 			$mol_assert_equal($mol_base64_encode(png), 'GgoASUh42g==')
 		},
 	})
-}
+
+
+ export {}

@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Reactive memoizing solo property decorator from [mol_wire](../wire/README.md)
@@ -9,7 +9,7 @@ namespace $ {
 	 * }
 	 * @see https://mol.hyoo.ru/#!section=docs/=qxmh6t_sinbmb
 	 */
-	export let $mol_mem = $mol_wire_solo
+	let $mol_mem = $mol_wire_solo
 
 	/**
 	 * Reactive memoizing multiplexed property decorator [mol_wire](../wire/README.md)
@@ -20,5 +20,7 @@ namespace $ {
 	 * }
 	 * @see https://mol.hyoo.ru/#!section=docs/=qxmh6t_sinbmb
 	 */
-	export let $mol_mem_key = $mol_wire_plex
-}
+	let $mol_mem_key = $mol_wire_plex
+
+
+ export {$mol_mem,$mol_mem_key}

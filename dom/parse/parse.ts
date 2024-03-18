@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_dom_parse(
+
+	function $mol_dom_parse(
 		text : string ,
 		type : DOMParserSupportedType = 'application/xhtml+xml' ,
 	) {
@@ -14,4 +14,6 @@ namespace $ {
 		return doc
 	}
 
-}
+
+
+ export {$mol_dom_parse}

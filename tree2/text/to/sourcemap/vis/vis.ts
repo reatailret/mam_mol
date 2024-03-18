@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_tree2_text_to_sourcemap_vis( this: $, text: $mol_tree2 ) {
+
+	function $mol_tree2_text_to_sourcemap_vis( this: $, text: $mol_tree2 ) {
 		
 		const code = this.$mol_tree2_text_to_string( text )
 		const map = this.$mol_tree2_text_to_sourcemap( text )
@@ -16,4 +16,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_tree2_text_to_sourcemap_vis}

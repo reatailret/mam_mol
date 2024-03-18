@@ -1,7 +1,7 @@
-namespace $.$$ {
+
 
 	/** @deprecated Use $mol_book2 **/
-	export class $mol_book extends $.$mol_book {
+	class $mol_book extends $.$mol_book {
 		
 		@ $mol_mem
 		pages_extended() : $mol_view[] {
@@ -66,4 +66,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_book}

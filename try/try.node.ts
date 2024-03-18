@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_try< Result >( handler : ()=> Result ) : Result|Error {
+	function $mol_try< Result >( handler : ()=> Result ) : Result|Error {
 		try {
 			return handler()
 		} catch( error: any ) {
@@ -8,4 +8,6 @@ namespace $ {
 		}
 	}
 	
-} 
+ 
+
+ export {$mol_try}

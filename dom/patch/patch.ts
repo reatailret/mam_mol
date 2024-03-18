@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_dom_patch( target : Node | null , source : Node ) {
+	function $mol_dom_patch( target : Node | null , source : Node ) {
 		
 		if( target == null ) return source.cloneNode( true )
 		if( target.nodeName !== source.nodeName ) target = source.cloneNode( false )
@@ -48,4 +48,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_dom_patch}

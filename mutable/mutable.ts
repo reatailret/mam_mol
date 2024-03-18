@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export type $mol_mutable_wrapper< Value > = {
+	type $mol_mutable_wrapper< Value > = {
 		(
 			patch?: ( next: $mol_type_immutable_deep< Value > )=> $mol_type_immutable_deep< Value >
 		): $mol_type_immutable_deep< Value >
@@ -9,7 +9,7 @@ namespace $ {
 	}
 	
 	/** Mutable way for immutable patch */
-	export function $mol_mutable< Value >(
+	function $mol_mutable< Value >(
 		input: Value,
 		update: ( next: Value )=> Value = next => input = next,
 	): $mol_mutable_wrapper< Value > {
@@ -38,4 +38,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_mutable_wrapper,$mol_mutable}

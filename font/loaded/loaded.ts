@@ -1,8 +1,8 @@
-namespace $ {
 
-	export const $mol_font_loaded_cache = new Set< string >()
 
-	export function $mol_font_loaded( config : { face : string , text : string } , next? : boolean ) {
+	const $mol_font_loaded_cache = new Set< string >()
+
+	function $mol_font_loaded( config : { face : string , text : string } , next? : boolean ) {
 		
 		if( next ) $mol_font_loaded_cache.add( config.face )
 		if( $mol_font_loaded_cache.has( config.face ) ) return true
@@ -13,4 +13,6 @@ namespace $ {
 		return mono === sans
 	}
 
-}
+
+
+ export {$mol_font_loaded_cache,$mol_font_loaded}

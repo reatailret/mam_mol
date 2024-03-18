@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_view_component( View: typeof $mol_view ) {
+	function $mol_view_component( View: typeof $mol_view ) {
 		
 		// service worker
 		if( typeof HTMLElement !== 'function' ) return
@@ -80,4 +80,6 @@ namespace $ {
 		return Component
 	}
 
-}
+
+
+ export {$mol_view_component}

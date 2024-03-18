@@ -1,11 +1,11 @@
-namespace $ {
+
 
 	/**
 	 * Returns `Tuple` without first element.
 	 * 
 	 * 	$mol_type_tail<[ 1 , 2 , 3 ]> // [ 2, 3 ]
 	 */
-	export type $mol_type_tail< Tuple extends readonly any[] > =
+	type $mol_type_tail< Tuple extends readonly any[] > =
 		(
 			( ...tail : Tuple )=> any
 		) extends (
@@ -14,4 +14,6 @@ namespace $ {
 			? Tail
 			: never
 
-}
+
+
+ export {type $mol_type_tail}

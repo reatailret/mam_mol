@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_huggingface_run(
+	function $mol_huggingface_run(
 		this: $,
 		space: string,
 		method: string | number,
@@ -31,7 +31,7 @@ namespace $ {
 		}
 	}
 	
-	export function $mol_huggingface_rest(
+	function $mol_huggingface_rest(
 		space: string,
 		method: string,
 		... data: readonly any[]
@@ -52,7 +52,7 @@ namespace $ {
 		
 	}
 	
-	export function $mol_huggingface_ws(
+	function $mol_huggingface_ws(
 		space: string,
 		fn_index: number,
 		... data: readonly any[]
@@ -123,4 +123,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_huggingface_run,$mol_huggingface_rest,$mol_huggingface_ws}

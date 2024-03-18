@@ -1,12 +1,12 @@
-namespace $ {
+
 	
-	export type $mol_unicode_category =
+	type $mol_unicode_category =
 	| [ $mol_unicode_category_binary ]
 	| [ 'General_Category', $mol_char_category_general ]
 	| [ 'Script', $mol_unicode_category_script ]
 	| [ 'Script_Extensions', $mol_unicode_category_script ]
 	
-	export type $mol_unicode_category_binary =
+	type $mol_unicode_category_binary =
 	| 'ASCII'
 	| 'ASCII_Hex_Digit'
 	| 'Alphabetic'
@@ -61,7 +61,7 @@ namespace $ {
 	| 'XID_Continue'
 	| 'XID_Start'
 	
-	export type $mol_char_category_general =
+	type $mol_char_category_general =
 	| 'Cased_Letter'
 	| 'Close_Punctuation'
 	| 'Connector_Punctuation'
@@ -101,7 +101,7 @@ namespace $ {
 	| 'Unassigned'
 	| 'Uppercase_Letter'
 	
-	export type $mol_unicode_category_script =
+	type $mol_unicode_category_script =
 	| 'Adlam'
 	| 'Ahom'
 	| 'Anatolian_Hieroglyphs'
@@ -259,4 +259,6 @@ namespace $ {
 	| 'Yi'
 	| 'Zanabazar_Square'
 	
-}
+
+
+ export {type $mol_unicode_category,type $mol_unicode_category_binary,type $mol_char_category_general,type $mol_unicode_category_script}

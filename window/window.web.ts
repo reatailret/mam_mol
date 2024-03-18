@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_window extends $mol_object {
+	class $mol_window extends $mol_object {
 		
 		@ $mol_mem
 		static size() {
@@ -18,4 +18,6 @@ namespace $ {
 
 	self.addEventListener( 'resize', event => $mol_window.resizes( event ) )
 	
-}
+
+
+ export {$mol_window}

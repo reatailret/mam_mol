@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Component for entering, incrementing and decrementing numeric values.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_number_demo
 	 */
-	export class $mol_number extends $.$mol_number {
+	class $mol_number extends $.$mol_number {
 		
 		value_limited( next? : any ) : number {
 			if ( next === undefined ) return this.value()
@@ -60,4 +60,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_number}

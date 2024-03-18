@@ -1,9 +1,9 @@
-namespace $.$$ {
+
 
 	/**
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_map_yandex_demo
 	 */
-	export class $mol_map_yandex_mark extends $.$mol_map_yandex_mark {
+	class $mol_map_yandex_mark extends $.$mol_map_yandex_mark {
 
 		@ $mol_mem
 		object() {
@@ -35,4 +35,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_map_yandex_mark}

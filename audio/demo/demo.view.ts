@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_audio_demo extends $.$mol_audio_demo {
+
+	class $mol_audio_demo extends $.$mol_audio_demo {
 		
 		noise_freq() {
 			$mol_wire_watch()
@@ -7,4 +7,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_audio_demo}

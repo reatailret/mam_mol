@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_vk extends $mol_object2 {
+	class $mol_vk extends $mol_object2 {
 		
 		static init() {
 			this.send( 'VKWebAppInit' )
@@ -21,4 +21,5 @@ namespace $ {
 	
 	setTimeout( ()=> $mol_vk.init() )
 	
-}
+
+ export {$mol_vk}

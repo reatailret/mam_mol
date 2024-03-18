@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test( {
 		
 		'tree parsing'( $ ) {
@@ -96,4 +96,6 @@ namespace $ {
 		},
 
 	} )	
-}
+
+
+ export {}

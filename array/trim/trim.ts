@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_array_trim< Item >( array : Item[] ) {
+
+	function $mol_array_trim< Item >( array : Item[] ) {
 
 		let last = array.length
 		while( last > 0 ) {
@@ -15,4 +15,6 @@ namespace $ {
 		return array
 	}
 
-}
+
+
+ export {$mol_array_trim}

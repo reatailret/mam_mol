@@ -1,9 +1,9 @@
-namespace $.$$ {
+
 
 	/**
 	 * Mixin view logic to DOM node of another component.
 	 */
-	export class $mol_ghost extends $.$mol_ghost {
+	class $mol_ghost extends $.$mol_ghost {
 		
 		override dom_node_external( next?: Element ) {
 			return this.Sub().dom_node( next )
@@ -54,4 +54,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_ghost}

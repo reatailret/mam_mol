@@ -1,8 +1,10 @@
-namespace $ {
+
 
 	let context = null as null | ( ()=> void )
-	export function $mol_log_context( next = context ) {
+	function $mol_log_context( next = context ) {
 		return context = next
 	}
 
-}
+
+
+ export {$mol_log_context}

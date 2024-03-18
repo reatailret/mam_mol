@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_build_server extends $mol_server {
+	class $mol_build_server extends $mol_server {
 
 		static trace = false
 
@@ -302,6 +302,7 @@ namespace $ {
 				
 				this.$.$mol_log3_fail({
 					place: this,
+					cause: error.cause,
 					message: error.message ?? error,
 				})
 				
@@ -380,4 +381,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {$mol_build_server}

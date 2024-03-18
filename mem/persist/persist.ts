@@ -1,3 +1,5 @@
-namespace $ {
-	export let $mol_mem_persist = $mol_wire_solid
-}
+
+	let $mol_mem_persist = $mol_wire_solid
+
+
+ export {$mol_mem_persist}

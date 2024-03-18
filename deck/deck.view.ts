@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 	
 	/**
 	 * The component which arrange content in multiple tabs.
 	 * @seehttps://mol.hyoo.ru/#!section=demos/demo=mol_deck_demo
 	 */
-	export class $mol_deck extends $.$mol_deck {
+	class $mol_deck extends $.$mol_deck {
 		
 		current( next? : string ) {
 			return $mol_state_session.value( `${ this }.current()` , next ) || '0'
@@ -24,4 +24,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_deck}

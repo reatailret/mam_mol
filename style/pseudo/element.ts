@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export type $mol_style_pseudo_element =
+	type $mol_style_pseudo_element =
 	
 	// common
 	| '::after'
@@ -168,4 +168,6 @@ namespace $ {
 	| '::-webkit-validation-bubble-message'
 	| '::-webkit-validation-bubble-text-block'
 
-}
+
+
+ export {$mol_style_pseudo_element}

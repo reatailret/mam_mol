@@ -1,8 +1,8 @@
-namespace $ {
+
 	const sourcemap_codec = $node['sourcemap-codec']
 	const path = $node.path
 
-	export class $mol_sourcemap_builder {
+	class $mol_sourcemap_builder {
 		version: number = 3
 
 		protected sourceRoot: string
@@ -147,4 +147,6 @@ namespace $ {
 			for (let i = lines.length; i < lineCount; i++) segment_lines.push([])
 		}
 	}
-}
+
+
+ export {$mol_sourcemap_builder}

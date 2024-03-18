@@ -1,9 +1,9 @@
-namespace $ {
+
 	
 	/**
 	 * Decorates method to fiber to ensure it is executed only once inside other fiber.
 	 */
-	export function $mol_wire_method<
+	function $mol_wire_method<
 		Host extends object,
 		Args extends readonly any[],
 	>(
@@ -36,4 +36,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_wire_method}

@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Tracks changes inside decorated action to current story.
 	 * Use $mol_story_hero to mark trackable props.
 	 */
-	export class $mol_story_tell extends $mol_wrapper {
+	class $mol_story_tell extends $mol_wrapper {
 
 		static override wrap<
 			This extends { $: $ } ,
@@ -31,4 +31,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_story_tell}

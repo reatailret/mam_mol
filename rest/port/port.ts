@@ -1,12 +1,12 @@
-namespace $ {
+
 	
-	export type $mol_rest_port_mime_hi =
+	type $mol_rest_port_mime_hi =
 		| 'text' | 'application' | 'font'
 		| 'audio' | 'video' | 'image' | 'model'
 	
-	export type $mol_rest_port_mime = `${ $mol_rest_port_mime_hi }/${ string }`
+	type $mol_rest_port_mime = `${ $mol_rest_port_mime_hi }/${ string }`
 	
-	export class $mol_rest_port extends $mol_object {
+	class $mol_rest_port extends $mol_object {
 		
 		send_code( code: $mol_rest_code ) {}
 		send_type( mime: $mol_rest_port_mime ) {}
@@ -62,4 +62,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_rest_port_mime_hi,$mol_rest_port_mime,$mol_rest_port}

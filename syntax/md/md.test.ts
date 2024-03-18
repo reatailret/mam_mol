@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'only text'() {
@@ -60,4 +60,6 @@ namespace $ {
 		}
 		
 	})
-}
+
+
+ export {}

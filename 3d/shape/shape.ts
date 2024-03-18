@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_3d_shape extends $mol_object {
+	class $mol_3d_shape extends $mol_object {
 		
 		@ $mol_memo.method
 		geometry() {
@@ -18,7 +18,7 @@ namespace $ {
 		
 	}
 	
-	export class $mol_3d_shape_triangle extends $mol_3d_shape {
+	class $mol_3d_shape_triangle extends $mol_3d_shape {
 		
 		@ $mol_memo.method
 		geometry() {
@@ -40,7 +40,7 @@ namespace $ {
 		
 	}
 	
-	export class $mol_3d_shape_square extends $mol_3d_shape {
+	class $mol_3d_shape_square extends $mol_3d_shape {
 		
 		@ $mol_memo.method
 		geometry() {
@@ -64,4 +64,5 @@ namespace $ {
 		
 	}
 	
-}
+
+ export {$mol_3d_shape,$mol_3d_shape_triangle,$mol_3d_shape_square}

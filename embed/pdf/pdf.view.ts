@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_embed_pdf extends $.$mol_embed_pdf {
+	class $mol_embed_pdf extends $.$mol_embed_pdf {
 		
 		@ $mol_mem
 		document( doc? : any , force? : $mol_mem_force ) : any {
@@ -21,7 +21,7 @@ namespace $.$$ {
 		
 	}
 	
-	export class $mol_embed_pdf_page extends $.$mol_embed_pdf_page {
+	class $mol_embed_pdf_page extends $.$mol_embed_pdf_page {
 		
 		viewport() {
 			return this.page().getViewport( this.scale_over() )
@@ -61,4 +61,6 @@ namespace $.$$ {
 
 	}
 	
-}
+
+
+ //export {$mol_embed_pdf,$mol_embed_pdf_page}

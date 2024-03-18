@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_media extends $mol_object2 {
+	class $mol_media extends $mol_object2 {
 		
 		@ $mol_mem_key
 		static match( query: string, next?: boolean ) {
@@ -15,4 +15,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_media}

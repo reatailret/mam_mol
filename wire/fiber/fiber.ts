@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	const handled = new WeakSet< Promise< unknown > >()
 	
@@ -9,7 +9,7 @@ namespace $ {
 	 * 	^           ^           ^
 	 * 	args_from   pubs_from   subs_from
 	 **/
-	export abstract class $mol_wire_fiber<
+	abstract class $mol_wire_fiber<
 		Host,
 		Args extends readonly unknown[],
 		Result,
@@ -296,4 +296,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_wire_fiber}

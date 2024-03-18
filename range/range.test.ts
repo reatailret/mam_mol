@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test( {
 		
 		'materialization'() {
@@ -80,4 +80,6 @@ namespace $ {
 		} , 
 		
 	} )
-}
+
+
+ export {}

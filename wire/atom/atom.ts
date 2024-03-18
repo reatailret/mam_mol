@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Long-living fiber. */
-	export class $mol_wire_atom<
+	class $mol_wire_atom<
 		Host,
 		Args extends readonly unknown[],
 		Result,
@@ -173,4 +173,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_wire_atom}

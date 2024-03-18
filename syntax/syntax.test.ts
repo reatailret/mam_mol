@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'search numbers'() {
@@ -44,4 +44,6 @@ namespace $ {
 		}
 	
 	})
-}
+
+
+ export {}

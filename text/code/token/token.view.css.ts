@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 
 	const { hsla } = $mol_style_func
 	
@@ -67,4 +67,6 @@ namespace $.$$ {
 
 	} )
 
-}
+
+
+ export {}

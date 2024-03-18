@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Reqursive converts intersection of records to record of intersections
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// { a : { x : 1 , y : 2 } }
 	 * 	$mol_type_merge< { a : { x : 1 } }&{ a : { y : 2 } } >
 	 */
-	export type $mol_type_merge< Intersection > =
+	type $mol_type_merge< Intersection > =
 	
 		Intersection extends (...a:any[])=> any
 		? Intersection
@@ -31,8 +31,10 @@ namespace $ {
 	 * 	// { a: 1, b: 2 }
 	 * 	$mol_type_merge< { a: 1 } & { b: 2 } >
 	 */
-	export type $mol_type_merge_object< Intersection > = {
+	type $mol_type_merge_object< Intersection > = {
 		[ Key in keyof Intersection ]: Intersection[ Key ]
 	}
 	
-}
+
+
+ export {type $mol_type_merge,type $mol_type_merge_object}

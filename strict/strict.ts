@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	// Prevent implicit cast objects to primitive (except boolean).
 	Object.prototype[ Symbol.toPrimitive ] = function() {
@@ -13,7 +13,7 @@ namespace $ {
 	// Prevent return undefined for fields which isn't defined.
 	// Works for every classes derived from Object but not for Object (including all literals).
 	
-	export let $mol_strict_object = new Proxy( {}, {
+	let $mol_strict_object = new Proxy( {}, {
 		get( obj: object, field: PropertyKey, proxy: object ) {
 			const name = JSON.stringify( String( field ) )
 			return $.$mol_fail(
@@ -48,4 +48,6 @@ namespace $ {
 	// Fix arrays concatenation
 	Array.prototype[ Symbol.isConcatSpreadable ] = true
 	
-}
+
+
+ export {$mol_strict_object}

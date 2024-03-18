@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Wrap & unwrap'() {
@@ -62,4 +62,5 @@ namespace $ {
 		},
 		
 	})
-}
+
+ export {}

@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type Attrs< View extends $mol_view , Config, Attrs = ReturnType< View['attr'] > > = {
 		[ name in keyof Attrs ]?: {
@@ -18,7 +18,7 @@ namespace $ {
 	| $mol_type_keys_extract< View, ()=> $mol_view >
 	| `$${string}`
 
-	export type $mol_style_guard< View extends $mol_view , Config > =
+	type $mol_style_guard< View extends $mol_view , Config > =
 	& { [ key in Keys< View > ]?: unknown }
 	& $mol_style_properties
 	& {
@@ -62,4 +62,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {type $mol_style_guard}

@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_dom_render_fields (
+	function $mol_dom_render_fields (
 		el : Element ,
 		fields : { [ key : string ] : any }
 	) {
@@ -14,4 +14,6 @@ namespace $ {
 		}
 	}
 
-}
+
+
+ export {$mol_dom_render_fields}

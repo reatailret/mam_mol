@@ -1,11 +1,11 @@
-namespace $ {
+
 	
 	let error : any
 	let result : any
 	let handler : ()=> any
 	
 	/// Debugger will stop at exceptions but exception will be returned normally
-	export function $mol_try< Result >( handler2 : ()=> Result ) : Result|Error {
+	function $mol_try< Result >( handler2 : ()=> Result ) : Result|Error {
 		
 		handler = handler2
 		error = undefined
@@ -30,4 +30,6 @@ namespace $ {
 		error = event.error
 	} , true )
 	
-} 
+ 
+
+ export {$mol_try}

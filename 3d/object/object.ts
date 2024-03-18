@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_3d_object extends $mol_object {
+	class $mol_3d_object extends $mol_object {
 		
 		@ $mol_memo.method
 		shape() {
@@ -19,4 +19,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_3d_object}

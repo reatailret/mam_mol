@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_audio_gain extends $mol_audio_node {
+	class $mol_audio_gain extends $mol_audio_node {
 		
 		@ $mol_mem
 		override node_raw() { return this.context().createGain() }
@@ -17,4 +17,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_audio_gain}

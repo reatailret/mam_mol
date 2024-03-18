@@ -1,16 +1,16 @@
-namespace $ {
 
-	export type $mol_view_content = $mol_view|Node|string|number|boolean
+
+	type $mol_view_content = $mol_view|Node|string|number|boolean
 	
-	export function $mol_view_visible_width() {
+	function $mol_view_visible_width() {
 		return $mol_window.size().width
 	}
 	
-	export function $mol_view_visible_height() {
+	function $mol_view_visible_height() {
 		return $mol_window.size().height
 	}
 	
-	export function $mol_view_state_key( suffix : string ) {
+	function $mol_view_state_key( suffix : string ) {
 		return suffix
 	}
 	
@@ -21,7 +21,7 @@ namespace $ {
 	 * @see https://mol.hyoo.ru/#!section=docs/=vv2nig_s5zr0f
 	 */
 	/// Reactive statefull lazy ViewModel
-	export class $mol_view extends $mol_object {
+	class $mol_view extends $mol_object {
 		
 		@ $mol_mem_key
 		static Root< This extends typeof $mol_view >( this : This , id: number ) {
@@ -163,7 +163,7 @@ namespace $ {
 
 		@ $mol_memo.method
 		dom_id() {
-			return this.toString().replace( /</g, '(' ).replace( />/g, ')' )
+			return this.toString().replace( /</g, '(' ).replace( />/g, ')' ).replaceAll( /"/g, "'" )
 		}
 	
 		dom_node_external( next?: Element) {
@@ -516,6 +516,8 @@ namespace $ {
 		}
 	}
 
-	export type $mol_view_all = $mol_type_pick< $ , typeof $mol_view >
+	type $mol_view_all = $mol_type_pick< $ , typeof $mol_view >
 
-}
+
+
+ export {type $mol_view_content,$mol_view_visible_width,$mol_view_visible_height,$mol_view_state_key,$mol_view,type $mol_view_all}

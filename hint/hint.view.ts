@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_hint extends $.$mol_hint {
+
+	class $mol_hint extends $.$mol_hint {
 		
 		
 		@ $mol_mem
@@ -66,4 +66,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_hint}

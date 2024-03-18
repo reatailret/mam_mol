@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	export interface $mol_github_user_json extends $mol_github_entity_json {
 		login : string
@@ -17,7 +17,7 @@ namespace $ {
 		site_admin : false
 	}
 
-	export class $mol_github_user extends $mol_github_entity< $mol_github_user_json > {
+	class $mol_github_user extends $mol_github_entity< $mol_github_user_json > {
 		
 		@ $mol_mem
 		name() {
@@ -30,4 +30,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_github_user}

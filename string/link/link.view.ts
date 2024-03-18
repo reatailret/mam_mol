@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_string_link extends $.$mol_string_link {
+
+	class $mol_string_link extends $.$mol_string_link {
 		
 		@ $mol_mem
 		sub() {
@@ -7,4 +7,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_string_link}

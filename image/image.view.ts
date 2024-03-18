@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_image extends $.$mol_image {
+
+	class $mol_image extends $.$mol_image {
 		
 		@ $mol_mem
 		natural_width( next?: null ) {
@@ -29,4 +29,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_image}

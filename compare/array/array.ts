@@ -1,5 +1,5 @@
-namespace $ {
-    export function $mol_compare_array<Value extends ArrayLike<unknown>>(a: Value, b: Value): boolean {
+
+    function $mol_compare_array<Value extends ArrayLike<unknown>>(a: Value, b: Value): boolean {
 		if (a === b) return true
 		if (Object.getPrototypeOf(a) !== Object.getPrototypeOf(b)) return false
 		if (a.length !== b.length) return false
@@ -9,4 +9,6 @@ namespace $ {
 
 		return true
 	}
-}
+
+
+ export {$mol_compare_array}

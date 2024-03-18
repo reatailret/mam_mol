@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_video_player_demo extends $.$mol_video_player_demo {
+
+	class $mol_video_player_demo extends $.$mol_video_player_demo {
 		
 		uri() {
 			
@@ -11,4 +11,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_video_player_demo}

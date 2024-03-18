@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_video_camera extends $.$mol_video_camera {
+
+	class $mol_video_camera extends $.$mol_video_camera {
 		
 		@ $mol_mem
 		stream_raw() {
@@ -60,4 +60,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_video_camera}

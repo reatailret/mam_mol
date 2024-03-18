@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Special'() {
@@ -53,4 +53,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

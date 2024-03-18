@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/** @FIXME Need polyfill for Safari and Node (https://github.com/microsoft/MSR-JavaScript-Crypto/) */
 	const algorithm = {
@@ -31,7 +31,7 @@ namespace $ {
 	}
 	
 	/** Asymmetric signing public key wrapper with shortest payload */
-	export class $mol_crypto_auditor_public extends Object {
+	class $mol_crypto_auditor_public extends Object {
 		
 		/** Key size in bytes. */
 		static size_str = 86
@@ -96,7 +96,7 @@ namespace $ {
 	}
 	
 	/** Asymmetric signing private key wrapper with shortest payload */
-	export class $mol_crypto_auditor_private extends Object {
+	class $mol_crypto_auditor_private extends Object {
 		
 		/** Key size in bytes. */
 		static size_str = 129
@@ -170,10 +170,12 @@ namespace $ {
 	}
 	
 	/** Sign size in bytes. */
-	export const $mol_crypto_auditor_sign_size = 64
+	const $mol_crypto_auditor_sign_size = 64
 	
-	export function $mol_crypto_auditor_private_to_public( serial: string ) {
+	function $mol_crypto_auditor_private_to_public( serial: string ) {
 		return serial.slice( 0, 86 )
 	}
 	
-}
+
+
+ export {$mol_crypto_auditor_public,$mol_crypto_auditor_private,$mol_crypto_auditor_sign_size,$mol_crypto_auditor_private_to_public}

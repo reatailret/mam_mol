@@ -1,5 +1,5 @@
-namespace $ {
-    export class $mol_bus< Data > extends $mol_object {
+
+    class $mol_bus< Data > extends $mol_object {
 		
         readonly channel: BroadcastChannel
 		
@@ -22,4 +22,6 @@ namespace $ {
 		}
 		
     }
-}
+
+
+ export {$mol_bus}

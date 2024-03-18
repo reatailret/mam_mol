@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_test_mocks.push( $ => {
 		$.$mol_story_current = new $mol_story
@@ -108,4 +108,6 @@ namespace $ {
 		} ,	
 		
 	})
-}
+
+
+ export {}

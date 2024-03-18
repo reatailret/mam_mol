@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 
 	const { rem , vh , per } = $mol_style_unit
 
@@ -64,4 +64,6 @@ namespace $.$$ {
 		
 	} )
 
-}
+
+
+ export {}

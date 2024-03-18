@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Convert a pseudo-synchronous (Suspense API) API to an explicit asynchronous one (for integrating with external systems). */
-	export function $mol_wire_async< Host extends object >( obj: Host ) {
+	function $mol_wire_async< Host extends object >( obj: Host ) {
 		
 		let fiber: $mol_wire_fiber< any, any, any >
 		const temp = $mol_wire_task.getter( obj as ( ... args: any[] )=> any )
@@ -46,4 +46,6 @@ namespace $ {
 		Some extends (...args: any) => unknown ? FunctionResultPromisify<Some> : {}
 	) & ( Some extends Object ? MethodsResultPromisify<Some> : Some )
 
-}
+
+
+ export {$mol_wire_async}

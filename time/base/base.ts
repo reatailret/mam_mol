@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_time_base {
+
+	class $mol_time_base {
 
 		static patterns = {} as Record< string , ( arg : any )=> string >
 
@@ -36,4 +36,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_time_base}

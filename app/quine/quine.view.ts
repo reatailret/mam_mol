@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_app_quine extends $.$mol_app_quine {
+	class $mol_app_quine extends $.$mol_app_quine {
 		
 		content() {
 			const paths = this.paths()
@@ -20,4 +20,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_app_quine}

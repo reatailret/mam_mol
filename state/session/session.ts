@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_state_session< Value > extends $mol_object {
+	class $mol_state_session< Value > extends $mol_object {
 		
 		static 'native()' : Pick< Storage , 'getItem'|'setItem'|'removeItem' >
 		static native() {
@@ -49,4 +49,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_state_session}

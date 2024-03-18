@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Logger event data */
-	export type $mol_log3_event< Fields > = {
+	type $mol_log3_event< Fields > = {
 		[ key in string ] : unknown
 	} & {
 		
@@ -17,31 +17,31 @@ namespace $ {
 	} & Fields
 
 	/** Logger function */
-	export type $mol_log3_logger< Fields , Res = void > = (
+	type $mol_log3_logger< Fields , Res = void > = (
 		this : $ ,
 		event : $mol_log3_event< Fields > ,
 	)=> Res
 
 	/** Log begin of some task */
-	export declare let $mol_log3_come : $mol_log3_logger<{}>
+	let $mol_log3_come : $mol_log3_logger<{}>
 	
 	/** Log end of some task */
-	export declare let $mol_log3_done : $mol_log3_logger<{}>
+	let $mol_log3_done : $mol_log3_logger<{}>
 	
 	/** Log error */
-	export declare let $mol_log3_fail : $mol_log3_logger<{}>
+	let $mol_log3_fail : $mol_log3_logger<{}>
 	
 	/** Log warning message */
-	export declare let $mol_log3_warn : $mol_log3_logger<{ hint : string }>
+	let $mol_log3_warn : $mol_log3_logger<{ hint : string }>
 	
 	/** Log some generic event */
-	export declare let $mol_log3_rise : $mol_log3_logger<{}>
+	let $mol_log3_rise : $mol_log3_logger<{}>
 
 	/** Log begin of log group, returns func to close group */
-	export declare let $mol_log3_area : $mol_log3_logger< {} , ()=> void >
+	let $mol_log3_area : $mol_log3_logger< {} , ()=> void >
 
 	/** Log begin of collapsed group only when some logged inside, returns func to close group */
-	export function $mol_log3_area_lazy(
+	function $mol_log3_area_lazy(
 		this : $ ,
 		event : $mol_log3_event<{}> ,
 	) {
@@ -64,6 +64,8 @@ namespace $ {
 
 	}
 
-	export let $mol_log3_stack = [] as ( ()=> void )[]
+	let $mol_log3_stack = [] as ( ()=> void )[]
 
-}
+
+
+ export {type $mol_log3_event,type $mol_log3_logger,$mol_log3_area_lazy,$mol_log3_stack,$mol_log3_come,$mol_log3_done,$mol_log3_fail,$mol_log3_warn,$mol_log3_rise,$mol_log3_area}

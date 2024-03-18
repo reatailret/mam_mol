@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_notify {
+	class $mol_notify {
 		
 		@ $mol_mem
 		static allowed( next?: boolean ) {
@@ -17,4 +17,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_notify}

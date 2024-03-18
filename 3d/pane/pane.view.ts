@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_3d_pane extends $.$mol_3d_pane {
+
+	class $mol_3d_pane extends $.$mol_3d_pane {
 
 		@ $mol_mem
 		context() {
@@ -56,4 +56,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_3d_pane}

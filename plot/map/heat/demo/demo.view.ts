@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_plot_map_heat_demo extends $.$mol_plot_map_heat_demo {
+	class $mol_plot_map_heat_demo extends $.$mol_plot_map_heat_demo {
 		
 		@ $mol_mem
 		terrain_x() {
@@ -32,4 +32,6 @@ namespace $.$$ {
 
 	}
 	
-}
+
+
+ //export {$mol_plot_map_heat_demo}

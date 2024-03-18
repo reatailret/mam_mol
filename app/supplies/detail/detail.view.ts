@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_app_supplies_detail extends $.$mol_app_supplies_detail {
+
+	class $mol_app_supplies_detail extends $.$mol_app_supplies_detail {
 		
 		supply() {
 			return null as unknown as $mol_app_supplies_domain_supply
@@ -91,4 +91,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_app_supplies_detail}

@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Capitalize type keys.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// { Foo: 1; Bar: 2 }
 	 * 	$mol_type_case_capital_keys< { foo: 1; bar: 2 } >
 	 */
-	export type $mol_type_case_capital_keys< Type > =
+	type $mol_type_case_capital_keys< Type > =
 		{
 			[
 				Key in keyof Type
@@ -21,10 +21,12 @@ namespace $ {
 	 * 	// { foo: 'Bar' }
 	 * 	$mol_type_case_capital_values< { foo: 'bar' } >
 	 */
-	export type $mol_type_case_capital_values< Type > =
+	type $mol_type_case_capital_values< Type > =
 		{
 			[ Key in keyof Type ]:
 				Capitalize< Extract< Type[ Key ], string > >
 		}
 
-}
+
+
+ export {$mol_type_case_capital_keys,$mol_type_case_capital_values}

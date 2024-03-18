@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_svg_image extends $.$mol_svg_image {
+	class $mol_svg_image extends $.$mol_svg_image {
 		
 		pos_x() {
 			return this.pos()[ 0 ]
@@ -20,4 +20,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_svg_image}

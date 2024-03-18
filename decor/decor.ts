@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_decor< Value > {
+
+	class $mol_decor< Value > {
 		
 		constructor(
 			readonly value : Value
@@ -16,4 +16,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_decor}

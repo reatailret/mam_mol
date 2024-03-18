@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Starts subtasks concurrently instead of serial. */
-	export function $mol_wire_race<
+	function $mol_wire_race<
 		Tasks extends ( ( ... args: any )=> any )[]
 	>( ... tasks: Tasks ): {
 		[ index in keyof Tasks ]: ReturnType< Tasks[ index ] > 
@@ -26,4 +26,6 @@ namespace $ {
 		return results as any
 	}
 	
-}
+
+
+ export {$mol_wire_race}

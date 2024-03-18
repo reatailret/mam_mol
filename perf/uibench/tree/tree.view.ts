@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_perf_uibench_tree extends $.$mol_perf_uibench_tree {
+
+	class $mol_perf_uibench_tree extends $.$mol_perf_uibench_tree {
 
 		state() {
 			return { root : null as any }
@@ -12,7 +12,7 @@ namespace $.$$ {
 		
 	}
 
-	export class $mol_perf_uibench_tree_branch extends $.$mol_perf_uibench_tree_branch {
+	class $mol_perf_uibench_tree_branch extends $.$mol_perf_uibench_tree_branch {
 
 		state() {
 			return { children : [] as any[] }
@@ -37,4 +37,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_perf_uibench_tree,$mol_perf_uibench_tree_branch}

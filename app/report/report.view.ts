@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export type $mol_app_report_formatCol =
+	type $mol_app_report_formatCol =
 	| {
 		title : string
 	}
@@ -19,7 +19,7 @@ namespace $.$$ {
 		sub? : $mol_app_report_formatRow[]
 	}
 	
-	export type $mol_app_report_scheme =
+	type $mol_app_report_scheme =
 	| {
 		type : 'number'
 		mask : string
@@ -30,7 +30,7 @@ namespace $.$$ {
 		options : { [ name : string ] : string }
 	}
 	
-	export class $mol_app_report extends $.$mol_app_report {
+	class $mol_app_report extends $.$mol_app_report {
 		
 		formatCols() : $mol_app_report_formatCol[] {
 			return [
@@ -318,4 +318,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_app_report_formatCol,$mol_app_report_scheme,$mol_app_report}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	// https://webassembly.github.io/spec/core/binary/modules.html#binary-section
 	export enum $mol_wasm_bin_section {
@@ -226,4 +226,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {}

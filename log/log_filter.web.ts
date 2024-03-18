@@ -1,8 +1,8 @@
-namespace $ {
+
 	
 	let filter = undefined as undefined | null | string
 
-	export var $mol_log_filter = function $mol_log_filter( next? : null | string ) {
+	var $mol_log_filter = function $mol_log_filter( next? : null | string ) {
 
 		if( next !== undefined ) {
 			if( next == null ) {
@@ -23,4 +23,6 @@ namespace $ {
 
 	if( $mol_log_filter() == null ) console.info( 'Use $mol_log_filter( needle : string|null ) to toggle logs' )
 	
-}
+
+
+ export {$mol_log_filter}

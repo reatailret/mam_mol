@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_app_supplies extends $.$mol_app_supplies {
+
+	class $mol_app_supplies extends $.$mol_app_supplies {
 		
 		entered( next? : boolean ) {
 			if( $mol_state_arg.value( `entered` ) != null ) return true
@@ -39,4 +39,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_app_supplies}

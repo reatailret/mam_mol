@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type primitives = $mol_type_assert<
 		$mol_type_merge< number > ,
@@ -30,4 +30,6 @@ namespace $ {
 		{ a: Set<1>, b: History }
 	>
 
-}
+
+
+ export {}

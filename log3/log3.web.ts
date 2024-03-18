@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_log3_web_make(
+
+	function $mol_log3_web_make(
 		level : $mol_type_keys_extract< Console, Function >,
 		color : string,
 	) {
@@ -38,4 +38,6 @@ namespace $ {
 	$.$mol_log3_rise = $mol_log3_web_make( 'log' , 'magenta' )
 	$.$mol_log3_area = $mol_log3_web_make( 'group' , 'cyan' )
 
-}
+
+
+ export {$mol_log3_web_make}

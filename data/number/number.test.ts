@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'Is number' () {
@@ -18,4 +18,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

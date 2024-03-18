@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Ignore changes inside decorated action.
 	 * Usefull inside $mol_story_tell.
 	 */
-	export class $mol_story_skip extends $mol_wrapper {
+	class $mol_story_skip extends $mol_wrapper {
 
 		static override wrap<
 			This ,
@@ -31,4 +31,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_story_skip}

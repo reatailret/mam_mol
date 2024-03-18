@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_row_demo_products extends $.$mol_row_demo_products {
+
+	class $mol_row_demo_products extends $.$mol_row_demo_products {
 		products() {
 			return $mol_range2(id => this.Product(id), () => this.count())
 		}
@@ -9,4 +9,6 @@ namespace $.$$ {
 			return $mol_stub_product_name()
 		}
 	}
-}
+
+
+ //export {$mol_row_demo_products}

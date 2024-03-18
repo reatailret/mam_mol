@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Checks for instance of given class and returns narrowed type.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_data_instance_demo
 	 */
-	export function $mol_data_instance< Instance extends new ( ... args : any[] )=> any >( Instance : Instance ) {
+	function $mol_data_instance< Instance extends new ( ... args : any[] )=> any >( Instance : Instance ) {
 
 		return $mol_data_setup( ( val : InstanceType< Instance > ) => {
 
@@ -16,4 +16,6 @@ namespace $ {
 
 	}
 					
-}
+
+
+ export {$mol_data_instance}

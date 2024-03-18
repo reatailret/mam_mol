@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Button Share title() and uri() to other app
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_button_share_demo
 	 */
-	export class $mol_button_share extends $.$mol_button_share {
+	class $mol_button_share extends $.$mol_button_share {
 		
 		capture() {
 			return this.$.$mol_dom_context.document.body as any
@@ -34,4 +34,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_button_share}

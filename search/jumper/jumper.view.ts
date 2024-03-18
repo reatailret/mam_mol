@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_search_jumper extends $.$mol_search_jumper {
+
+	class $mol_search_jumper extends $.$mol_search_jumper {
 
 		@ $mol_mem
 		results() {
@@ -53,4 +53,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_search_jumper}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_array_chunks< Item >(
+
+	function $mol_array_chunks< Item >(
 		array : Item[],
 		br: ( item: Item, index: number )=> boolean,
 	) {
@@ -24,4 +24,6 @@ namespace $ {
 		return chunks
 	}
 
-}
+
+
+ export {$mol_array_chunks}

@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Plugin for touch gestures.
 	 * @see [mol_plugin](../plugin/readme.md)
 	 */
-	export class $mol_touch extends $.$mol_touch {
+	class $mol_touch extends $.$mol_touch {
 		
 		auto() {
 			this.pointer_events()
@@ -329,4 +329,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_touch}

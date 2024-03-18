@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * An input field for entering multiline text.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_textarea_demo
 	 */
-	export class $mol_textarea extends $.$mol_textarea {
+	class $mol_textarea extends $.$mol_textarea {
 
 		indent_inc() {
 
@@ -109,4 +109,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_textarea}

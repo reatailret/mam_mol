@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_rest_port_webrtc extends $mol_rest_port {
+	class $mol_rest_port_webrtc extends $mol_rest_port {
 		
 		channel!: InstanceType< typeof import( 'node-datachannel/polyfill' ).RTCDataChannel >
 		
@@ -18,4 +18,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_rest_port_webrtc}

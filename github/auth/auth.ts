@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_github_auth extends $mol_object {
+
+	class $mol_github_auth extends $mol_object {
 
 		static id() { return '07c88ba2782884016182' }
 
@@ -100,4 +100,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_github_auth}

@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_app_questions extends $.$mol_app_questions {
+
+	class $mol_app_questions extends $.$mol_app_questions {
 		
 		pages() {
 			const question = this.question_cur_id()
@@ -119,4 +119,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_app_questions}

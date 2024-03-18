@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export let $mol_report_bugsnag = ''
+	let $mol_report_bugsnag = ''
 	
 	globalThis.onerror = function( msg, url, line, col, err ) {
 		
@@ -66,4 +66,6 @@ namespace $ {
 		error.apply( console, args )
 	}
 	
-}
+
+
+ export {$mol_report_bugsnag}

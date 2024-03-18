@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_store_local_class extends $mol_store< Record< string , any > > {
+
+	class $mol_store_local_class extends $mol_store< Record< string , any > > {
 
 		@ $mol_mem
 		native() {
@@ -49,6 +49,8 @@ namespace $ {
 
 	}
 
-	export let $mol_store_local : $mol_store< Record< string , any > > = new $mol_store_local_class
+	let $mol_store_local : $mol_store< Record< string , any > > = new $mol_store_local_class
 
-}
+
+
+ export {$mol_store_local_class,$mol_store_local}

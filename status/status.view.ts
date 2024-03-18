@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_status extends $.$mol_status {
+	class $mol_status extends $.$mol_status {
 		
 		message() {
 			try {
@@ -13,4 +13,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_status}

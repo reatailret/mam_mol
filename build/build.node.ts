@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_build_start(
+	function $mol_build_start(
 		this: $,
 		paths : string[],
 	) {
@@ -29,7 +29,7 @@ namespace $ {
 	
 	setTimeout( ()=> $mol_wire_async( $mol_ambient({}) ).$mol_build_start( process.argv.slice( 2 ) ) )
 
-	export class $mol_build extends $mol_object {
+	class $mol_build extends $mol_object {
 		
 		@ $mol_mem_key
 		static root( path : string ) {
@@ -118,7 +118,7 @@ namespace $ {
 						
 			const id = file.relate( this.root() )
 			const styles = file.text()
-			const code = 'namespace $ { $'+`mol_style_attach( ${ JSON.stringify( id ) },\n ${ JSON.stringify( styles ) }\n) }`
+			const code =  $'+`mol_style_attach( ${ JSON.stringify( id ) },\n ${ JSON.stringify( styles ) }\n) }`
 			script.text( code )
 			
 			return [ script ]
@@ -591,6 +591,21 @@ namespace $ {
 					return {}
 			}
 		}
+
+		@ $mol_mem
+		gitVersion() {
+			return this.$.$mol_exec('.', 'git', 'version').stdout?.toString().trim().match(/.*\s+([\d\.]+)$/)?.[1] ?? ''
+		}
+
+		gitDeepenSupported() {
+			return $mol_compare_text()(this.gitVersion(), '2.42.0') >= 0
+		}
+
+		gitPull(path: string) {
+			const args = [ 'pull' ]
+			if (this.gitDeepenSupported()) args.push('--deepen=1')
+			return this.$.$mol_exec( path , 'git', ...args)
+		}
 		
 		@ $mol_mem_key
 		modEnsure( path : string ) {
@@ -612,9 +627,8 @@ namespace $ {
 					if( mod.type() !== 'dir' ) return false
 					
 					const git_dir = mod.resolve( '.git' )
-					if( git_dir.exists() ) {
-						
-						this.$.$mol_exec( mod.path() , 'git' , 'pull', '--depth=1' )
+					if( git_dir.exists() && git_dir.type() === 'dir') {
+						this.gitPull( mod.path() )
 						// mod.reset()
 						// for ( const sub of mod.sub() ) sub.reset()
 						
@@ -632,7 +646,7 @@ namespace $ {
 							: matched[1]
 						
 						this.$.$mol_exec( mod.path() , 'git' , 'remote' , 'add' , '--track' , head_branch_name! , 'origin' , repo.text() )
-						this.$.$mol_exec( mod.path() , 'git' , 'pull', '--deepen=1' )
+						this.gitPull( mod.path() )
 						mod.reset()
 						for ( const sub of mod.sub() ) {
 							sub.reset()
@@ -966,7 +980,7 @@ namespace $ {
 					}
 				}
 			)
-			if( errors.length ) $mol_fail_hidden( new $mol_error_mix( `Build fail ${path}`, ... errors ) )
+			if( errors.length ) $mol_fail_hidden( new $mol_error_mix( `Build fail ${path}`, null, ... errors ) )
 
 			var targetJSMap = pack.resolve( `-/${bundle}.js.map` )
 	
@@ -1021,7 +1035,7 @@ namespace $ {
 			this.logBundle( target , Date.now() - start )
 			
 			if( errors.length ) {
-				const error = new $mol_error_mix( `Build fail ${path}`, ... errors )
+				const error = new $mol_error_mix( `Build fail ${path}`, null, ... errors )
 				target.text( `console.error(${ JSON.stringify( error ) })` )
 				$mol_fail_hidden( error )
 			}
@@ -1077,7 +1091,7 @@ namespace $ {
 			
 			this.logBundle( target , Date.now() - start )
 			
-			if( errors.length ) $mol_fail_hidden( new $mol_error_mix( `Build fail ${path}`, ... errors ) )
+			if( errors.length ) $mol_fail_hidden( new $mol_error_mix( `Build fail ${path}`, null, ... errors ) )
 
 			if( bundle === 'node' ) {
 				this.$.$mol_exec( this.root().path() , 'node' , '--enable-source-maps', '--trace-uncaught', target.relate( this.root() ) )
@@ -1766,6 +1780,8 @@ namespace $ {
 		return {
 			[`/${ source.parent().relate() }/-view.tree/${ source.name() }.js`]: 0,
 		}
-	}
 	
-}
+	
+
+
+ export {$mol_build_start,$mol_build}

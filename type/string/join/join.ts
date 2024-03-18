@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Join strings with `Separator`.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// 'foo%bar%wee'
 	 * 	$mol_type_string_join< [ 'foo', 'bar', 'wee' ], '%' >
 	 */
-	export type $mol_type_string_join<
+	type $mol_type_string_join<
 		Parts extends Array< string >,
 		Separator extends string
 	> =
@@ -27,4 +27,6 @@ namespace $ {
 						Separator
 					>
 
-}
+
+
+ export {$mol_type_string_join}

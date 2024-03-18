@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_bind_having<
+
+	function $mol_bind_having<
 		Values extends string ,
 		Mapping extends Record< string , Values > ,
 		Keys extends keyof Mapping
@@ -37,4 +37,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_bind_having}

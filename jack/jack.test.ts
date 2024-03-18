@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'test'( $ ) {
@@ -146,4 +146,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export type $mol_time_duration_config = number | string | {
+
+	type $mol_time_duration_config = number | string | {
 		year? : number
 		month? : number
 		day? : number
@@ -15,7 +15,7 @@ namespace $ {
 	 * Immutable iso8601 time duration representation.
 	 * @see http://localhost:9080/mol/app/docs/-/test.html#!demo=mol_time_demo
 	 */
-	export class $mol_time_duration extends $mol_time_base {
+	class $mol_time_duration extends $mol_time_base {
 
 		constructor( config : $mol_time_duration_config = 0 ) {
 			
@@ -163,4 +163,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_time_duration_config,$mol_time_duration}

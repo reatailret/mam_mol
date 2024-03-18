@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_data_setup<
+
+	function $mol_data_setup<
 		Value extends $mol_data_value ,
 		Config = never
 	>(
@@ -15,4 +15,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_data_setup}

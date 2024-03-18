@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_infinite_demo extends $.$mol_infinite_demo {
+	class $mol_infinite_demo extends $.$mol_infinite_demo {
 		
 		// @ $mol_mem_key
 		// before( anchor_id: number | null ) {
@@ -38,4 +38,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_infinite_demo}

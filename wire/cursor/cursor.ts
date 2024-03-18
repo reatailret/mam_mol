@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Special status statuses. */
-	export enum $mol_wire_cursor {
+	enum $mol_wire_cursor {
 		
 		/** Update required. */
 		stale = -1,
@@ -17,4 +17,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_wire_cursor}

@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_array_groups<
+	function $mol_array_groups<
 		Item,
 		Groups extends string,
 	>(
@@ -15,4 +15,6 @@ namespace $ {
 		return res as $mol_type_immutable_deep< typeof res >
 	}
 	
-}
+
+
+ export {$mol_array_groups}

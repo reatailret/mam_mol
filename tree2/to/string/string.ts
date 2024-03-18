@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Serializes tree to string in tree format. */
-	export function $mol_tree2_to_string(
+	function $mol_tree2_to_string(
 		this: $,
 		tree: $mol_tree2,
 	) : string {
@@ -47,4 +47,6 @@ namespace $ {
 		return output.join('')
 	}
 		
-}
+
+
+ export {$mol_tree2_to_string}

@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** State of time moment */
-	export class $mol_state_time extends $mol_object {
+	class $mol_state_time extends $mol_object {
 		
 		@ $mol_mem_key
 		static task( precision: number, reset?: null ): $mol_after_timeout | $mol_after_frame {
@@ -22,4 +22,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_state_time}

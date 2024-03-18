@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_wire_graph( root: $mol_wire_pub_sub ) {
+	function $mol_wire_graph( root: $mol_wire_pub_sub ) {
 		
 		const graph = new $mol_graph< $mol_wire_pub, number >()
 		
@@ -28,4 +28,6 @@ namespace $ {
 		return graph
 	}
 	
-}
+
+
+ export {$mol_wire_graph}

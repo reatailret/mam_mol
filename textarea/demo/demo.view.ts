@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_textarea_demo extends $.$mol_textarea_demo {
+
+	class $mol_textarea_demo extends $.$mol_textarea_demo {
 		
 		@ $mol_mem
 		symbols_hint() {
@@ -21,4 +21,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_textarea_demo}

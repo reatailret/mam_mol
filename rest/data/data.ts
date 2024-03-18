@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_rest_data_simplify(
+	function $mol_rest_data_simplify(
 		data: null | string | Uint8Array | object
 	) {
 		
@@ -15,4 +15,6 @@ namespace $ {
 		$mol_fail( new Error( 'Wrong data' ) )
 	}
 	
-}
+
+
+ export {$mol_rest_data_simplify}

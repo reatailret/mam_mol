@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_tree2_from_json( json: any, span = $mol_span.unknown ): $mol_tree2 {
+
+	function $mol_tree2_from_json( json: any, span = $mol_span.unknown ): $mol_tree2 {
 
 		if( typeof json === 'boolean' || typeof json === 'number' || json === null ) {
 			return new $mol_tree2( String( json ) , '' , [] , span )
@@ -59,4 +59,6 @@ namespace $ {
 			
 	}
 
-}
+
+
+ export {$mol_tree2_from_json}

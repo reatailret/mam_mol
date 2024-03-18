@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Allow user to select value from various options and displays current value.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_select_demo_colors
 	 */
-	export class $mol_select extends $.$mol_select {
+	class $mol_select extends $.$mol_select {
 		
 		@ $mol_mem
 		filter_pattern( next? : string ) {
@@ -88,4 +88,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_select}

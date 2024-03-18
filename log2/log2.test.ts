@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_test_mocks.push( $ => {
 		$.$mol_log2 = class extends $mol_log2 {
@@ -6,4 +6,6 @@ namespace $ {
 		}
 	} )
 
-}
+
+
+ export {}

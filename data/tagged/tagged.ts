@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	type $mol_data_tagged_type< Value, Tag extends PropertyKey > = Value & { [ Key in Tag ]: Value }
 	
@@ -12,7 +12,7 @@ namespace $ {
 	 * Checks for given runtype and returns tagged version of returned type.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_data_tagged_demo
 	 */
-	export function $mol_data_tagged<
+	function $mol_data_tagged<
 		Config extends Record< string, $mol_data_value >,
 	>(
 		config: Config
@@ -25,4 +25,6 @@ namespace $ {
 		}
 	}
 
-}
+
+
+ export {$mol_data_tagged}

@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Checks for undefined or passing given runtype.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_data_optional_demo
 	 */
-	export function $mol_data_optional<
+	function $mol_data_optional<
 		Sub extends $mol_data_value,
 		Fallback extends undefined | ( ()=> ReturnType< Sub > )
 	>( 
@@ -25,4 +25,6 @@ namespace $ {
 
 	}
 	
-}
+
+
+ export {$mol_data_optional}

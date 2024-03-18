@@ -1,5 +1,5 @@
-namespace $ {
-	export const $mol_colors = {
+
+	const $mol_colors = {
 		aliceblue : "#f0f8ff" ,
 		antiquewhite : "#faebd7" ,
 		aqua : "#00ffff" ,
@@ -148,4 +148,6 @@ namespace $ {
 		yellow : "#ffff00" ,
 		yellowgreen : "#9acd32" ,
 	} as const
-}
+
+
+ export {$mol_colors}

@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Module for working with terminal. Text coloring when output in terminal */
-	export class $mol_term_color {
+	class $mol_term_color {
 		
 		static reset = this.ansi( 0, 0 )
 		static bold = this.ansi( 1, 22 )
@@ -51,4 +51,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_term_color}

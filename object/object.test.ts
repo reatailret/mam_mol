@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test( {
 		
 		'init with overload'() {
@@ -16,4 +16,6 @@ namespace $ {
 		} ,
 			
 	} )
-}
+
+
+ export {}

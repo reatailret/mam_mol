@@ -1,4 +1,4 @@
-namespace $ {
+
 	function get_parts(str: string) {
 		return $$.$mol_view_tree2_prop_parts($mol_tree2.struct(str))
 	}
@@ -51,4 +51,6 @@ namespace $ {
 			$mol_assert_equal(parts.next, '?')
 		}
 	})
-}
+
+
+ export {}

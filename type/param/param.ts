@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Returns type of function param by index.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// 888
 	 * 	$mol_type_param< ( a : 777 , b : 888 )=> 666 , 1 >
 	 */
-	export type $mol_type_param<
+	type $mol_type_param<
 		Func ,
 		Index extends number
 	> = Func extends ( ... params : infer Params ) => any
@@ -15,4 +15,6 @@ namespace $ {
 			? Params2[ Index ]
 			: never
 
-}
+
+
+ export {$mol_type_param}

@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 
 	const { per , rem } = $mol_style_unit
 	const { calc } = $mol_style_func
@@ -118,4 +118,6 @@ namespace $.$$ {
 
 	} )
 	
-}
+
+
+ export {}

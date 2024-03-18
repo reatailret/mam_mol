@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_print extends $mol_object {
+
+	class $mol_print extends $mol_object {
 
 		@ $mol_mem
 		static before() {
@@ -25,4 +25,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_print}

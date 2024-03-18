@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Machine readable code input. On Cordova displays button to call native scanner.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_code_demo
 	 */
-	export class $mol_code extends $.$mol_code {
+	class $mol_code extends $.$mol_code {
 		
 		scan_support() {
 			return Boolean( $mol_cordova.plugins.barcodeScanner ) 
@@ -30,4 +30,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_code}

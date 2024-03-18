@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	const keywords = new Set([
 		'',
@@ -12,7 +12,7 @@ namespace $ {
 		'.with_delimiter',
 	])
 	
-	export function $mol_tree2_grammar_check( grammar: $mol_tree2 ) {
+	function $mol_tree2_grammar_check( grammar: $mol_tree2 ) {
 
 		function visit( node: $mol_tree2 ) {
 
@@ -33,4 +33,6 @@ namespace $ {
 		return grammar
 	}
 
-}
+
+
+ export {$mol_tree2_grammar_check}

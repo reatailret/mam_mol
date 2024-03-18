@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	type $mol_data_nominal_type< Value, Nominal > = Value | { $mol_data_nominal: Nominal }
 	
@@ -9,7 +9,7 @@ namespace $ {
 	)
 
 	/** @deprecated Use $mol_data_tagged instead */
-	export function $mol_data_nominal<
+	function $mol_data_nominal<
 		Nominal extends string ,
 		Sub extends $mol_data_value ,
 		Value = $mol_data_nominal_type<ReturnType< Sub >, Nominal >,
@@ -22,4 +22,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {$mol_data_nominal}

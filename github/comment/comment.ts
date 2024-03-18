@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export interface $mol_github_comment_json extends $mol_github_entity_json {
 		issue_url : string
@@ -7,7 +7,7 @@ namespace $ {
 		body : string
 	}
 
-	export class $mol_github_comment extends $mol_github_entity< $mol_github_comment_json > {
+	class $mol_github_comment extends $mol_github_entity< $mol_github_comment_json > {
 		
 		json_update( patch?: Partial< $mol_github_comment_json > ) {
 			
@@ -30,4 +30,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_github_comment}

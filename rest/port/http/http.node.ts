@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_rest_port_http extends $mol_rest_port {
+	class $mol_rest_port_http extends $mol_rest_port {
 		
 		output!: InstanceType< $node['http']['ServerResponse'] >
 		
@@ -27,4 +27,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_rest_port_http}

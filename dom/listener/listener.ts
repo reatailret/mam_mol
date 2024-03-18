@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_dom_listener extends $mol_object {
+
+	class $mol_dom_listener extends $mol_object {
 
 		constructor(
 			public _node : any ,
@@ -19,4 +19,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_dom_listener}

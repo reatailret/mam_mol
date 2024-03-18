@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_embed_youtube extends $.$mol_embed_youtube {
+
+	class $mol_embed_youtube extends $.$mol_embed_youtube {
 		
 		@ $mol_mem
 		video_embed() {
@@ -26,4 +26,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_embed_youtube}

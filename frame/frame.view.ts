@@ -1,9 +1,9 @@
-namespace $.$$ {
+
 
 	/**
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_frame_demo
 	 */
-	export class $mol_frame extends $.$mol_frame {
+	class $mol_frame extends $.$mol_frame {
 		
 		window() {
 			// if( this.html() ) return ( this.dom_node() as HTMLIFrameElement ).contentWindow!
@@ -24,4 +24,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_frame}

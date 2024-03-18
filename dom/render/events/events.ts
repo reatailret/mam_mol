@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_dom_render_events (
+	function $mol_dom_render_events (
 		el : Element ,
 		events : { [ key : string ] : ( event : Event )=> any },
 		passive = false
@@ -10,4 +10,6 @@ namespace $ {
 		}
 	}
 
-}
+
+
+ export {$mol_dom_render_events}

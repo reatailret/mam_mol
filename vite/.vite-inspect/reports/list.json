@@ -1,0 +1,21 @@
+{
+  "root": "H:/GITHUB/mam/mol/vite",
+  "modules": [
+    {
+      "id": "H:/GITHUB/mam/mol/vite/index.html",
+      "deps": [],
+      "plugins": [
+        {
+          "name": "vite:resolve",
+          "resolveId": 2
+        }
+      ],
+      "virtual": true,
+      "totalTime": 0,
+      "invokeCount": 0,
+      "sourceSize": 0,
+      "distSize": 0
+    }
+  ],
+  "ssrModules": []
+}

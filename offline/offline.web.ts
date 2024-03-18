@@ -1,11 +1,11 @@
-namespace $ {
+
 	
 	const blacklist = new Set([
 		'//cse.google.com/adsense/search/async-ads.js'
 	])
 
 	/** Installs service worker proxy, which caches all requests and respond from cache on http errors. */
-	export function $mol_offline_web() {
+	function $mol_offline_web() {
 		
 		if( typeof window === 'undefined' ) {
 			
@@ -104,4 +104,6 @@ namespace $ {
 
 	$.$mol_offline = $mol_offline_web
 
-}
+
+
+ export {$mol_offline_web}

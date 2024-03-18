@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	if( $mol_dom_context.document ) {
 
@@ -20,4 +20,6 @@ namespace $ {
 	
 	}
 	
-}
+
+
+ export {}

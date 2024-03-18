@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_mark_hor extends $.$mol_plot_mark_hor {
+
+	class $mol_plot_mark_hor extends $.$mol_plot_mark_hor {
 		@ $mol_mem
 		series_x(): readonly number[] {
 			return this.labels().map((val, index) => index)
@@ -82,4 +82,6 @@ namespace $.$$ {
 			return this.title_pos_y()
 		}
 	}
-}
+
+
+ //export {$mol_plot_mark_hor}

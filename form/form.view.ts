@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Form, that contains form fields and action buttons.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_form_demo
 	 */
-	export class $mol_form extends $.$mol_form {
+	class $mol_form extends $.$mol_form {
 		
 		@ $mol_mem
 		form_fields() {
@@ -26,4 +26,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_form}

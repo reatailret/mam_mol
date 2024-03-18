@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 
 	type Primitive = string | number | boolean
 
@@ -30,7 +30,7 @@ namespace $.$$ {
 	/**
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_form_draft_demo
 	 */
-	export class $mol_form_draft extends $.$mol_form_draft {
+	class $mol_form_draft extends $.$mol_form_draft {
 		@ $mol_mem_key
 		override list_string( field: string, next? : readonly string[] | null ) {
 			return this.value( field, next )?.map(norm_string) ?? []
@@ -130,4 +130,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_form_draft}

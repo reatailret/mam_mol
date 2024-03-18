@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'Is null' () {
@@ -19,4 +19,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

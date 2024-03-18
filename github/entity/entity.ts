@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export interface $mol_github_entity_json {
 		url? : string
@@ -8,7 +8,7 @@ namespace $ {
 		updated_at? : string
 	}
 
-	export class $mol_github_entity< Raw extends $mol_github_entity_json > extends $mol_model< Raw > {
+	class $mol_github_entity< Raw extends $mol_github_entity_json > extends $mol_model< Raw > {
 
 		link() {
 			return this.json().html_url
@@ -39,4 +39,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_github_entity}

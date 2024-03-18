@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_gallery_demo extends $.$mol_gallery_demo {
+
+	class $mol_gallery_demo extends $.$mol_gallery_demo {
 		
 		items() {
 			return Array.from(
@@ -14,4 +14,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_gallery_demo}

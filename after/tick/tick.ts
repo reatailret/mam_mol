@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_after_tick extends $mol_object2 {
+
+	class $mol_after_tick extends $mol_object2 {
 
 		promise : any
 		cancelled = false
@@ -21,4 +21,6 @@ namespace $ {
 
 	}
 	
-}
+
+
+ export {$mol_after_tick}

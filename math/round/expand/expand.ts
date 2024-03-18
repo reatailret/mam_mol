@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_math_round_expand( val : number , gap = 1 ) {
+	function $mol_math_round_expand( val : number , gap = 1 ) {
 		if( val === 0 ) return 0
 		
 		const val_abs = Math.abs( val )
@@ -13,4 +13,6 @@ namespace $ {
 		return val_sign * val_expanded
 	}
 	
-}
+
+
+ export {$mol_math_round_expand}

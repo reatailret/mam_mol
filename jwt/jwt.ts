@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	function decode_base64(base64: string): string {
 		return $mol_charset_decode($mol_base64_decode(base64.replace(/-/g, '+').replace(/_/g, '/')))
 	}
 
-	export function $mol_jwt_decode(raw: string) {
+	function $mol_jwt_decode(raw: string) {
 		let line = 'split'
 		try {
 			const [ headers_raw, payload_raw ] = raw.split('.')
@@ -36,4 +36,6 @@ namespace $ {
 			$mol_fail_hidden(e)
 		}
 	}
-}
+
+
+ export {$mol_jwt_decode}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	$mol_test_mocks.push( $ => {
 		class $mol_locale_mock extends $mol_locale {
@@ -15,4 +15,6 @@ namespace $ {
 		$.$mol_locale = $mol_locale_mock
 	} )
 	
-}
+
+
+ export {}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export interface $mol_github_repository_json extends $mol_github_entity_json {
 		name? : string
@@ -69,7 +69,7 @@ namespace $ {
 		subscribers_count? : number
 	}
 
-	export class $mol_github_repository extends $mol_github_entity< $mol_github_repository_json > {
+	class $mol_github_repository extends $mol_github_entity< $mol_github_repository_json > {
 		
 		json_update( patch? : Partial< $mol_github_repository_json > ) {
 			
@@ -97,7 +97,7 @@ namespace $ {
 
 	}
 
-	export class $mol_github_repository_issues extends $mol_model< $mol_github_issue_json[] > {
+	class $mol_github_repository_issues extends $mol_model< $mol_github_issue_json[] > {
 		
 		json_update( patch : $mol_github_issue_json[] ) {
 			
@@ -147,4 +147,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_github_repository,$mol_github_repository_issues}

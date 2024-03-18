@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_after_frame extends $mol_after_timeout {
+
+	class $mol_after_frame extends $mol_after_timeout {
 
 		constructor(
 			public task : ()=> void ,
@@ -10,4 +10,6 @@ namespace $ {
 
 	}
 	
-}
+
+
+ export {$mol_after_frame}

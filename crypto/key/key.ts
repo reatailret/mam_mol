@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	const algorithm = {
 		name: 'ECDSA',
@@ -6,7 +6,7 @@ namespace $ {
 		namedCurve: "P-256",
 	}
 	
-	export class $mol_crypto_key extends $mol_buffer {
+	class $mol_crypto_key extends $mol_buffer {
 		
 		static from< This extends typeof $mol_crypto_key >( this: This, serial: number | string | ArrayBufferView ) {
 			
@@ -35,7 +35,7 @@ namespace $ {
 		
 	}
 	
-	export class $mol_crypto_key_public extends $mol_crypto_key {
+	class $mol_crypto_key_public extends $mol_crypto_key {
 		
 		static size_str = 86
 		static size_bin = 64
@@ -70,7 +70,7 @@ namespace $ {
 		
 	}
 	
-	export class $mol_crypto_key_private extends $mol_crypto_key {
+	class $mol_crypto_key_private extends $mol_crypto_key {
 		
 		static size_str = 129
 		static size_bin = 96
@@ -124,4 +124,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_crypto_key,$mol_crypto_key_public,$mol_crypto_key_private}

@@ -1,9 +1,9 @@
-namespace $ {
+
 
 	declare function requestIdleCallback( task : ()=> void , options? : { timeout : number } ) : any
 	declare function cancelIdleCallback( id : any ) : void
 
-	export class $mol_after_work extends $mol_object2 {
+	class $mol_after_work extends $mol_object2 {
 
 		id : any
 
@@ -25,4 +25,6 @@ namespace $ {
 		$.$mol_after_work = $mol_after_timeout
 	}
 	
-}
+
+
+ export {$mol_after_work}

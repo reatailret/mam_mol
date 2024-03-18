@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Date presenter and picker.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_date_demo
 	 */
-	export class $mol_date extends $.$mol_date {
+	class $mol_date extends $.$mol_date {
 
 		trigger_content() {
 			return [ this.value() || this.Icon() ]
@@ -123,4 +123,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_date}

@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	/**
 	 * Lowercase type keys.
@@ -6,7 +6,7 @@ namespace $ {
 	 * 	// { foo: 'BAR' }
 	 * 	$mol_type_case_lower_keys< { FOO: 'BAR' } >
 	 */
-	export type $mol_type_case_lower_keys< Type > =
+	type $mol_type_case_lower_keys< Type > =
 		{
 			[
 				Key in keyof Type
@@ -21,10 +21,12 @@ namespace $ {
 	 * 	// { FOO: 'bar' }
 	 * 	$mol_type_case_lower_values< { FOO: 'BAR' } >
 	 */
-	export type $mol_type_case_lower_values< Type > =
+	type $mol_type_case_lower_values< Type > =
 		{
 			[ Key in keyof Type ]:
 				Lowercase< Extract< Type[ Key ], string > >
 		}
 
-}
+
+
+ export {$mol_type_case_lower_keys,$mol_type_case_lower_values}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_tree2_js_to_text( this: $, js: $mol_tree2 ) {
+
+	function $mol_tree2_js_to_text( this: $, js: $mol_tree2 ) {
 
 		function sequence( open?: string, separator?: string, close?: string ) {
 			return ( input: $mol_tree2, belt: $mol_tree2_belt< never > )=> [
@@ -69,6 +69,7 @@ namespace $ {
 			'!': sequence( '!' ),
 			'~': sequence( '~' ),
 
+			'export': sequence( 'export ' ),
 			'return': sequence( 'return ' ),
 			'break': sequence( 'break ' ),
 			'continue': sequence( 'continue ' ),
@@ -237,4 +238,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_tree2_js_to_text}

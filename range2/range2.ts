@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Lazy computed lists with native Array interface. $mol_range2_array is mutable but all derived ranges are immutable. */
-	export function $mol_range2< Item = number >(
+	function $mol_range2< Item = number >(
 		item: Item[] | ( ( index : number )=> Item ) = index => index as any ,
 		size = ()=> Number.POSITIVE_INFINITY ,
 	): Item[] {
@@ -60,7 +60,7 @@ namespace $ {
 
 	}
 
-	export class $mol_range2_array< Item > extends Array< Item > {
+	class $mol_range2_array< Item > extends Array< Item > {
 		
 		// Lazy
 		concat( ... tail : Item[][] ) : Item[] {
@@ -191,4 +191,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_range2,$mol_range2_array}

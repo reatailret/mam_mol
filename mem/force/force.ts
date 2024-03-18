@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** @deprecated See docs on $mol_wire_mem **/
-	export class $mol_mem_force extends Object {
+	class $mol_mem_force extends Object {
 		constructor(){ super() }
 		$mol_mem_force = true
 		static $mol_mem_force = true
@@ -9,12 +9,14 @@ namespace $ {
 	}
 	
 	/** @deprecated See docs on $mol_wire_mem **/
-	export class $mol_mem_force_cache extends $mol_mem_force {}
+	class $mol_mem_force_cache extends $mol_mem_force {}
 	
 	/** @deprecated See docs on $mol_wire_mem **/
-	export class $mol_mem_force_update extends $mol_mem_force {}
+	class $mol_mem_force_update extends $mol_mem_force {}
 	
 	/** @deprecated See docs on $mol_wire_mem **/
-	export class $mol_mem_force_fail extends $mol_mem_force_cache {}
+	class $mol_mem_force_fail extends $mol_mem_force_cache {}
 	
-}
+
+
+ export {$mol_mem_force,$mol_mem_force_cache,$mol_mem_force_update,$mol_mem_force_fail}

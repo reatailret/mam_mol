@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Watch one value' ($) {
@@ -143,4 +143,6 @@ namespace $ {
 		},
 
 	})
-}
+
+
+ export {}

@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_calendar_demo_selection extends $.$mol_calendar_demo_selection {
+
+	class $mol_calendar_demo_selection extends $.$mol_calendar_demo_selection {
 
 		@ $mol_mem
 		interval() {
@@ -20,4 +20,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_calendar_demo_selection}

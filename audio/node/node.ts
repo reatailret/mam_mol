@@ -1,5 +1,5 @@
-namespace $ {
-	export class $mol_audio_node extends $mol_object2 {
+
+	class $mol_audio_node extends $mol_object2 {
 		context() { return this.$.$mol_audio_context.context() }
 		
 		@ $mol_mem
@@ -60,4 +60,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_audio_node}

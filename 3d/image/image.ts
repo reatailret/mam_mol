@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_3d_image extends $mol_object {
+	class $mol_3d_image extends $mol_object {
 		
 		uri() {
 			return 'about:blank'
@@ -42,4 +42,5 @@ namespace $ {
 		
 	}
 	
-}
+
+ export {$mol_3d_image}

@@ -1,4 +1,6 @@
-namespace $ {
+
 	console.warn( '$mol_set is deprecated. Use native Set instead.' )
-	export let $mol_set = Set
-}
+	let $mol_set = Set
+
+
+ export {$mol_set}

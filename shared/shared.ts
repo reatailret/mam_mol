@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_shared extends $mol_object2 {
+
+	class $mol_shared extends $mol_object2 {
 
 		@( $mol_action as any )
 		static value< Value >( key : string , next? : Value ) {
@@ -60,4 +60,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {$mol_shared}

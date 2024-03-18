@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_app_demo extends $.$mol_app_demo {
+	class $mol_app_demo extends $.$mol_app_demo {
 
 		@ $mol_mem_key
 		component_name( name: string ) {
@@ -48,7 +48,7 @@ namespace $.$$ {
 
 				console.warn( `Demo widget without tags: ${ name }` )
 
-				return [ 'untagged', component_name ]
+				return [ component_name ]
 
 			} else {
 
@@ -188,4 +188,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_app_demo}

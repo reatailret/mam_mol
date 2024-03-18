@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 
 	const { rem } = $mol_style_unit
 	const { calc } = $mol_style_func
@@ -24,4 +24,6 @@ namespace $.$$ {
 		}
 
 	})
-}
+
+
+ export {}

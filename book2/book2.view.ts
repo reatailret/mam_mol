@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Root component for adaptivity to various screen sizes. Implements booklet UX.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_book2_demo
 	 */
-	export class $mol_book2 extends $.$mol_book2 {
+	class $mol_book2 extends $.$mol_book2 {
 		
 		title() {
 			return this.pages().map( page => {
@@ -56,4 +56,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_book2}

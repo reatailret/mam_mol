@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_text_distance(
+	function $mol_text_distance(
 		left: string,
 		right: string,
 	) {
@@ -10,4 +10,6 @@ namespace $ {
 		)
 	}
 	
-}
+
+
+ export {$mol_text_distance}

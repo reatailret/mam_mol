@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	type Type =
 		| 'mat4' | 'mat3' | 'mat2'
@@ -11,14 +11,14 @@ namespace $ {
 		| 'samplerCube' | 'samplerCubeShadow'
 		| 'sampler3D'
 	
-	export type $mol_3d_program_face = {
+	type $mol_3d_program_face = {
 		glob?: Record< string, Type >,
 		input?: Record< string, Type >,
 		pipe?: Record< string, Type >,
 		output?: Record< string, Type >,
 	}
 	
-	export class $mol_3d_program< Face extends $mol_3d_program_face > extends Object {
+	class $mol_3d_program< Face extends $mol_3d_program_face > extends Object {
 		
 		constructor(
 			readonly api: WebGL2RenderingContext,
@@ -96,4 +96,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_3d_program_face,$mol_3d_program}

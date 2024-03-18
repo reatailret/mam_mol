@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_bind<
+
+	function $mol_bind<
 		Slave extends object ,
 		Master extends object ,
 		Slave_keys extends keyof Slave ,
@@ -26,4 +26,6 @@ namespace $ {
 		return slave
 	}
 
-}
+
+
+ export {$mol_bind}

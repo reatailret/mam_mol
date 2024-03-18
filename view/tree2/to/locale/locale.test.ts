@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	const run = $mol_data_pipe(
 		$mol_tree2_from_string.bind($$),
@@ -47,4 +47,6 @@ namespace $ {
 
 	
 	})
-}
+
+
+ export {}

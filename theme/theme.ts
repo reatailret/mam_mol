@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Theme css variables
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_textarea_demo
 	 */	
-	export const $mol_theme = $mol_style_prop(
+	const $mol_theme = $mol_style_prop(
 		'mol_theme',
 		[
 			'back',
@@ -22,4 +22,6 @@ namespace $ {
 		]
 	)
 
-}
+
+
+ export {$mol_theme}

@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Decorates solo object channel to [mol_wire_atom](../atom/atom.ts). */
-	export function $mol_wire_solo< Args extends any[] >(
+	function $mol_wire_solo< Args extends any[] >(
 		host: object,
 		field: string,
 		descr?: TypedPropertyDescriptor< ( ... args: Args )=> any >
@@ -50,4 +50,6 @@ namespace $ {
 		? []
 		: [ Args[0] | undefined, ... $mol_type_tail< Args > ]
 
-}
+
+
+ export {$mol_wire_solo}

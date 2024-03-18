@@ -1,0 +1,6 @@
+$mol_vite $mol_page
+	body /
+		<= b $mol_button_major
+			title \RUN ME !!!
+			click? <=> click?
+

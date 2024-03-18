@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_dom_visible extends $mol_object {
+
+	class $mol_dom_visible extends $mol_object {
 
 		@ $mol_mem
 		static observer() {
@@ -19,5 +19,7 @@ namespace $ {
 
 	}
 
-}
 
+
+
+ export {$mol_dom_visible}

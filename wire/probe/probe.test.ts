@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Previous value'() {
@@ -24,4 +24,6 @@ namespace $ {
 		} ,
 		
 	})
-}
+
+
+ export {}

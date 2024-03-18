@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 	
 	/**
 	 * Allow user to select value from various options and displays current value.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_select_demo_colors
 	 */
-	export class $mol_select_list extends $.$mol_select_list {
+	class $mol_select_list extends $.$mol_select_list {
 
 		override value( val? : readonly string[] ) {
 			return super.value( val ) as readonly string[]
@@ -70,4 +70,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_select_list}

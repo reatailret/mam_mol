@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	enum sex { male , female }
 	
@@ -90,4 +90,6 @@ namespace $ {
 
 	})
 
-}
+
+
+ export {}

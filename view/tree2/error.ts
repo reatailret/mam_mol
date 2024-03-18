@@ -1,5 +1,5 @@
-namespace $ {
-	export class $mol_view_tree2_error extends Error {
+
+	class $mol_view_tree2_error extends Error {
 		constructor(
 			message: string,
 			readonly spans: readonly $mol_span[]
@@ -15,7 +15,7 @@ namespace $ {
 		}
 	}
 
-	export class $mol_view_tree2_error_suggestions {
+	class $mol_view_tree2_error_suggestions {
 		constructor(
 			readonly suggestions: readonly string[]
 		) {}
@@ -29,7 +29,7 @@ namespace $ {
 		}
 	}
 
-	export function $mol_view_tree2_error_str(
+	function $mol_view_tree2_error_str(
 		strings: readonly string[],
 		...parts: readonly ($mol_span | readonly $mol_span[] | string | number | $mol_view_tree2_error_suggestions)[]
 	) {
@@ -59,4 +59,6 @@ namespace $ {
 
 		return result
 	}
-}
+
+
+ export {$mol_view_tree2_error,$mol_view_tree2_error_suggestions,$mol_view_tree2_error_str}

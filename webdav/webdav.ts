@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_webdav extends $mol_http {
+	class $mol_webdav extends $mol_http {
 		
 		@ $mol_mem_key
 		static item( uri : string ) {
@@ -94,4 +94,6 @@ namespace $ {
 		}
 	}
 	
-}
+
+
+ export {$mol_webdav}

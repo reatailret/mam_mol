@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_speech_demo extends $.$mol_speech_demo {
+	class $mol_speech_demo extends $.$mol_speech_demo {
 		
 		hearing( next? : boolean ) {
 			return $mol_speech.hearing( next )
@@ -38,4 +38,6 @@ namespace $.$$ {
 		
 	}
 	
-}
+
+
+ //export {$mol_speech_demo}

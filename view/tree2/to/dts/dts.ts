@@ -1,4 +1,4 @@
-namespace $ {
+
 	const err = $mol_view_tree2_error_str
 
 	function name_of(this: $, prop: $mol_tree2) {
@@ -97,7 +97,7 @@ namespace $ {
 		])
 	}
 
-	export function $mol_view_tree2_to_dts(this: $, tree: $mol_tree2) {
+	function $mol_view_tree2_to_dts(this: $, tree: $mol_tree2) {
 		
 		const descr = $mol_view_tree2_classes( tree )
 		
@@ -368,11 +368,13 @@ namespace $ {
 		}
 
 		return descr.list([
-			descr.data( 'declare namespace $ {' ),
+			descr.data( 'declare' ),
 			descr.data( '' ),
 			descr.struct( 'indent', types ),
 			descr.data( '}' ),
 		])
 		
-	}
-}
+	
+
+
+ export {$mol_view_tree2_to_dts}

@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_ruler extends $.$mol_plot_ruler {
+
+	class $mol_plot_ruler extends $.$mol_plot_ruler {
 		labels_formatted() {
 			return this.axis_points().map( ( point , index )=> this.Label( index ) )
 		}
@@ -81,4 +81,6 @@ namespace $.$$ {
 			] as readonly $.$mol_svg[]
 		}
 	}
-}
+
+
+ //export {$mol_plot_ruler}

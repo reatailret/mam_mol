@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_style_sheet<
+
+	function $mol_style_sheet<
 		Component extends $mol_view,
 		Config extends $mol_style_guard< Component , Config >,
 	>(
@@ -131,4 +131,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_style_sheet}

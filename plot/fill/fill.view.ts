@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_fill extends $.$mol_plot_fill {
+
+	class $mol_plot_fill extends $.$mol_plot_fill {
 
 		curve() {
 			const points = this.points()
@@ -21,4 +21,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_plot_fill}

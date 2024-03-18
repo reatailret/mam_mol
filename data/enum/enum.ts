@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Checks for value of given enum and returns expected type.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_data_enum_demo
 	 */
-	export function $mol_data_enum<
+	function $mol_data_enum<
 		Dict extends Record< number | string , number | string >
 	>( name : string , dict : Dict ) {
 
@@ -30,4 +30,6 @@ namespace $ {
 
 	}
 	
-}
+
+
+ export {$mol_data_enum}

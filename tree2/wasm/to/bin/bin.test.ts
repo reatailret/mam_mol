@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_test({
 
@@ -121,7 +121,7 @@ namespace $ {
 
 		} ,
 
-		'export function that returns pair'($) {
+		'function that returns pair'($) {
 
 			const code = $.$mol_tree2_from_string(`
 				type pair
@@ -142,4 +142,6 @@ namespace $ {
 
 	})
 
-}
+
+
+ export {that}

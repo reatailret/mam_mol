@@ -1,8 +1,8 @@
-namespace $ {
+
 
 	const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 
-	export function $mol_vlq_encode( val: number ): string {
+	function $mol_vlq_encode( val: number ): string {
 
 		const sign = val < 0 ? 1 : 0
 		if( sign ) val = -val
@@ -29,4 +29,6 @@ namespace $ {
 		return res
 	}
 	
-}
+
+
+ export {$mol_vlq_encode}

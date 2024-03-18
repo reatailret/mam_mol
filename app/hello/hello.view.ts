@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_app_hello extends $.$mol_app_hello {
+
+	class $mol_app_hello extends $.$mol_app_hello {
 		
 		@ $mol_mem
 		greeting() {
@@ -9,4 +9,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_app_hello}

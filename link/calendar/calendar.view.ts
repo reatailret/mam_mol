@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_link_calendar extends $.$mol_link_calendar {
+
+	class $mol_link_calendar extends $.$mol_link_calendar {
 		
 		@ $mol_mem
 		uri() {
@@ -13,4 +13,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_link_calendar}

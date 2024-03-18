@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** @deprecated Use $mol_wire_fiber..plan */
-	export function $mol_fiber_defer< Value = void >( calculate : ()=> Value ) {
+	function $mol_fiber_defer< Value = void >( calculate : ()=> Value ) {
 		const host = {}
 		const fiber = new $mol_wire_task( calculate.name, calculate, host, [] )
 		fiber.plan()
@@ -9,7 +9,7 @@ namespace $ {
 	}
 	
 	/** @deprecated Use $mol_wire_async */
-	export function $mol_fiber_root<
+	function $mol_fiber_root<
 		Calculate extends ( this : This , ... args : any[] )=> Result ,
 		Result = void ,
 		This = void ,
@@ -26,7 +26,7 @@ namespace $ {
 	}
 
 	/** @deprecated Use $mol_wire_sync */
-	export function $mol_fiber_sync< Args extends any[] , Value = void , This = void >(
+	function $mol_fiber_sync< Args extends any[] , Value = void , This = void >(
 		request : ( this : This , ... args : Args )=> PromiseLike< Value >
 	) : ( ... args : Args )=> Value {
 		throw new Error( 'Use $mol_wire_sync instead' )
@@ -38,7 +38,7 @@ namespace $ {
 	}
 	
 	/** @deprecated Don't use that */
-	export class $mol_fiber_solid extends $mol_wrapper {
+	class $mol_fiber_solid extends $mol_wrapper {
 
 		static func< This , Args extends any[] , Result >( task : ( this : This , ... args : Args )=> Result ) {
 			return task
@@ -46,9 +46,11 @@ namespace $ {
 
 	}
 	
-	export class $mol_fiber {
+	class $mol_fiber {
 		/** @deprecated Use $mol_wire_method */
 		static method = $mol_action
 	}
 
-}
+
+
+ export {$mol_fiber_defer,$mol_fiber_root,$mol_fiber_sync,$mol_fiber_solid,$mol_fiber}

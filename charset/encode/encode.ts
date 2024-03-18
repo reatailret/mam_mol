@@ -1,10 +1,12 @@
-namespace $ {
+
 	const TextEncoder = globalThis.TextEncoder ?? $node.util.TextEncoder
 
 	const encoder = new TextEncoder()
 
-	export function $mol_charset_encode(value: string) {
+	function $mol_charset_encode(value: string) {
 		return encoder.encode(value)
 	}
 
-}
+
+
+ export {$mol_charset_encode}

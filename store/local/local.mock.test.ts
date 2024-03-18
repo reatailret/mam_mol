@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_test_mocks.push( context => {
 
@@ -6,4 +6,6 @@ namespace $ {
 
 	} )
 	
-}
+
+
+ export {}

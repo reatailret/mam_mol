@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_unit extends $mol_object {
+	class $mol_unit extends $mol_object {
 		
 		'valueOf()' : number
 		
@@ -54,4 +54,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_unit}

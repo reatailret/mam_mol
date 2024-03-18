@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	// Positive
 
@@ -22,4 +22,6 @@ namespace $ {
 	// type never_any = $mol_type_assert< never , any >
 	// type any_void = $mol_type_assert< any , void >
 
-}
+
+
+ export {}

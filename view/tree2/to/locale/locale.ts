@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_view_tree2_to_locale(this: $, module: $mol_tree2) {
+
+	function $mol_view_tree2_to_locale(this: $, module: $mol_tree2) {
 		const locales: Record<string, string> = {}
 		const descr = $mol_view_tree2_classes( module )
 
@@ -54,4 +54,6 @@ namespace $ {
 
 		return locales
 	}
-}
+
+
+ export {$mol_view_tree2_to_locale}

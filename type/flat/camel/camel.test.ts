@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type type_obj = {
 		foo: {
@@ -81,4 +81,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

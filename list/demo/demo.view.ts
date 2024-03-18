@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_list_demo extends $.$mol_list_demo {
+
+	class $mol_list_demo extends $.$mol_list_demo {
 		
 		override item_title( id : number ) : string {
 			return `Item #${ id + 1 }`
@@ -18,4 +18,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_list_demo}

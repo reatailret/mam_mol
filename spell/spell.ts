@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_spell_morphs extends Set<string> {
+	class $mol_spell_morphs extends Set<string> {
 		
 		readonly max: number = 0
 		
@@ -21,7 +21,7 @@ namespace $ {
 	 * Draft of compact spell checker.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_spell_demo
 	 */
-	export class $mol_spell extends Object {
+	class $mol_spell extends Object {
 		
 		static head = new $mol_spell_morphs
 		static prefix = new $mol_spell_morphs
@@ -88,4 +88,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_spell_morphs,$mol_spell}

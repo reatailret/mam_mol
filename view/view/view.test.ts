@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test( {
 		
 		'id auto generation'($) {
@@ -144,4 +144,6 @@ namespace $ {
 		} ,
 	
 	} )
-}
+
+
+ export {}

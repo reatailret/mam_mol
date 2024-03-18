@@ -1,8 +1,8 @@
-namespace $ {
+
 
 	const err = $mol_view_tree2_error_str
 
-	export function $mol_view_tree2_value(
+	function $mol_view_tree2_value(
 		this: $,
 		value: $mol_tree2,
 	) {
@@ -37,4 +37,6 @@ namespace $ {
 		'null',
 		'\\some'
 	])
-}
+
+
+ export {$mol_view_tree2_value}

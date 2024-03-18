@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 	
 	/**
 	 * Plugin which can navigate in list of items
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_nav_demo
 	 */
-	export class $mol_nav extends $.$mol_nav {
+	class $mol_nav extends $.$mol_nav {
 		
 		event_key( event? : KeyboardEvent ) {
 			if( !event ) return event
@@ -111,4 +111,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_nav}

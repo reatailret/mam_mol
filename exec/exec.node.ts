@@ -1,5 +1,5 @@
-namespace $ {
-	export function $mol_exec(
+
+	function $mol_exec(
 		this : $ ,
 		dir : string ,
 		command : string ,
@@ -26,9 +26,14 @@ namespace $ {
 			}
 		)
 		
-		if( res.status || res.error ) return $mol_fail( res.error || new Error( res.stderr.toString() ) )
+		if( res.status || res.error ) {
+			return $mol_fail( res.error || new Error( res.stderr.toString(), { cause: res.stdout } ) )
+		}
+		
 		if( !res.stdout ) res.stdout = Buffer.from([])
 
 		return res
 	}
-}
+
+
+ export {$mol_exec}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_diff_path< Item >( ... paths : Item[][] ) {
+
+	function $mol_diff_path< Item >( ... paths : Item[][] ) {
 
 		const limit = Math.min( ... paths.map( path => path.length ) )
 
@@ -21,4 +21,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_diff_path}

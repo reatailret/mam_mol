@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_rpc_client_frame< Handlers > extends $mol_object {
+
+	class $mol_rpc_client_frame< Handlers > extends $mol_object {
 
 		@ $mol_mem_key
 		static item< Handlers >( uri : string ) {
@@ -58,4 +58,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_rpc_client_frame}

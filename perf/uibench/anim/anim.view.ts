@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_perf_uibench_anim extends $.$mol_perf_uibench_anim {
+	class $mol_perf_uibench_anim extends $.$mol_perf_uibench_anim {
 		
 		state() {
 			return { items : [] as any[] }
@@ -17,7 +17,7 @@ namespace $.$$ {
 		
 	}
 
-	export class $mol_perf_uibench_anim_box extends $.$mol_perf_uibench_anim_box {
+	class $mol_perf_uibench_anim_box extends $.$mol_perf_uibench_anim_box {
 
 		state() {
 			return { id : '' , time : 0 }
@@ -41,4 +41,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_perf_uibench_anim,$mol_perf_uibench_anim_box}

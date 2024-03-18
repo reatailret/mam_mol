@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 	$mol_test({
 		
 		'Empty needle'() {
@@ -62,4 +62,6 @@ namespace $.$$ {
 		},
 		
 	})
-}
+
+
+ export {}

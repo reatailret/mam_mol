@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_tag_sieve extends $mol_object2 {
+
+	class $mol_tag_sieve extends $mol_object2 {
 		ids_tags() {
 			return {} as Record<string, string[]>
 		}
@@ -120,4 +120,6 @@ namespace $ {
 		}
 	}
 
-}
+
+
+ export {$mol_tag_sieve}

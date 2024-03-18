@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_dom_context.addEventListener( 'storage' , event => {
 		
@@ -10,4 +10,6 @@ namespace $ {
 
 	} )
 
-}
+
+
+ export {}

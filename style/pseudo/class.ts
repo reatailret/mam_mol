@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export type $mol_style_pseudo_class =
+	type $mol_style_pseudo_class =
 	| ':active'
 	| ':any'
 	| ':any-link'
@@ -51,4 +51,6 @@ namespace $ {
 	| ':valid'
 	| ':visited'
 
-}
+
+
+ export {$mol_style_pseudo_class}

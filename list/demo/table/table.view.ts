@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_list_demo_table extends $.$mol_list_demo_table {
+
+	class $mol_list_demo_table extends $.$mol_list_demo_table {
 		
 		@ $mol_mem
 		rows() {
@@ -69,4 +69,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_list_demo_table}

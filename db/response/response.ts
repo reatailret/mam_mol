@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Converts IDBResult to Promise */
-	export function $mol_db_response< Result >(
+	function $mol_db_response< Result >(
 		request: IDBRequest< Result >
 	) {
 		
@@ -12,4 +12,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_db_response}

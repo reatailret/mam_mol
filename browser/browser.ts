@@ -1,5 +1,5 @@
-namespace $ {
-	export class $mol_browser extends $mol_object2 {
+
+	class $mol_browser extends $mol_object2 {
 		
 		@ $mol_mem
 		static window() {
@@ -57,4 +57,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_browser}

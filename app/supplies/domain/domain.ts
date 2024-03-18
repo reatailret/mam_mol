@@ -1,14 +1,14 @@
-namespace $ {
+
 
 	/// Поставщик
-	export class $mol_app_supplies_domain_provider extends $mol_object {
+	class $mol_app_supplies_domain_provider extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
 	}
 
 	/// Группа закупок
-	export class $mol_app_supplies_domain_supply_group extends $mol_object {
+	class $mol_app_supplies_domain_supply_group extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
@@ -17,28 +17,28 @@ namespace $ {
 	}
 
 	/// Закупочный дивизион
-	export class $mol_app_supplies_domain_supply_division extends $mol_object {
+	class $mol_app_supplies_domain_supply_division extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
 	}
 
 	/// Способ оплаты
-	export class $mol_app_supplies_domain_pay_method extends $mol_object {
+	class $mol_app_supplies_domain_pay_method extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
 	}
 
 	/// Дебитор
-	export class $mol_app_supplies_domain_debitor extends $mol_object {
+	class $mol_app_supplies_domain_debitor extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
 	}
 
 	/// Продукт
-	export class $mol_app_supplies_domain_supply_position extends $mol_object {
+	class $mol_app_supplies_domain_supply_position extends $mol_object {
 		name() : string { return undefined as any }
 		
 		supply_moment() : $mol_time_moment { return undefined as any }
@@ -57,47 +57,47 @@ namespace $ {
 	}
 
 	/// Вложение
-	export class $mol_app_supplies_domain_attachment extends $mol_object {
+	class $mol_app_supplies_domain_attachment extends $mol_object {
 		url_thumb() : string { return undefined as any }
 		
 		url_load() : string { return undefined as any }
 	}
 
 	/// Работник
-	export class $mol_app_supplies_domain_person extends $mol_object {
+	class $mol_app_supplies_domain_person extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
 	}
 
 	/// Договор
-	export class $mol_app_supplies_domain_contract extends $mol_object {
+	class $mol_app_supplies_domain_contract extends $mol_object {
 		id() : string { return undefined as any }
 	}
 
 	/// Балансовая единица
-	export class $mol_app_supplies_domain_ballance_unit extends $mol_object {
+	class $mol_app_supplies_domain_ballance_unit extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
 	}
 
 	/// Закупочная организация
-	export class $mol_app_supplies_domain_consumer extends $mol_object {
+	class $mol_app_supplies_domain_consumer extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
 	}
 
 	/// Склад для доставки
-	export class $mol_app_supplies_domain_store extends $mol_object {
+	class $mol_app_supplies_domain_store extends $mol_object {
 		id() : string { return undefined as any }
 		
 		name() : string { return undefined as any }
 	}
 
 	/// Заявка на закупку
-	export class $mol_app_supplies_domain_supply extends $mol_object {
+	class $mol_app_supplies_domain_supply extends $mol_object {
 		
 		id() : string { return undefined as any }
 		
@@ -136,7 +136,7 @@ namespace $ {
 	}
 
 	/// Демонстрационный бизнес домен
-	export class $mol_app_supplies_domain_mock extends $mol_object {
+	class $mol_app_supplies_domain_mock extends $mol_object {
 		
 		@ $mol_mem
 		supplies() {
@@ -299,4 +299,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_app_supplies_domain_provider,$mol_app_supplies_domain_supply_group,$mol_app_supplies_domain_supply_division,$mol_app_supplies_domain_pay_method,$mol_app_supplies_domain_debitor,$mol_app_supplies_domain_supply_position,$mol_app_supplies_domain_attachment,$mol_app_supplies_domain_person,$mol_app_supplies_domain_contract,$mol_app_supplies_domain_ballance_unit,$mol_app_supplies_domain_consumer,$mol_app_supplies_domain_store,$mol_app_supplies_domain_supply,$mol_app_supplies_domain_mock}

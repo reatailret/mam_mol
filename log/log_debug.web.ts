@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_log_debug( next? : string ) {
+	function $mol_log_debug( next? : string ) {
 
 		if( next !== undefined ) {
 			if( next == null ) {
@@ -13,4 +13,6 @@ namespace $ {
 		return sessionStorage.getItem( '$mol_log_debug()' )
 	}
 
-}
+
+
+ export {$mol_log_debug}

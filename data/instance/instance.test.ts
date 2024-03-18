@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'Is same class' () {
@@ -28,4 +28,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

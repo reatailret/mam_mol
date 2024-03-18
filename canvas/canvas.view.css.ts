@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 	
 	$mol_style_define( $mol_canvas, {
 			
@@ -12,4 +12,6 @@ namespace $.$$ {
 		
 	} )
 	
-}
+
+
+ export {}

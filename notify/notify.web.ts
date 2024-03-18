@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Manages system notifications. Notifications of same context are auto joined to one notification. */
-	export class $mol_notify {
+	class $mol_notify {
 		
 		@ $mol_mem
 		static allowed( next?: boolean ) {
@@ -79,4 +79,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_notify}

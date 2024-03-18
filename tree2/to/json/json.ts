@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Makes JSON from json.tree. */
-	export function $mol_tree2_to_json(
+	function $mol_tree2_to_json(
 		this: $,
 		tree: $mol_tree2,
 	): unknown {
@@ -54,4 +54,6 @@ namespace $ {
 		this.$mol_fail( new Error( `Unknown json type (${tree.type}) at ${tree.span}` ) )
 	}
 
-}
+
+
+ export {$mol_tree2_to_json}

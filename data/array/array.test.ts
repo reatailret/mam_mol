@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'Is empty array' () {
@@ -28,4 +28,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

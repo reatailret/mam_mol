@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'Nominal typing' () {
@@ -19,4 +19,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

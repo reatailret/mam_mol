@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	/** Base SVG component to display SVG images or icons. */
-	export class $mol_svg extends $.$mol_svg {
+	class $mol_svg extends $.$mol_svg {
 		@$mol_mem
 		computed_style() {
 			const win = this.$.$mol_dom_context
@@ -22,4 +22,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_svg}

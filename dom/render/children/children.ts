@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_dom_render_children (
+
+	function $mol_dom_render_children (
 		el : Element | DocumentFragment ,
 		childNodes : NodeList | Array< Node | string | null >
 	) {
@@ -53,4 +53,6 @@ namespace $ {
 		}
 	}
 
-}
+
+
+ export {$mol_dom_render_children}

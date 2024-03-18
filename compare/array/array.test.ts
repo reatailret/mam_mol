@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	class TestClass extends Uint8Array {}
 
@@ -14,4 +14,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

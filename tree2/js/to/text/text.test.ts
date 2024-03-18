@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	const convert = $mol_data_pipe(
 		$mol_tree2_from_string,
@@ -488,4 +488,6 @@ namespace $ {
 
 	})
 
-}
+
+
+ export {}

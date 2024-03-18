@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_store< Data > extends $mol_object2 {
+
+	class $mol_store< Data > extends $mol_object2 {
 
 		constructor(
 			public data_default? : Data
@@ -65,4 +65,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_store}

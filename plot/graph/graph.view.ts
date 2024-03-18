@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_graph extends $.$mol_plot_graph {
+
+	class $mol_plot_graph extends $.$mol_plot_graph {
 		
 		viewport() {
 			const size = this.size_real()
@@ -74,4 +74,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_plot_graph}

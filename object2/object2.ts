@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_object2 {
+
+	class $mol_object2 {
 		
 		static $ = $ as any as $
 		
@@ -54,4 +54,6 @@ namespace $ {
 		// }
 
 	}
-}
+
+
+ export {$mol_object2}

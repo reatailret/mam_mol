@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** State of arguments like `foo=bar xxx` */
-	export class $mol_state_arg extends $mol_object {
+	class $mol_state_arg extends $mol_object {
 		
 		static prolog = ''
 		static separator = ' '
@@ -96,4 +96,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_state_arg}

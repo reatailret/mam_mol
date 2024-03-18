@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_compare_text< Item >( item = ( item : Item )=> String( item ) ) {
+
+	function $mol_compare_text< Item >( item = ( item : Item )=> String( item ) ) {
 		
 		return ( a : Item , b : Item )=> {
 
@@ -30,4 +30,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_compare_text}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'Collect deps'() {
@@ -77,4 +77,6 @@ namespace $ {
 		},
 
 	})
-}
+
+
+ export {}

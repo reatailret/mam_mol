@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type no_params = $mol_type_assert<
 		$mol_type_param< ()=> 777 , 0 > ,
@@ -15,4 +15,6 @@ namespace $ {
 		888
 	>
 
-}
+
+
+ export {}

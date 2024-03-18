@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** IndexedDB Index wrapper. */
-	export class $mol_db_index< Schema extends $mol_db_index_schema > {
+	class $mol_db_index< Schema extends $mol_db_index_schema > {
 		
 		constructor(
 			readonly native: IDBIndex,
@@ -54,4 +54,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_db_index}

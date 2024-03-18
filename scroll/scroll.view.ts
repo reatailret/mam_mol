@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 	
 	/**
 	 * Scrolling pane.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_scroll_demo
 	 */
-	export class $mol_scroll extends $.$mol_scroll {
+	class $mol_scroll extends $.$mol_scroll {
 
 		@ $mol_mem
 		scroll_top( next? : number, cache?: 'cache' ): number {
@@ -43,4 +43,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_scroll}

@@ -1,5 +1,5 @@
-namespace $ {
-	export class $mol_buffer extends DataView {
+
+	class $mol_buffer extends DataView {
 		
 		static from< This extends typeof $mol_buffer >( this: This, array: number | string | ArrayBufferView ) {
 			if( typeof array === 'number' ) array = new Uint8Array( array )
@@ -102,4 +102,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_buffer}

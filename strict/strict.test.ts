@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'object to primitive'( $ ) {
@@ -55,4 +55,6 @@ namespace $ {
 		},
 		
 	})
-}
+
+
+ export {}

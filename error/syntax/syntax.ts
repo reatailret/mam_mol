@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Syntax error with cordinates and source line snippet. */
-	export class $mol_error_syntax extends SyntaxError {
+	class $mol_error_syntax extends SyntaxError {
 		constructor (
 			public reason: string,
 			public line: string,
@@ -12,4 +12,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_error_syntax}

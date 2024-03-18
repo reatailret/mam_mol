@@ -1,9 +1,9 @@
-namespace $.$$ {
+
 	/**
 	 * An input field for entering single line text.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_string_demo
 	 */
-	export class $mol_string extends $.$mol_string {
+	class $mol_string extends $.$mol_string {
 		
 		@ $mol_action
 		event_change( next? : Event ) {
@@ -93,4 +93,6 @@ namespace $.$$ {
 		}
 
 	}
-}
+
+
+ //export {$mol_string}

@@ -1,6 +1,6 @@
-namespace $ {
 
-	export class $mol_memo extends $mol_wrapper {
+
+	class $mol_memo extends $mol_wrapper {
 		
 		static wrap< This extends object , Value >( task : ( this : This , next? : Value )=> Value ) {
 
@@ -22,4 +22,6 @@ namespace $ {
 		
 	}
 
-}
+
+
+ export {$mol_memo}

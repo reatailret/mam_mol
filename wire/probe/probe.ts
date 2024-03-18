@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Run code without state changes */
-	export function $mol_wire_probe< Value >(
+	function $mol_wire_probe< Value >(
 		task : ()=> Value, def?: Value
 	) : Value | undefined {
 		
@@ -18,4 +18,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_wire_probe}

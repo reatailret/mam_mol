@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_tree2_text_to_sourcemap( this: $, tree: $mol_tree2 ) {
+
+	function $mol_tree2_text_to_sourcemap( this: $, tree: $mol_tree2 ) {
 
 		let col = 1
 		let prev_span: $mol_span | undefined
@@ -99,4 +99,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_tree2_text_to_sourcemap}

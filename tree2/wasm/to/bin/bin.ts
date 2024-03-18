@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_tree2_wasm_to_bin( this: $, code : $mol_tree2 ) {
+
+	function $mol_tree2_wasm_to_bin( this: $, code : $mol_tree2 ) {
 
 		const bytes = ( bytes : ArrayLike< number > , span : $mol_span ) => $mol_tree2_bin_from_bytes( bytes , span ).kids
 
@@ -258,4 +258,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_tree2_wasm_to_bin}

@@ -1,11 +1,11 @@
-namespace $ {
+
 
 	/**
 	 * Returns reversed `Tuple`.
 	 * 
 	 * 	$mol_type_reverse< [ 1 , 2 ,3 ] > // [ 3 , 2 , 1 ]
 	 */
-	export type $mol_type_reverse<
+	type $mol_type_reverse<
 		Tuple extends readonly any[] ,
 		Reversed extends readonly any[] = []
 	> = {
@@ -18,4 +18,6 @@ namespace $ {
 		Tuple['length'] extends 0 ? 0 : 1
 	]
 
-}
+
+
+ export {$mol_type_reverse}

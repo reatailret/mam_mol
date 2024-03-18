@@ -1,11 +1,11 @@
-namespace $ {
+
 	export interface $mol_syntax_token {
 		name : string
 		found : string
 		chunks : string[]
 	}
 	
-	export class $mol_syntax {
+	class $mol_syntax {
 		
 		constructor( lexems : { [ name : string ] : RegExp } ) {
 			this[ 'lexems()' ] = lexems
@@ -94,4 +94,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_syntax}

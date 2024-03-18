@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * Checks for dictionary which maps strings to given runtype and returns expected type.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_data_dict_demo
 	 */
-	export function $mol_data_dict< Sub extends $mol_data_value >( sub : Sub ) {
+	function $mol_data_dict< Sub extends $mol_data_value >( sub : Sub ) {
 
 		return $mol_data_setup( ( val : Readonly< Record< string , ReturnType< Sub > > > ) => {
 			
@@ -35,4 +35,6 @@ namespace $ {
 
 	}
 			
-}
+
+
+ export {$mol_data_dict}

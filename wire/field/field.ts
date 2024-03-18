@@ -1,7 +1,7 @@
-namespace $ {
+
 	
 	/** Incompatible with instance fields with initializators */
-	export function $mol_wire_field<
+	function $mol_wire_field<
 		Host extends object ,
 		Field extends keyof Host ,
 		Value extends Host[ Field ],
@@ -45,4 +45,6 @@ namespace $ {
 		return descr2
 	}
 
-}
+
+
+ export {$mol_wire_field}

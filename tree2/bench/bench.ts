@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	let tree: $mol_tree2
 	let json: any
@@ -61,4 +61,6 @@ namespace $ {
 		setTimeout( run )
 	}
 
-}
+
+
+ export {}

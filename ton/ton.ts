@@ -1,8 +1,8 @@
-namespace $ {
+
 
 	$node['tonweb'] // for installing npm package
 
-	export class $mol_ton extends $mol_object2 {
+	class $mol_ton extends $mol_object2 {
 
 		@ $mol_mem
 		static lib() {
@@ -76,4 +76,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_ton}

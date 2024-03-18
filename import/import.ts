@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Dynamic sources import. */
-	export class $mol_import extends $mol_object2 {
+	class $mol_import extends $mol_object2 {
 		
 		@ $mol_mem_key
 		static module( uri: string ): any {
@@ -56,4 +56,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_import}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'is same number' () {
@@ -25,4 +25,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

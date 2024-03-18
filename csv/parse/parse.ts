@@ -1,10 +1,10 @@
-namespace $ {
+
 	
 	/**
 	 * Parse csv text with delimiter
 	 * @see @see https://mol.hyoo.ru/#!section=demos/demo=mol_csv_parse
 	 */
-	export function $mol_csv_parse( text: string, delimiter = ',' ) {
+	function $mol_csv_parse( text: string, delimiter = ',' ) {
 		
 		var lines = text.split( /\r?\n/g )
 		var header = lines.shift()!.split( delimiter )
@@ -28,4 +28,6 @@ namespace $ {
 		return res
 	}
 
-}
+
+
+ export {$mol_csv_parse}

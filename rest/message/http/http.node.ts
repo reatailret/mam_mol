@@ -1,5 +1,5 @@
-namespace $ {
-	export class $mol_rest_message_http extends $mol_rest_message {
+
+	class $mol_rest_message_http extends $mol_rest_message {
 		
 		input!: InstanceType< $node['http']['IncomingMessage'] >
 		
@@ -58,4 +58,6 @@ namespace $ {
 		}
 		
 	}
-}
+
+
+ export {$mol_rest_message_http}

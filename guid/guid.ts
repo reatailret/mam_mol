@@ -1,7 +1,7 @@
-namespace $ {
+
 
 	/** Generates unique identifier. */
-	export function $mol_guid(
+	function $mol_guid(
 		length = 8,
 		exists: ( id: string )=> boolean = ()=> false,
 	) {
@@ -16,4 +16,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_guid}

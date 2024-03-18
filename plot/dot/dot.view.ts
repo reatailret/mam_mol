@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_dot extends $.$mol_plot_dot {
+
+	class $mol_plot_dot extends $.$mol_plot_dot {
 		
 		@$mol_mem
 		filled(): Set<number> {
@@ -91,4 +91,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_plot_dot}

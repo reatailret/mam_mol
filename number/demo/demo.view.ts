@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_number_demo extends $.$mol_number_demo {
+
+	class $mol_number_demo extends $.$mol_number_demo {
 		@ $mol_mem
 		override value_string() : string {
 			return String(this.value())
@@ -14,4 +14,6 @@ namespace $.$$ {
 			return Number.isFinite( this.value() )
 		}
 	}
-}
+
+
+ //export {$mol_number_demo}

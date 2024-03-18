@@ -1,6 +1,6 @@
-namespace $.$$ {
+
 	
-	export class $mol_app_demo_main extends $.$mol_app_demo_main {
+	class $mol_app_demo_main extends $.$mol_app_demo_main {
 
 		@ $mol_mem
 		description() {
@@ -9,4 +9,6 @@ namespace $.$$ {
 
 	}
 	
-}
+
+
+ //export {$mol_app_demo_main}

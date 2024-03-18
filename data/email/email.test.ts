@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 
 		'Is email' () {
@@ -24,4 +24,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

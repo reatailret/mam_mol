@@ -1,9 +1,9 @@
-namespace $ {
+
 	
 	/**
 	 * Collects subscribers in compact array. 28B
 	 */
-	export class $mol_wire_pub extends Object {
+	class $mol_wire_pub extends Object {
 		
 		data = [] as unknown[]
 		
@@ -123,4 +123,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_wire_pub}

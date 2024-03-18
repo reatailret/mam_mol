@@ -1,10 +1,10 @@
-namespace $ {
+
 	
 	/**
 	 * Argument must be Truthy
 	 * @deprecated use $mol_assert_equal instead
 	 */
-	export function $mol_assert_ok( value : any ) {
+	function $mol_assert_ok( value : any ) {
 		if( value ) return
 		$mol_fail( new Error( `${value} ≠ true` ) )
 	}
@@ -13,7 +13,7 @@ namespace $ {
 	 * Argument must be Falsy
 	 * @deprecated use $mol_assert_equal instead
 	 */
-	export function $mol_assert_not( value : any ) {
+	function $mol_assert_not( value : any ) {
 		if( !value ) return
 		$mol_fail( new Error( `${value} ≠ false` ) )
 	}
@@ -26,7 +26,7 @@ namespace $ {
 	 * $mol_assert_fail( ()=>{ throw new Error( 'Parse error' ) } , Error ) // Passes because throws right class
 	 * @see https://mol.hyoo.ru/#!section=docs/=9q9dv3_fgxjsf
 	 */
-	export function $mol_assert_fail(
+	function $mol_assert_fail(
 		handler: ()=> any ,
 		ErrorRight: string | typeof Error | typeof Promise
 	) {
@@ -58,7 +58,7 @@ namespace $ {
 	}
 	
 	/** @deprecated Use $mol_assert_equal */
-	export function $mol_assert_like< Value >( ... args : [ Value, Value, ...Value[] ] ) {
+	function $mol_assert_like< Value >( ... args : [ Value, Value, ...Value[] ] ) {
 		$mol_assert_equal( ... args )
 	}
 	
@@ -69,7 +69,7 @@ namespace $ {
 	 * $mol_assert_unique( 1 , 1 , 2 ) // Fails because 1 === 1
 	 * @see https://mol.hyoo.ru/#!section=docs/=9q9dv3_fgxjsf
 	 */
-	export function $mol_assert_unique( ... args : [ any, any, ...any[] ] ) {
+	function $mol_assert_unique( ... args : [ any, any, ...any[] ] ) {
 		
 		for( let i = 0 ; i < args.length ; ++i ) {
 			for( let j = 0 ; j < args.length ; ++j ) {
@@ -91,7 +91,7 @@ namespace $ {
 	 * $mol_assert_like( [1] , [1] , [2] ) // Fails because 1 !== 2
 	 * @see https://mol.hyoo.ru/#!section=docs/=9q9dv3_fgxjsf
 	 */
-	export function $mol_assert_equal< Value >( ... args : Value[] ) {
+	function $mol_assert_equal< Value >( ... args : Value[] ) {
 		for( let i = 1 ; i < args.length ; ++i ) {
 			
 			if( $mol_compare_deep( args[0] , args[i] ) ) continue
@@ -119,4 +119,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_assert_ok,$mol_assert_not,$mol_assert_fail,$mol_assert_like,$mol_assert_unique,$mol_assert_equal}

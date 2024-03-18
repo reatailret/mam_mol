@@ -1,8 +1,8 @@
-namespace $ {
 
-	export const $mol_owning_map = new WeakMap< any , any >()
 
-	export function $mol_owning_allow< Having >(
+	const $mol_owning_map = new WeakMap< any , any >()
+
+	function $mol_owning_allow< Having >(
 		having : Having ,
 	) : having is Having & {
 		destructor() : void
@@ -18,7 +18,7 @@ namespace $ {
 		}
 	}
 
-	export function $mol_owning_get< Having , Owner extends object >( having : Having , Owner? : { new() : Owner } ) : Owner | null {
+	function $mol_owning_get< Having , Owner extends object >( having : Having , Owner? : { new() : Owner } ) : Owner | null {
 	
 		if( !$mol_owning_allow( having ) ) return null
 
@@ -35,7 +35,7 @@ namespace $ {
 
 	}
 	
-	export function $mol_owning_check< Owner , Having >(
+	function $mol_owning_check< Owner , Having >(
 		owner : Owner ,
 		having : Having ,
 	) : having is Having & { destructor() : void } {
@@ -44,7 +44,7 @@ namespace $ {
 		return true
 	}
 	
-	export function $mol_owning_catch< Owner , Having >(
+	function $mol_owning_catch< Owner , Having >(
 		owner : Owner ,
 		having : Having ,
 	) {
@@ -55,4 +55,6 @@ namespace $ {
 		return true
 	}
 
-}
+
+
+ export {$mol_owning_map,$mol_owning_allow,$mol_owning_get,$mol_owning_check,$mol_owning_catch}

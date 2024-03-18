@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_plot_ruler_vert extends $.$mol_plot_ruler_vert {
+
+	class $mol_plot_ruler_vert extends $.$mol_plot_ruler_vert {
 		dimensions_axis() {
 			return this.dimensions_pane().y
 		}
@@ -39,4 +39,6 @@ namespace $.$$ {
 			return (this.axis_points()[index] * this.scale()[1] + this.shift()[1]).toFixed(3)
 		}
 	}
-}
+
+
+ //export {$mol_plot_ruler_vert}

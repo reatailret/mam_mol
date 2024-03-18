@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_array_shuffle<Item>(
+
+	function $mol_array_shuffle<Item>(
 		array: readonly Item[],
 	) {
 
@@ -17,4 +17,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_array_shuffle}

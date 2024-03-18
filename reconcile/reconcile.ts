@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export function $mol_reconcile< Prev, Next >( {
+	function $mol_reconcile< Prev, Next >( {
 		prev,
 		from,
 		to,
@@ -59,4 +59,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_reconcile}

@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_app_supplies_card extends $.$mol_app_supplies_card {
+
+	class $mol_app_supplies_card extends $.$mol_app_supplies_card {
 		
 		supply() {
 			return null as unknown as $mol_app_supplies_domain_supply
@@ -22,4 +22,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_app_supplies_card}

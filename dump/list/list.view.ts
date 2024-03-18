@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Dumps any JS values.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_dump_demo
 	 */
-	export class $mol_dump_list extends $.$mol_dump_list {
+	class $mol_dump_list extends $.$mol_dump_list {
 		
 		@ $mol_mem
 		sub() {
@@ -20,4 +20,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_dump_list}

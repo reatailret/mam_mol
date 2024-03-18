@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_text_code_row extends $.$mol_text_code_row {
+
+	class $mol_text_code_row extends $.$mol_text_code_row {
 		
 		maximal_width() {
 			return this.text().length * this.letter_width()
@@ -124,4 +124,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_text_code_row}

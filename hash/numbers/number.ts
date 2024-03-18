@@ -1,10 +1,10 @@
-namespace $ {
+
 
 	/**
 	 * 48-bit streamable array hash function
 	 * Based on cyrb53: https://stackoverflow.com/a/52171480
 	 */
-	export function $mol_hash_numbers( buff: ArrayLike< number >, seed = 0 ) {
+	function $mol_hash_numbers( buff: ArrayLike< number >, seed = 0 ) {
 		
 		let h1 = 0xdeadbeef ^ seed
 		let h2 = 0x41c6ce57 ^ seed
@@ -21,4 +21,6 @@ namespace $ {
 		return 4294967296 * ( ( ( 1 << 16 ) - 1 ) & h2 ) + ( h1 >>> 0 )
 	}
 
-}
+
+
+ export {$mol_hash_numbers}

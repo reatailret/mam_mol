@@ -1,6 +1,6 @@
-namespace $.$$ {
 
-	export class $mol_link_demo extends $.$mol_link_demo {
+
+	class $mol_link_demo extends $.$mol_link_demo {
 		
 		@ $mol_mem
 		object_uri() {
@@ -10,4 +10,6 @@ namespace $.$$ {
 
 	}
 
-}
+
+
+ //export {$mol_link_demo}

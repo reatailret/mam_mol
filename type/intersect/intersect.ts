@@ -1,11 +1,11 @@
-namespace $ {
+
 
 	/**
 	 * Converts union of types to intersection of same types
 	 * 
 	 * 	$mol_type_intersect< number | string > // number & string
 	 */
-	export type $mol_type_intersect< Union > =
+	type $mol_type_intersect< Union > =
 		(
 			Union extends any
 				? ( _ : Union )=> void
@@ -16,4 +16,6 @@ namespace $ {
 			? Intersection
 			: never
 
-}
+
+
+ export {type $mol_type_intersect}

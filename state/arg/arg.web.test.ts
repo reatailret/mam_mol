@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	$mol_test_mocks.push( context => {
 		class $mol_state_arg_mock extends $mol_state_arg {
@@ -63,4 +63,6 @@ namespace $ {
 
 	})
 	
-}
+
+
+ export {}

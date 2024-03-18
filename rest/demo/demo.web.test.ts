@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 	$mol_test({
 		
 		async "GET request and URI parse"( $ ) {
@@ -192,4 +192,6 @@ namespace $.$$ {
 		},
 		
 	})
-}
+
+
+ export {}

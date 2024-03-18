@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	type access1 = $mol_type_assert<
 
@@ -53,4 +53,6 @@ namespace $ {
 
 	>
 
-}
+
+
+ export {}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export enum $mol_si_prefix {
 		y = -8,
@@ -20,4 +20,6 @@ namespace $ {
 		Y = 8,
 	}
 	
-}
+
+
+ export {}

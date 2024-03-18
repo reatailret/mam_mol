@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		'$mol_syntax2_template'() {
@@ -32,4 +32,6 @@ namespace $ {
 		}
 	
 	})
-}
+
+
+ export {}

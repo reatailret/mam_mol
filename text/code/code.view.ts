@@ -1,10 +1,10 @@
-namespace $.$$ {
+
 
 	/**
 	 * Code visualizer.
 	 * @see https://mol.hyoo.ru/#!section=demos/demo=mol_text_code_demo
 	 */
-	export class $mol_text_code extends $.$mol_text_code {
+	class $mol_text_code extends $.$mol_text_code {
 		
 		render_visible_only() {
 			return this.$.$mol_support_css_overflow_anchor()
@@ -83,4 +83,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_text_code}

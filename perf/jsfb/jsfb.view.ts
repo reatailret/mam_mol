@@ -1,4 +1,4 @@
-namespace $.$$ {
+
 	
 	function title_gen() {
 		const A = [ "pretty", "large", "big", "small", "tall", "short", "long", "handsome", "plain", "quaint", "clean", "elegant", "easy", "angry", "crazy", "helpful", "mushy", "odd", "unsightly", "adorable", "important", "inexpensive", "cheap", "expensive", "fancy" ]
@@ -7,7 +7,7 @@ namespace $.$$ {
 		return `${ $mol_array_lottery(A) } ${ $mol_array_lottery(C) } ${ $mol_array_lottery(N) }`
 	}
 	
-	export class $mol_perf_jsfb extends $.$mol_perf_jsfb {
+	class $mol_perf_jsfb extends $.$mol_perf_jsfb {
 		
 		counter = 0
 		
@@ -86,7 +86,7 @@ namespace $.$$ {
 		
 	}
 	
-	export class $mol_perf_jsfb_row extends $.$mol_perf_jsfb_row {
+	class $mol_perf_jsfb_row extends $.$mol_perf_jsfb_row {
 		
 		@ $mol_mem
 		title( next?: string ) {
@@ -96,4 +96,6 @@ namespace $.$$ {
 		
 	}
 
-}
+
+
+ //export {$mol_perf_jsfb,$mol_perf_jsfb_row}

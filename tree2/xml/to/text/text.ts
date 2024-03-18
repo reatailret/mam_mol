@@ -1,4 +1,4 @@
-namespace $ {
+
 
 	function attrs_belt( separator : string ) : Record< string, $mol_tree2_hack<never> > {
 		return {
@@ -32,7 +32,7 @@ namespace $ {
 		}
 	}
 	
-	export function $mol_tree2_xml_to_text( xml: $mol_tree2 ) {
+	function $mol_tree2_xml_to_text( xml: $mol_tree2 ) {
 		return xml.list(
 			xml.hack({
 
@@ -96,4 +96,6 @@ namespace $ {
 		)
 	}
 
-}
+
+
+ export {$mol_tree2_xml_to_text}

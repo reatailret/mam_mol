@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	/**
 	 * Change of one field of one object. 12B+
@@ -20,7 +20,7 @@ namespace $ {
 	 * `this.foo()` - getter
 	 * `this.foo( 123 )` - setter-getter
 	 */
-	 export class $mol_story_step_prop extends $mol_story_step {
+	 class $mol_story_step_prop extends $mol_story_step {
 
 		@ $mol_story_skip.method
 		go() {
@@ -34,7 +34,7 @@ namespace $ {
 	 * `this.foo` - getter
 	 * `this.foo = 123` - setter
 	 */
-	 export class $mol_story_step_field extends $mol_story_step {
+	 class $mol_story_step_field extends $mol_story_step {
 
 		@ $mol_story_skip.method
 		go() {
@@ -43,4 +43,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_story_step_prop,$mol_story_step_field}

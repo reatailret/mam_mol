@@ -1,6 +1,6 @@
-namespace $ {
 
-	export function $mol_data_wrapper<
+
+	function $mol_data_wrapper<
 		Pre extends $mol_data_value ,
 		Obj extends { new( val : ReturnType< Pre > ) : any } ,
 	>( pre : Pre , Obj : Obj ) {
@@ -14,4 +14,6 @@ namespace $ {
 
 	}
 
-}
+
+
+ export {$mol_data_wrapper}

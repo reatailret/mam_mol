@@ -1,4 +1,4 @@
-namespace $ {
+
 	$mol_test({
 		
 		async 'Error caching' ($) {
@@ -131,4 +131,6 @@ namespace $ {
 		} ,
 
 	})
-}
+
+
+ export {}

@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	/**
 	 * Creates new or returns existen database with automatic schema migration.
@@ -30,4 +30,6 @@ namespace $ {
 		return new $mol_db_database< Schema >( db )
 	}
 	
-}
+
+
+ export {}

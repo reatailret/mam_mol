@@ -1,5 +1,5 @@
-namespace $ {
-	export function $mol_tree2_span_reuse( tree: $mol_tree2 ) {
+
+	function $mol_tree2_span_reuse( tree: $mol_tree2 ) {
 		
 		const sources = new Map< string, string >()
 
@@ -28,4 +28,6 @@ namespace $ {
 		)
 
 	}
-}
+
+
+ export {$mol_tree2_span_reuse}

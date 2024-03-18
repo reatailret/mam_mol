@@ -1,5 +1,5 @@
-namespace $.$$ {
-	export class $mol_button_demo extends $.$mol_button_demo {
+
+	class $mol_button_demo extends $.$mol_button_demo {
 		
 		fail() {
 			this.$.$mol_wait_timeout( 2000 )
@@ -7,4 +7,6 @@ namespace $.$$ {
 		}
 		
 	}
-}
+
+
+ //export {$mol_button_demo}

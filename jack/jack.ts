@@ -1,6 +1,6 @@
-namespace $ {
 
-	export const $mol_jack : $mol_tree2_belt<{}> = {
+
+	const $mol_jack : $mol_tree2_belt<{}> = {
 
 		no: ( input, belt )=> [],
 		
@@ -87,8 +87,10 @@ namespace $ {
 
 	}
 	
-	export function $mol_jack_transform( code: $mol_tree2 ) {
+	function $mol_jack_transform( code: $mol_tree2 ) {
 		return code.list( code.hack( Object.create( $mol_jack ) ) )
 	}
 
-}
+
+
+ export {$mol_jack,$mol_jack_transform}

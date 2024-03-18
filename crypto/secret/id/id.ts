@@ -1,4 +1,4 @@
-namespace $ {
+
 	
 	export async function $mol_crypto_secret_id( this: $ ) {
 		
@@ -54,4 +54,6 @@ namespace $ {
 		return $mol_crypto_secret.from( cred!.rawId )
 	}
 	
-}
+
+
+ export {}

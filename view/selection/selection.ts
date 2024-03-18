@@ -1,6 +1,6 @@
-namespace $ {
+
 	
-	export class $mol_view_selection extends $mol_object {
+	class $mol_view_selection extends $mol_object {
 		
 		@ $mol_mem
 		static focused( next? : Element[], notify?: 'notify' ) : Element[] {
@@ -29,4 +29,6 @@ namespace $ {
 		
 	}
 	
-}
+
+
+ export {$mol_view_selection}
