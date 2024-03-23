@@ -1,6 +1,6 @@
 $mol_form_draft $mol_form
 	model $mol_object2
-	changed false
+	changed? false
 	value_str*? \
 	value_bool*? false
 	value_number*? 0

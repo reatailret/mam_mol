@@ -95,7 +95,8 @@ namespace $.$$ {
 		}
 		
 		@ $mol_mem
-		override changed() {
+		override changed(next?: boolean) {
+			if(next !== undefined) return next;
 			return Object.keys(this.state()).some(field => this.value_changed(field))
 		}
 		
@@ -105,6 +106,7 @@ namespace $.$$ {
 
 		override reset(next?: unknown) {
 			this.state(null)
+			this.changed(true)
 		}
 
 		@ $mol_action
