@@ -263,6 +263,7 @@ namespace $ {
 		for( const klass of descr.kids ) {
 
 			const parent = klass.kids[0]
+			
 			const props = this.$mol_view_tree2_class_props( klass )
 			const addons = [] as $mol_tree2[]
 			const members = [] as $mol_tree2[]
@@ -291,7 +292,7 @@ namespace $ {
 							parent.struct( '()', [
 								parent.struct( '$' ),
 								parent.struct( '[]', [
-									parent.data( parent.type ),
+									parent.data( parent.type.replace(/(\<[\W\w]+\>)/gm,'') ),
 								]),
 							] ),
 						] ),
