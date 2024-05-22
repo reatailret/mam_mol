@@ -1683,7 +1683,7 @@ namespace $ {
 				var priority = -indent[ 0 ].replace( /\t/g , '    ' ).length / 4
 				
 				line.replace(
-					/\b(?:require|import)\(\s*['"]([^"'()]*?)['"]\s*\)/ig , ( str , path )=> {
+					/\b(?:require)\(\s*['"]([^"'()]*?)['"]\s*\)/ig , ( str , path )=> {
 						path = path.replace( /(\/[^\/.]+)$/ , '$1.js' ).replace( /\/$/, '/index.js' )
 						if( path[0] === '.' ) path = '../' + path
 						$mol_build_depsMerge( depends , { [ path ] : priority } )
@@ -1721,7 +1721,7 @@ namespace $ {
 				
 				
 				line.replace(
-					/\b(?:require|import)\(\s*['"]([^"'()]*?)['"]\s*\)/ig , ( str , path )=> {
+					/\b(?:require)\(\s*['"]([^"'()]*?)['"]\s*\)/ig , ( str , path )=> {
 						$mol_build_depsMerge( depends , { [ path ] : priority } )
 						return str
 					}
