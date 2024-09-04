@@ -23,7 +23,8 @@ namespace $.$$ {
 		@ $mol_mem
 		sub() {
 			
-			const next = [  ... this.pages(), this.Placeholder() ]
+			const placeholder = this.Placeholder()
+			const next = [  ... this.pages(), placeholder ]
 			
 			const prev = $mol_mem_cached( ()=> this.sub() ) ?? []
 			
@@ -35,8 +36,18 @@ namespace $.$$ {
 				if( !n ) break
 
 				if( p === n ) continue
+				if( n === placeholder ) continue
 
 				n.bring()
+				
+				new this.$.$mol_after_frame( ()=> {
+					const b = this.dom_node() as HTMLElement
+					const p = n.dom_node() as HTMLElement
+					b.scroll({
+						left: p.offsetLeft + p.offsetWidth - b.offsetWidth,
+						behavior: 'smooth',
+					})
+				})
 				
 				break
 

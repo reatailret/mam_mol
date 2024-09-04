@@ -26,6 +26,7 @@ namespace $.$$ {
 				
 				switch( name ) {
 					case 'quote': return this.Quote( index )
+					case 'spoiler': return this.Spoiler( index )
 					case 'header': return this.Header( index )
 					case 'list': return this.List( index )
 					case 'code': return this.Pre( index )
@@ -67,7 +68,7 @@ namespace $.$$ {
 		@ $mol_mem_key
 		pre_text( index : number ) {
 			const token = this.flow_tokens()[ index ]
-			return ( token.chunks[2] ?? token.chunks[0].replace( /^(\t|  (?:\+\+|--|\*\*|  ))/gm , '' ) ).replace( /[\n\r]*$/ , '' )
+			return ( token.chunks[2] ?? token.chunks[0].replace( /^(\t| (?:\+\+|--|\*\*|  ) )/gm , '' ) ).replace( /[\n\r]*$/ , '' )
 		}
 		
 		@ $mol_mem_key
@@ -301,6 +302,20 @@ namespace $.$$ {
 			}
 		}
 
+		@ $mol_mem_key
+		spoiler_rows( index: number ): string[] {
+			return this.flow_tokens()[ index ].chunks[0].replace( /^[\?] /mg , '' ).split('\n');
+		}
+
+		@ $mol_mem_key
+		spoiler_label( index: number ): string {
+			return this.spoiler_rows(index)[0];
+		}
+	
+		@ $mol_mem_key
+		spoiler_content( index: number): string {
+			return this.spoiler_rows(index).slice(1).join('\n');
+		}
 	}
 	
 	export class $mol_text_header extends $.$mol_text_header {
