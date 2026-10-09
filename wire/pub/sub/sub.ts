@@ -95,8 +95,9 @@ namespace $ {
 				cursor < this.cursor;
 				cursor += 2
 			) {
-				const pub = this.data[ cursor ] as $mol_wire_pub
-				pub.fresh()
+				const pub = this.data[ cursor ] as $mol_wire_pub | undefined
+				// Slot may be cleared by pub_off when a temp was destroyed mid-calc.
+				pub?.fresh()
 			}
 			
 			this.cursor = $mol_wire_cursor.fresh
@@ -109,6 +110,10 @@ namespace $ {
 		}
 		
 		destructor() {
+			
+			// Mid-calc destroy (absorb restarts a temp): stop promoting into this
+			// fiber so track_next does not throw 'Promo to non begun sub'.
+			if( $mol_wire_auto() === this ) $mol_wire_auto( null )
 			
 			for(
 				let cursor = this.data.length - 2;
